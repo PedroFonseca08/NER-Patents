@@ -1,0 +1,2799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>US20190387365A1 - Method and system for classifying an activity of a user 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/US20190387365A1/en">
+    <meta name="description" content="
+     A method or system for classifying an activity of a user on the basis of measurements performed by a plurality of sensors is comprised in a mobile device associated with the user. The method comprises: obtaining a set of measurements from the plurality of sensors; iteratively deriving user events from the set of measurements, the user events comprising time data, user location data, and user movement data; analyzing the iteratively derived user events to obtain predictions regarding the user events; analyzing the iteratively derived user events and the predictions to obtain circumstances of regarding the user events; and outputting the circumstances to an information system. 
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="Method and system for classifying an activity of a user 
+       ">
+    <meta name="DC.date" content="2018-01-22" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     A method or system for classifying an activity of a user on the basis of measurements performed by a plurality of sensors is comprised in a mobile device associated with the user. The method comprises: obtaining a set of measurements from the plurality of sensors; iteratively deriving user events from the set of measurements, the user events comprising time data, user location data, and user movement data; analyzing the iteratively derived user events to obtain predictions regarding the user events; analyzing the iteratively derived user events and the predictions to obtain circumstances of regarding the user events; and outputting the circumstances to an information system. 
+   
+   ">
+    <meta name="citation_patent_application_number" content="US:16/479,454">
+    <meta name="citation_pdf_url" content="https://patentimages.storage.googleapis.com/8d/dc/f8/9b01a0fe7997fc/US20190387365A1.pdf">
+    <meta name="citation_patent_publication_number" content="US:20190387365:A1">
+    <meta name="DC.date" content="2019-12-19">
+    <meta name="DC.contributor" content="Vincent SPRUYT" scheme="inventor">
+    <meta name="DC.contributor" content="Frank VERBIST" scheme="inventor">
+    <meta name="DC.contributor" content="Vincent JOCQUET" scheme="inventor">
+    <meta name="DC.contributor" content="Sentiance NV" scheme="assignee">
+    <meta name="DC.relation" content="WO:2016203298:A1" scheme="references">
+    <meta name="DC.relation" content="US:20180231653:A1" scheme="references">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      body { transition: none; }
+    </style>
+
+    <script>
+      window.version = 'patent-search.search_20240108_RC01';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20240108_RC01/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20240108_RC01/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20240108_RC01/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">US20190387365A1 - Method and system for classifying an activity of a user 
+        - Google Patents</h1>
+  <span itemprop="title">Method and system for classifying an activity of a user 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  <a href="https://patentimages.storage.googleapis.com/8d/dc/f8/9b01a0fe7997fc/US20190387365A1.pdf" itemprop="pdfLink">Download PDF</a>
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">US20190387365A1</dd>
+    <meta itemprop="numberWithoutCodes" content="20190387365">
+    <meta itemprop="kindCode" content="A1">
+    <meta itemprop="publicationDescription" content="Patent application publication">
+    <span>US20190387365A1</span>
+    <span>US16/479,454</span>
+    <span>US201816479454A</span>
+    <span>US2019387365A1</span>
+    <span>US 20190387365 A1</span>
+    <span>US20190387365 A1</span>
+    <span>US 20190387365A1</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>US 201816479454 A</span>
+    <span>US201816479454 A</span>
+    <span>US 201816479454A</span>
+    <span>US 2019387365 A1</span>
+    <span>US2019387365 A1</span>
+    <span>US 2019387365A1</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">US</dd>
+    <dd itemprop="countryName">United States</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>user</dd>
+    <dd itemprop="priorArtKeywords" repeat>user events</dd>
+    <dd itemprop="priorArtKeywords" repeat>events</dd>
+    <dd itemprop="priorArtKeywords" repeat>measurements</dd>
+    <dd itemprop="priorArtKeywords" repeat>data</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2017-01-20">2017-01-20</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Abandoned</span>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">US16/479,454</dd>
+
+  
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>Vincent SPRUYT</dd>
+  <dd itemprop="inventor" repeat>Frank VERBIST</dd>
+  <dd itemprop="inventor" repeat>Vincent JOCQUET</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    Sentiance NV
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>Sentiance NV</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2017-01-20">2017-01-20</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2018-01-22">2018-01-22</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2019-12-19">2019-12-19</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2018-01-22">2018-01-22</time>
+    <span itemprop="title">Application filed by Sentiance NV</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">Sentiance NV</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2019-07-19">2019-07-19</time>
+    <span itemprop="title">Assigned to SENTIANCE N.V.</span>
+    <span itemprop="type">reassignment</span>
+    
+    
+    
+    
+    <span itemprop="assigneeSearch">SENTIANCE N.V.</span>
+    <span itemprop="description" repeat>ASSIGNMENT OF ASSIGNORS INTEREST (SEE DOCUMENT FOR DETAILS).</span>
+    <span itemprop="description" repeat>Assignors: VERBIST, Frank, JOCQUET, Vincent, SPRUYT, Vincent</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2019-12-19">2019-12-19</time>
+    <span itemprop="title">Publication of US20190387365A1</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/US20190387365A1/en</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Abandoned</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoLink">
+          <a href="https://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PG01&s1=20190387365.PGNR." itemprop="url" target="_blank"><span itemprop="text">USPTO</span></a>
+        </li>
+        
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoPatentCenterLink">
+          <a href="https://patentcenter.uspto.gov/applications/16479454" itemprop="url" target="_blank"><span itemprop="text">USPTO PatentCenter</span></a>
+        </li>
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoAssignmentLink">
+          <a href="https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=20190387365" itemprop="url" target="_blank"><span itemprop="text">USPTO Assignment</span></a>
+        </li>
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&amp;NR=2019387365A1&amp;KC=A1&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="globalDossierLink">
+        <a href="https://globaldossier.uspto.gov/#/result/publication/US/20190387365/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+      </li>
+
+      
+
+      
+
+      
+
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/US20190387365" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+      
+  </ul>
+
+  
+
+  <section>
+    <h2>Images</h2>
+    <ul>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/25/a8/5f/fecfa175782725/US20190387365A1-20191219-D00000.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/e1/40/2f/95db80184a69ed/US20190387365A1-20191219-D00000.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="1120">
+            <meta itemprop="label" content="steps">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1336">
+              <meta itemprop="top" content="660">
+              <meta itemprop="right" content="1457">
+              <meta itemprop="bottom" content="712">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="1130">
+            <meta itemprop="label" content="steps">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1334">
+              <meta itemprop="top" content="899">
+              <meta itemprop="right" content="1458">
+              <meta itemprop="bottom" content="954">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="0">
+            <meta itemprop="id" content="1140">
+            <meta itemprop="label" content="segments">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1451">
+              <meta itemprop="top" content="1502">
+              <meta itemprop="right" content="1569">
+              <meta itemprop="bottom" content="1555">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/2b/e3/6a/1d71c1646b85de/US20190387365A1-20191219-D00001.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/6d/ec/32/424562e05d7652/US20190387365A1-20191219-D00001.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="1">
+            <meta itemprop="id" content="1120">
+            <meta itemprop="label" content="steps">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1336">
+              <meta itemprop="top" content="660">
+              <meta itemprop="right" content="1457">
+              <meta itemprop="bottom" content="712">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="1">
+            <meta itemprop="id" content="1130">
+            <meta itemprop="label" content="steps">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1334">
+              <meta itemprop="top" content="899">
+              <meta itemprop="right" content="1458">
+              <meta itemprop="bottom" content="954">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="1">
+            <meta itemprop="id" content="1140">
+            <meta itemprop="label" content="segments">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1449">
+              <meta itemprop="top" content="1501">
+              <meta itemprop="right" content="1572">
+              <meta itemprop="bottom" content="1552">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="1">
+            <meta itemprop="id" content="2">
+            <meta itemprop="label" content="EP">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1152">
+              <meta itemprop="top" content="1805">
+              <meta itemprop="right" content="1255">
+              <meta itemprop="bottom" content="1882">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/d7/05/e7/3c9f87ab0acd9b/US20190387365A1-20191219-D00002.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/bc/d9/5a/d22743f3567539/US20190387365A1-20191219-D00002.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="110">
+            <meta itemprop="label" content="processing units">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="816">
+              <meta itemprop="top" content="565">
+              <meta itemprop="right" content="896">
+              <meta itemprop="bottom" content="598">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="120">
+            <meta itemprop="label" content="processing units">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="775">
+              <meta itemprop="top" content="1075">
+              <meta itemprop="right" content="856">
+              <meta itemprop="bottom" content="1109">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="130">
+            <meta itemprop="label" content="processing units">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1318">
+              <meta itemprop="top" content="1363">
+              <meta itemprop="right" content="1398">
+              <meta itemprop="bottom" content="1396">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="140">
+            <meta itemprop="label" content="processing units">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1564">
+              <meta itemprop="top" content="1710">
+              <meta itemprop="right" content="1646">
+              <meta itemprop="bottom" content="1746">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="150">
+            <meta itemprop="label" content="processing units">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="265">
+              <meta itemprop="top" content="1372">
+              <meta itemprop="right" content="347">
+              <meta itemprop="bottom" content="1405">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="155">
+            <meta itemprop="label" content="processing units">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="266">
+              <meta itemprop="top" content="1942">
+              <meta itemprop="right" content="344">
+              <meta itemprop="bottom" content="1976">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="210">
+            <meta itemprop="label" content="data store">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="793">
+              <meta itemprop="top" content="778">
+              <meta itemprop="right" content="879">
+              <meta itemprop="bottom" content="820">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="220">
+            <meta itemprop="label" content="data store">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="792">
+              <meta itemprop="top" content="1339">
+              <meta itemprop="right" content="875">
+              <meta itemprop="bottom" content="1374">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="230">
+            <meta itemprop="label" content="data stores">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="896">
+              <meta itemprop="top" content="2118">
+              <meta itemprop="right" content="980">
+              <meta itemprop="bottom" content="2153">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="240">
+            <meta itemprop="label" content="data stores">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1195">
+              <meta itemprop="top" content="1893">
+              <meta itemprop="right" content="1277">
+              <meta itemprop="bottom" content="1929">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="2">
+            <meta itemprop="id" content="250">
+            <meta itemprop="label" content="data stores">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="263">
+              <meta itemprop="top" content="1625">
+              <meta itemprop="right" content="348">
+              <meta itemprop="bottom" content="1659">
+            </span>
+          </li>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/d4/bc/94/5187b21bf02223/US20190387365A1-20191219-D00003.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/bb/d9/4c/ecb546720dd31a/US20190387365A1-20191219-D00003.png">
+        <ul>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="310">
+            <meta itemprop="label" content="mobile devices">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1369">
+              <meta itemprop="top" content="302">
+              <meta itemprop="right" content="1475">
+              <meta itemprop="bottom" content="355">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="320">
+            <meta itemprop="label" content="mobile devices">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1479">
+              <meta itemprop="top" content="865">
+              <meta itemprop="right" content="1579">
+              <meta itemprop="bottom" content="918">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="330">
+            <meta itemprop="label" content="mobile devices">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="1333">
+              <meta itemprop="top" content="1316">
+              <meta itemprop="right" content="1436">
+              <meta itemprop="bottom" content="1371">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="340">
+            <meta itemprop="label" content="analysis engine">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="260">
+              <meta itemprop="top" content="593">
+              <meta itemprop="right" content="360">
+              <meta itemprop="bottom" content="647">
+            </span>
+          </li>
+          <li itemprop="callouts" itemscope repeat>
+            <meta itemprop="figurePage" content="3">
+            <meta itemprop="id" content="350">
+            <meta itemprop="label" content="information system">
+            <span itemprop="bounds" itemscope>
+              <meta itemprop="left" content="261">
+              <meta itemprop="top" content="1495">
+              <meta itemprop="right" content="358">
+              <meta itemprop="bottom" content="1548">
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Classifications</h2>
+    <ul>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L</span>&mdash;<span itemprop="Description">TRANSMISSION OF DIGITAL INFORMATION, e.g. TELEGRAPHIC COMMUNICATION</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/00</span>&mdash;<span itemprop="Description">Network arrangements or protocols for supporting network services or applications</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/50</span>&mdash;<span itemprop="Description">Network services</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/535</span>&mdash;<span itemprop="Description">Tracking the activity of the user</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="FirstCode" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W</span>&mdash;<span itemprop="Description">WIRELESS COMMUNICATION NETWORKS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/00</span>&mdash;<span itemprop="Description">Services specially adapted for wireless communication networks; Facilities therefor</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/02</span>&mdash;<span itemprop="Description">Services making use of location information</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/029</span>&mdash;<span itemprop="Description">Location-based management or tracking services</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="FirstCode" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L</span>&mdash;<span itemprop="Description">TRANSMISSION OF DIGITAL INFORMATION, e.g. TELEGRAPHIC COMMUNICATION</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/00</span>&mdash;<span itemprop="Description">Network arrangements or protocols for supporting network services or applications</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/01</span>&mdash;<span itemprop="Description">Protocols</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/12</span>&mdash;<span itemprop="Description">Protocols specially adapted for proprietary or special-purpose networking environments, e.g. medical networks, sensor networks, networks in vehicles or remote metering networks</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/22</span>&mdash;<span itemprop="Description"></span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W</span>&mdash;<span itemprop="Description">WIRELESS COMMUNICATION NETWORKS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/00</span>&mdash;<span itemprop="Description">Services specially adapted for wireless communication networks; Facilities therefor</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/02</span>&mdash;<span itemprop="Description">Services making use of location information</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/025</span>&mdash;<span itemprop="Description">Services making use of location information using location based information parameters</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/027</span>&mdash;<span itemprop="Description">Services making use of location information using location based information parameters using movement velocity, acceleration information</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W</span>&mdash;<span itemprop="Description">WIRELESS COMMUNICATION NETWORKS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/00</span>&mdash;<span itemprop="Description">Services specially adapted for wireless communication networks; Facilities therefor</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/30</span>&mdash;<span itemprop="Description">Services specially adapted for particular environments, situations or purposes</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W4/38</span>&mdash;<span itemprop="Description">Services specially adapted for particular environments, situations or purposes for collecting sensor information</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L</span>&mdash;<span itemprop="Description">TRANSMISSION OF DIGITAL INFORMATION, e.g. TELEGRAPHIC COMMUNICATION</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/00</span>&mdash;<span itemprop="Description">Network arrangements or protocols for supporting network services or applications</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/01</span>&mdash;<span itemprop="Description">Protocols</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04L67/10</span>&mdash;<span itemprop="Description">Protocols in which an application is distributed across nodes in the network</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="Additional" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W</span>&mdash;<span itemprop="Description">WIRELESS COMMUNICATION NETWORKS</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W64/00</span>&mdash;<span itemprop="Description">Locating users or terminals or network equipment for network management purposes, e.g. mobility management</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04W64/006</span>&mdash;<span itemprop="Description">Locating users or terminals or network equipment for network management purposes, e.g. mobility management with additional information processing, e.g. for direction or speed determination</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="Additional" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  
+
+  
+
+  <section>
+    <h2>Definitions</h2>
+    <ul>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the present invention</span>
+        <span itemprop="definition">pertains to the field of sensor-based analysis of user behavior, in particular to systems and methods relying on input from sensors comprised in users&#39; mobile devices.</span>
+        <meta itemprop="num_attr" content="0001">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">United States patent application publication no. US 2013/0178241 A1</span>
+        <span itemprop="definition">discloses a mobile device with a mobile application that communicates with a cloud platform for context based content delivery to the mobile terminal device.</span>
+        <meta itemprop="num_attr" content="0002">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the mobile cloud platform</span>
+        <span itemprop="definition">includes a mobile cloud virtualization layer, a mobile cloud content delivery layer and a mobile cloud network layer.</span>
+        <meta itemprop="num_attr" content="0002">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the mobile cloud virtualization layer</span>
+        <span itemprop="definition">functions as a storage and process center. It allocates resources for native applications and other user information storage, content storage for static services, content storage for dynamic services and runs application processes for mobile users independent of the mobile platform.</span>
+        <meta itemprop="num_attr" content="0002">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the mobile cloud content delivery layer</span>
+        <span itemprop="definition">runs a context-adaptive engine that delivers service provider content to a mobile platform based on space-time context of the user.</span>
+        <meta itemprop="num_attr" content="0002">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the mobile cloud network layer</span>
+        <span itemprop="definition">forms dynamic local networks as well as high frequency usage networks with other mobile terminal devices based on the user analytical data. While this document discloses the use of the accelerometer of a smart phone to detect motion types such as walking and vehicular motion, it does not explain in detail how such observations can be combined into a meaningful context.</span>
+        <meta itemprop="num_attr" content="0002">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">European patent application publication no. EP 2 677 484 A1</span>
+        <span itemprop="definition">discloses a system for making personalized recommendations to a user of a mobile computing device.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the system</span>
+        <span itemprop="definition">comprises at least one mobile computing device, a central processing unit, and a memory structure comprising a dataset of personalized data.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the at least one mobile computing device</span>
+        <span itemprop="definition">is provided with a plurality of sensors arranged for collecting contextual data.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the central processing unit</span>
+        <span itemprop="definition">comprises receiving means for receiving said collected contextual data.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the central processing unit</span>
+        <span itemprop="definition">is arranged for combining information from the personalized dataset with the received contextual data, in order to obtain a personalized recommendation.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the central processing unit</span>
+        <span itemprop="definition">is provided with transmitting means for transmitting the personalized recommendation to the user.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the central processing unit</span>
+        <span itemprop="definition">is arranged for checking follow-up of the transmitted recommendation by the user by comparing the transmitted recommendation with contextual data received by the central processing unit.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the central processing unit</span>
+        <span itemprop="definition">is further arranged for basing a further recommendation at least partly on said checked follow-up.</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">EP 2 677 484 A1</span>
+        <span itemprop="definition">âhumans typically suffer from common defects, including self-deception, cognitive dissonance, confabulations and many more cognitive biases that prevent humans from producing trustworthy information, which in turn prevents accurate behavioral analysis of a humanâ.</span>
+        <meta itemprop="num_attr" content="0004">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the system disclosed in EP 2 677 484 A1</span>
+        <span itemprop="definition">attempts to remedy these defects by combining human-generated data with observational data.</span>
+        <meta itemprop="num_attr" content="0004">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a method for classifying an activity of a user on the basis of measurements performed by a plurality of sensors comprised in a mobile device associated with the user</span>
+        <span itemprop="definition">comprising: obtaining a set of measurements from the plurality of sensors; iteratively deriving user events from the set of measurements, the user events comprising time data, user location data, and user movement data; analyzing the iteratively derived user events to obtain predictions regarding the user events; analyzing the iteratively derived user events and the predictions to obtain circumstances of the user events, said circumstances comprising a classification of said user events as a certain activity; and outputting the circumstances to an information system.</span>
+        <meta itemprop="num_attr" content="0007">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the present invention</span>
+        <span itemprop="definition">is based inter alia on the insight of the inventors that while a correct interpretation of short-term observed data (user events; for example: being present at a certain location at a certain time, or being engaged in a specific detectable activity such as driving a car, . . . ) requires some knowledge of the user&#39;s profile to provide the necessary context, an adequate profile can actually be generated by judiciously analyzing user event observations gathered over a longer period of time.</span>
+        <meta itemprop="num_attr" content="0008">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">These user events</span>
+        <span itemprop="definition">are analyzed over time to obtain circumstances (hereinafter also referred to as âmomentsâ) that explain the observed user events (for example being present at a certain location that, based on prior observations, can be identified as the person&#39;s work place, at a point in time which falls within a time window that, based on prior observations, can be identified as the person&#39;s working hours, would thus be identified as âworkingâ; likewise, being engaged in the activity of driving a car, at a time and place that are consistent with the person&#39;s daily movements between a place identified as âhomeâ and a place identified as âworkâ, would thus be identified as âcommutingâ).</span>
+        <meta itemprop="num_attr" content="0008">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the method according to the present invention</span>
+        <span itemprop="definition">further comprises analyzing the circumstances and the user events to obtain observed user profiles.</span>
+        <meta itemprop="num_attr" content="0009">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">users</span>
+        <span itemprop="definition">can be categorized into one or more (optionally overlapping) segments of the population, based on automatically detected attributes that are derived from observed events and the associated circumstances (âmomentsâ), and that take on the role of an observed user profile.</span>
+        <meta itemprop="num_attr" content="0010">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Each segment</span>
+        <span itemprop="definition">is a cluster in the attribute space.</span>
+        <meta itemprop="num_attr" content="0010">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the segments</span>
+        <span itemprop="definition">are not necessarily static, but may be updated and/or refined over time on the basis of new observations.</span>
+        <meta itemprop="num_attr" content="0010">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the combination of events, moments, and segments,</span>
+        <span itemprop="definition">may be referred to as the context of the observations.</span>
+        <meta itemprop="num_attr" content="0010">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the method according to the present invention</span>
+        <span itemprop="definition">further comprises analyzing the iteratively derived user events and the predictions to detect a discrepancy between an observed user event and the predictions, and outputting an anomaly signal if such a discrepancy is detected.</span>
+        <meta itemprop="num_attr" content="0011">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the measurements</span>
+        <span itemprop="definition">are performed by a location subsystem of the mobile device.</span>
+        <meta itemprop="num_attr" content="0013">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the inventors</span>
+        <span itemprop="definition">have found, surprisingly, that the data provided by the location subsystem of the mobile device is sufficient to paint an accurate picture of the activities of a mobile device user, when observed over a sufficiently long time.</span>
+        <meta itemprop="num_attr" content="0014">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the location subsystem</span>
+        <span itemprop="definition">may in particular include one or more of a beacon signal receiver and a GPS or assisted GPS receiver.</span>
+        <meta itemprop="num_attr" content="0014">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the sensors</span>
+        <span itemprop="definition">comprise one or more of an accelerometer, a gyroscope, a magnetometer, a compass, and a barometer.</span>
+        <meta itemprop="num_attr" content="0015">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the measurements</span>
+        <span itemprop="definition">are performed by a wireless communication transceiver of the mobile device.</span>
+        <meta itemprop="num_attr" content="0017">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">wireless communication transceivers</span>
+        <span itemprop="definition">that are typically available in mobile devices, including a mobile telephony and data transceiver (e.g. GSM, GPRS, UMTS, 3G, LTE; used for example for cell tower triangulation), a wireless local area network transceiver (e.g. an IEEE 802.11 âWi-Fiâ transceiver, used for example for localization by âWi-Fi fingerprintingâ), a wireless local personal area network transceiver (e.g., a Bluetooth or Ultra-Wide Band transceiver).</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a mobile telephony and data transceiver</span>
+        <span itemprop="definition">e.g. GSM, GPRS, UMTS, 3G, LTE; used for example for cell tower triangulation</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a wireless local area network transceiver</span>
+        <span itemprop="definition">e.g. an IEEE 802.11 âWi-Fiâ transceiver, used for example for localization by âWi-Fi fingerprintingâ</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a wireless local personal area network transceiver</span>
+        <span itemprop="definition">e.g., a Bluetooth</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the iteratively deriving user events</span>
+        <span itemprop="definition">comprises analyzing measurements obtained over a period of at least 48 hours.</span>
+        <meta itemprop="num_attr" content="0019">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the inventors</span>
+        <span itemprop="definition">have found that a 48-hour observation period is a minimum to ensure that a pattern of activities repeating on a daily basis can be detected.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the iteratively deriving user events</span>
+        <span itemprop="definition">comprises analyzing measurements obtained over a period of at least two weeks.</span>
+        <meta itemprop="num_attr" content="0021">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the inventors</span>
+        <span itemprop="definition">have found that a 2-week observation period is a minimum to ensure that a pattern of activities repeating on a weekly basis can be detected.</span>
+        <meta itemprop="num_attr" content="0022">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a mobile application</span>
+        <span itemprop="definition">comprising code means configured to cause a mobile device to carry out the obtaining and the deriving of the method described above, and to transmit the user events to an analysis engine configured to carry out the analyzing steps of the method described above.</span>
+        <meta itemprop="num_attr" content="0023">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a computer program product</span>
+        <span itemprop="definition">comprising code means configured to cause a processor to obtain user events from one or more mobile devices and to carry out the analyzing steps of the method described above.</span>
+        <meta itemprop="num_attr" content="0024">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a system for classifying an activity of a user</span>
+        <span itemprop="definition">comprising: at least one mobile device comprising a processor and a plurality of sensors operatively connected to the processor, the processor being configured to: obtain a set of measurements from the plurality of sensors and iteratively derive user events from the set of measurements, the user events comprising time data, user location data, and user movement data; and an analysis engine, connected to the at least one mobile device via a wireless data network, the analysis engine being configured to: analyze the iteratively derived user events to obtain predictions regarding the user events, analyze the iteratively derived user events and the predictions to obtain circumstances of the user events, said circumstances comprising a classification of said user events as a certain activity, and output the circumstances to an information system.</span>
+        <meta itemprop="num_attr" content="0025">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 1</span>
+        <span itemprop="definition">provides a flow chart of an embodiment of the method according to the present invention</span>
+        <meta itemprop="num_attr" content="0028">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 2</span>
+        <span itemprop="definition">schematically represents an embodiment of the system according to the present invention.</span>
+        <meta itemprop="num_attr" content="0029">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 3</span>
+        <span itemprop="definition">schematically illustrates a further embodiment of the system according to the present invention.</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 1</span>
+        <span itemprop="definition">provides a flow chart of an embodiment of the method for classifying an activity of a user on the basis of measurements performed by a plurality of sensors comprised in a mobile device associated with said user, according to the present invention.</span>
+        <meta itemprop="num_attr" content="0031">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the method</span>
+        <span itemprop="definition">comprises obtaining 1100 a set of measurements from the plurality of sensors (e.g., one or more of an accelerometer, a gyroscope, a magnetometer, a compass, and a barometer).</span>
+        <meta itemprop="num_attr" content="0031">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">sensors that are part of the location subsystem of the mobile device</span>
+        <span itemprop="definition">may be used (e.g. a GPS receiver or an assisted GPS receiver).</span>
+        <meta itemprop="num_attr" content="0031">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">sensors that are part of the communication subsystem</span>
+        <span itemprop="definition">may be used (e.g. a mobile telephony, WLAN, or WPAN receiver).</span>
+        <meta itemprop="num_attr" content="0031">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the sensor data</span>
+        <span itemprop="definition">undergoes signal processing, such as filtering, to remove noise and artefacts and to facilitate the extraction of useful data.</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This extraction</span>
+        <span itemprop="definition">includes iteratively deriving 1110 user events from the set of measurements, preferably using machine learning.</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the user events</span>
+        <span itemprop="definition">are data structures including at least time data (when did the event occur), user location data (where did the event occur), and user movement data (what occurred).</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the user movement data</span>
+        <span itemprop="definition">may include time-varying motion vectors and acceleration vectors, allowing the motion to be classified as, for example, resting or being idle, sitting, standing, walking, jogging/running, cycling, riding a motorcycle, driving a car, riding a tram or a train, flying aboard an aircraft, and the like, in known manners.</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the user event data</span>
+        <span itemprop="definition">may be augmented by data obtained from external data sources, such as current or predicted traffic information, current or predicted weather information, location-related information including points-of-interest, street names, road types, speed limits, shops and service providers, and the like (for example obtained via a web service).</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">external data sources</span>
+        <span itemprop="definition">such as current or predicted traffic information, current or predicted weather information, location-related information including points-of-interest, street names, road types, speed limits, shops and service providers, and the like (for example obtained via a web service).</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the iteratively derived user events</span>
+        <span itemprop="definition">are then analyzed 1120 to obtain predictions regarding the user events; the predictions can be considered as an observed profile of the user. Once sufficient predictions are available (i.e., when patterns have emerged from the user events), the iteratively derived user events and the predictions are analyzed 1130 in combination to obtain âmomentsâ, i.e. circumstances of the user events. The circumstances are output to an information system 1190 .</span>
+        <meta itemprop="num_attr" content="0033">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the method</span>
+        <span itemprop="definition">may further comprise analyzing the circumstances and the user events to obtain segments 1140 .</span>
+        <meta itemprop="num_attr" content="0034">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Segments</span>
+        <span itemprop="definition">may be based on automatically detected attributes that are derived from circumstances and user events. Each segment is a cluster in the attribute space, which may be labeled using a human-recognizable typology, thus creating variables defining semantic time and semantic space. For example, in function of the amount of time spent at a place identified as âworkâ (i.e., the person&#39;s âsemantic workâ), a person may be categorized as a âworkaholicâ; in function of the regularity of attending a place identified as an educational institution (i.e., the person&#39;s âsemantic schoolâ), a user may be categorized as a âstudentâ; in function of the regularity of attending places identified as quality restaurants, a person may be categorized as a âfoodyâ.</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">work</span>
+        <span itemprop="definition">i.e., the person&#39;s âs âsemantic workâ</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a person</span>
+        <span itemprop="definition">in function of the regularity of attending a place identified as an educational institution (i.e., the person&#39;s âsemantic schoolâ)</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a user</span>
+        <span itemprop="definition">may</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the method</span>
+        <span itemprop="definition">may further comprise analyzing 1150 the iteratively derived user events and the predictions to detect a discrepancy between an observed user event and the predictions, and outputting an anomaly signal if such a discrepancy is detected. In a similar way, discrepancies between an observed context and the predictions may be detected and reported.</span>
+        <meta itemprop="num_attr" content="0036">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 2</span>
+        <span itemprop="definition">schematically represents an embodiment of the system according to the present invention.</span>
+        <meta itemprop="num_attr" content="0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the system</span>
+        <span itemprop="definition">comprises a number of processing units 110 , 120 , 130 , 140 , 150 , 155 operating on different types of data present in data stores 210 , 220 , 230 , 240 , 250 .</span>
+        <meta itemprop="num_attr" content="0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">processing units 110 , 120 , 130 , 140 , 150 , 155</span>
+        <span itemprop="definition">are depicted as separate elements in FIG. 2 for clarity purposes, this is meant as an abstract, functional separation only; the skilled person will understand that the underlying functions may be carried out by a common processing platform.</span>
+        <meta itemprop="num_attr" content="0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the data stores 210 , 220 , 230 , 240 , 250</span>
+        <span itemprop="definition">are depicted as separate elements in FIG.</span>
+        <meta itemprop="num_attr" content="0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the data stores</span>
+        <span itemprop="definition">may provide access to the data structures via a database interface, an api, a feed, or similar means.</span>
+        <meta itemprop="num_attr" content="0037">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Data store 210</span>
+        <span itemprop="definition">contains events (related to what happens or happened, when, and where), derived by a machine learning function 110 from the observed and processed sensor data, which may include historic data.</span>
+        <meta itemprop="num_attr" content="0038">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the events</span>
+        <span itemprop="definition">may be stored in the form of an event timeline.</span>
+        <meta itemprop="num_attr" content="0038">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the observed data</span>
+        <span itemprop="definition">lead to the classification of the ongoing actions as at most one specific event. Examples of events are âat 8:30 am, the user is driving on highway A1 Northbound, at location Xâ; âat 2:15 pm, the user is stationary in a coffee shop Yâ; âat 9:00 pm, the user is moving about in an area designated as âhomeââ.</span>
+        <meta itemprop="num_attr" content="0038">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Data store 220</span>
+        <span itemprop="definition">contains predictions, derived by a machine learning function 120 from the events in data store 210 . These predictions may pertain to the type of âeventsâ or âmomentsâ that may be expected to take place at certain times and/or locations based on the past observations, and thus form an observed profile of the user.</span>
+        <meta itemprop="num_attr" content="0039">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Data store 230</span>
+        <span itemprop="definition">contains circumstances (also referred to as âmomentsâ, related to why or how things happen or happened), derived by a rule engine 130 from the events in data store 210 and the predictions in data store 220 .</span>
+        <meta itemprop="num_attr" content="0040">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the moments</span>
+        <span itemprop="definition">may be stored in the form of a moments timeline. At any given time, the observed data may lead to the classification of the ongoing actions as any number of moments. If the event âat 8:30 am, the user is driving on highway A1 Northbound, at location Xâ is detected, and if the prediction store 220 indicates that this movement is on a path from an area designated as âhomeâ to an area designated as âworkâ and tends to happen every working day, the moment âcommuteâ may be concluded to be occurring.</span>
+        <meta itemprop="num_attr" content="0040">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the moment âoutside coffee breakâ</span>
+        <span itemprop="definition">may be concluded to be occurring, notwithstanding the fact that an ongoing moment âat workâ remains active.</span>
+        <meta itemprop="num_attr" content="0040">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Data store 240</span>
+        <span itemprop="definition">contains segments (related to who is/was involved in an event), derived by a machine learning function 140 from the events in data store 210 and moments stored in data store 230 .</span>
+        <meta itemprop="num_attr" content="0041">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Data store 250</span>
+        <span itemprop="definition">stores anomalies, derived by a machine learning function 150 from the events (related to what happened, when, and where) in data store 210 and the predictions in data store 220 , and also derived by a machine learning function 155 from the moments in data store 230 and the predictions in data store 220 .</span>
+        <meta itemprop="num_attr" content="0042">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the anomalies</span>
+        <span itemprop="definition">comprise divergences between observed events and predicted events (as derived by MLF 150 ) and divergences between observed moments and predicted moments (as derived by MLF 155 ). These anomalies may trigger any appropriate action, such as a notification to the user or the logging of the anomaly in an anomaly timeline.</span>
+        <meta itemprop="num_attr" content="0042">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the illustrated system for classifying an activity of a user</span>
+        <span itemprop="definition">comprises at least one mobile device, associated with a user. Without loss of generality, three mobile devices 310 , 320 , 330 , are illustrated, each of which would normally be associated with a different user, who carries the mobile device around during her daily activities, allowing the sensors to gather data about the user&#39;s movements.</span>
+        <meta itemprop="num_attr" content="0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Each mobile device</span>
+        <span itemprop="definition">comprises a processor and a plurality of sensors operatively connected to said processor (not illustrated).</span>
+        <meta itemprop="num_attr" content="0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the processor</span>
+        <span itemprop="definition">is configured, for example by means of an appropriate mobile application or âappâ, to obtain a set of measurements from the sensors and to iteratively derive user events from the set of measurements, said user events comprising time data, user location data, and user movement data.</span>
+        <meta itemprop="num_attr" content="0044">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the illustrated system</span>
+        <span itemprop="definition">further comprises an analysis engine 340 , connected to the at least one mobile device 310 , 320 , 330 , via a wireless data network.</span>
+        <meta itemprop="num_attr" content="0045">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the wireless data network</span>
+        <span itemprop="definition">may be a mobile internet infrastructure, such as an EDGE, GPRS, UMTS, LTE, or similar infrastructure, or a wireless LAN infrastructure, such as an IEEE 802.11 âWi-Fiâ infrastructure, or a combination of several such networks depending on the availability at a present location of the relevant user.</span>
+        <meta itemprop="num_attr" content="0045">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the analysis engine</span>
+        <span itemprop="definition">may be a server connected to the internet, provided with an appropriate combination of hardware (including for example dedicated hardware such as ASICs, configurable hardware such as FPGAs, and/or programmable hardware such as processors) and software, to carry out the functions described hereinabove in the context of FIGS.</span>
+        <meta itemprop="num_attr" content="0045">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the analysis engine 340</span>
+        <span itemprop="definition">is further connected (via the internet of any other appropriate internal or external interface as known to the skilled person) to an information system 350 to which the circumstances are provided for storage.</span>
+        <meta itemprop="num_attr" content="0045">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the obtained information regarding user events, circumstances, and segments</span>
+        <span itemprop="definition">may be used by the information system 350 for a variety of purposes, including sending context-specific messages to the mobile device 310 , 320 , 330 of a particular user, or offering individually customized services to such users.</span>
+        <meta itemprop="num_attr" content="0046">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the mobile devices 310 , 320 , 330</span>
+        <span itemprop="definition">may be equipped with a mobile application (or âappâ) that controls the processor and the sensor to operate in accordance with the described methods.</span>
+        <meta itemprop="num_attr" content="0047">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a mobile application</span>
+        <span itemprop="definition">according to the present invention comprises code means configured to cause the mobile device to carry out the obtaining 1100 and the deriving 1110 steps of the method described in the context of FIG. 1 , and to transmit (via its mobile internet connection or other wireless data connection) the user events to an analysis engine 340 configured to carry out the analyzing steps 1120 ; 1130 of the method described in the context of FIG. 1 .</span>
+        <meta itemprop="num_attr" content="0047">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the analysis engine 340</span>
+        <span itemprop="definition">may be equipped with a computer program product that controls a processor to operate in accordance with the described methods.</span>
+        <meta itemprop="num_attr" content="0048">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a computer program product according to the present invention</span>
+        <span itemprop="definition">comprises code means configured to cause a processor to obtain user events from one or more mobile devices 310 , 320 , 330 and to carry out the analyzing steps 1120 ; 1130 of the method described in the context of FIG. 1 .</span>
+        <meta itemprop="num_attr" content="0048">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the functions of the mobile application and the computer program product</span>
+        <span itemprop="definition">may be adapted accordingly.</span>
+        <meta itemprop="num_attr" content="0049">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">one or more of the analyzing steps 1120 , 1130 , 1140</span>
+        <span itemprop="definition">may be carried out by the mobile devices 310 , 320 , 330 .</span>
+        <meta itemprop="num_attr" content="0049">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a first exemplary use case in which the present invention may be applied</span>
+        <span itemprop="definition">is the case of âsmart mobilityâ.</span>
+        <meta itemprop="num_attr" content="0050">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">sensor data</span>
+        <span itemprop="definition">is converted into real-life and real-time behavioral profiles, including rich insights into mobility, commute and driving patterns, in particular by recognizing patterns in âeventsâ and being able to predict the occurrence of âmomentsâ such as commuting, driving children to school, travelling to a holiday destination, and the like.</span>
+        <meta itemprop="num_attr" content="0050">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">individualized mobility profiles and heat maps</span>
+        <span itemprop="definition">may be generated to provide a contextual view into transport trips and patterns, frequented places and common trajectories.</span>
+        <meta itemprop="num_attr" content="0050">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">detailed and multi-layered driving profiles and scores</span>
+        <span itemprop="definition">may be generated.</span>
+        <meta itemprop="num_attr" content="0050">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">These mobility and driving related behavioral insights</span>
+        <span itemprop="definition">may be used to power innovative smart mobility services ranging from safe driving coaching, user-based car insurance (pay-how-you-drive), green mobility initiatives and smart city mobility engineering programs.</span>
+        <meta itemprop="num_attr" content="0050">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a second exemplary use case in which the present invention may be applied</span>
+        <span itemprop="definition">is the case of âlifestyle based insuranceâ.</span>
+        <meta itemprop="num_attr" content="0051">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Access to behavioral data and insights</span>
+        <span itemprop="definition">is shifting insurers to a more proactive way of interacting with their customers.</span>
+        <meta itemprop="num_attr" content="0051">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">lifestyle behavioral data</span>
+        <span itemprop="definition">which may include analyzing the occurrence of âmomentsâ such as resting, walking, working out, and the like, insurance companies will be able to reduce costs and claims by more accurately assessing clients&#39; risk levels.</span>
+        <meta itemprop="num_attr" content="0051">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">discounts and rewards for safe and healthy behavior and improved habits</span>
+        <span itemprop="definition">they can help change customer behavior and offer more personalized customer experiences tailored to individual lifestyles.</span>
+        <meta itemprop="num_attr" content="0051">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a third exemplary use case in which the present invention may be applied,</span>
+        <span itemprop="definition">is the case of âcontextual healthâ. Tracking of health-related behavior makes health coaching more personalized, pro-active and preventative. Sensor-based artificial intelligence can help users align care and assistance with real-life health and activity patterns, based on the recognition of âmomentsâ that are associated with varying levels of healthy activity, including detection of sudden or gradual changes in those patterns, allowing providers to personalize and contextualize their support and assistance depending on the observed habits and activities of an individual. Moreover, well-being and health coaching can be greatly enhanced by contextualizing health data and assistance, leveraging real-time behavioral insights.</span>
+        <meta itemprop="num_attr" content="0052">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a fourth exemplary use case in which the present invention may be applied</span>
+        <span itemprop="definition">is the case of âcontextual marketing &amp; customer loyaltyâ.</span>
+        <meta itemprop="num_attr" content="0053">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Contextual marketing</span>
+        <span itemprop="definition">refers to the ability to tune marketing content and campaigns to customer context in real-time. Context, more than anything else, defines needs and intent. Understanding a customer&#39;s situational context, especially when enriched with other behavioral profile or demographic data, will enable companies and brands to deliver more relevant and engaging customer experiences. The customer is no longer just an identified user in a given place at a given time, but she may now for example be classified as a person belonging to a particular set of âsegmentsâ, known to be on her weekly tour of preferred shops.</span>
+        <meta itemprop="num_attr" content="0054">
+      </li>
+    </ul>
+  </section>
+
+  
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA351850726" lang="EN" load-source="patent-office">
+    <div id="p-0001" num="0000" class="abstract">A method or system for classifying an activity of a user on the basis of measurements performed by a plurality of sensors is comprised in a mobile device associated with the user. The method comprises: obtaining a set of measurements from the plurality of sensors; iteratively deriving user events from the set of measurements, the user events comprising time data, user location data, and user movement data; analyzing the iteratively derived user events to obtain predictions regarding the user events; analyzing the iteratively derived user events and the predictions to obtain circumstances of regarding the user events; and outputting the circumstances to an information system.</div>
+  </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    
+    <div itemprop="content" html><ul mxw-id="PDES229894642" lang="EN" load-source="patent-office" class="description">
+    
+    <heading id="h-0001">FIELD OF THE INVENTION</heading>
+    <li> <para-num num="[0001]"> </para-num> <div id="p-0002" num="0001" class="description-line">The present invention pertains to the field of sensor-based analysis of user behavior, in particular to systems and methods relying on input from sensors comprised in users&#39; mobile devices.</div>
+    </li> <heading id="h-0002">BACKGROUND</heading>
+    <li> <para-num num="[0002]"> </para-num> <div id="p-0003" num="0002" class="description-line">United States patent application publication no. US 2013/0178241 A1 discloses a mobile device with a mobile application that communicates with a cloud platform for context based content delivery to the mobile terminal device. The mobile cloud platform includes a mobile cloud virtualization layer, a mobile cloud content delivery layer and a mobile cloud network layer. The mobile cloud virtualization layer functions as a storage and process center. It allocates resources for native applications and other user information storage, content storage for static services, content storage for dynamic services and runs application processes for mobile users independent of the mobile platform. The mobile cloud content delivery layer runs a context-adaptive engine that delivers service provider content to a mobile platform based on space-time context of the user. The mobile cloud network layer forms dynamic local networks as well as high frequency usage networks with other mobile terminal devices based on the user analytical data. While this document discloses the use of the accelerometer of a smart phone to detect motion types such as walking and vehicular motion, it does not explain in detail how such observations can be combined into a meaningful context.</div>
+    </li> <li> <para-num num="[0003]"> </para-num> <div id="p-0004" num="0003" class="description-line">European patent application publication no. <figure-callout id="2" label="EP" filenames="US20190387365A1-20191219-D00001.png" state="{{state}}">EP</figure-callout> 2 677 484 A1, assigned to the present applicant, discloses a system for making personalized recommendations to a user of a mobile computing device. The system comprises at least one mobile computing device, a central processing unit, and a memory structure comprising a dataset of personalized data. The at least one mobile computing device is provided with a plurality of sensors arranged for collecting contextual data. The central processing unit comprises receiving means for receiving said collected contextual data. The central processing unit is arranged for combining information from the personalized dataset with the received contextual data, in order to obtain a personalized recommendation. The central processing unit is provided with transmitting means for transmitting the personalized recommendation to the user. The central processing unit is arranged for checking follow-up of the transmitted recommendation by the user by comparing the transmitted recommendation with contextual data received by the central processing unit. The central processing unit is further arranged for basing a further recommendation at least partly on said checked follow-up.</div>
+    </li> <li> <para-num num="[0004]"> </para-num> <div id="p-0005" num="0004" class="description-line">As stated in <figure-callout id="2" label="EP" filenames="US20190387365A1-20191219-D00001.png" state="{{state}}">EP</figure-callout> 2 677 484 A1, âhumans typically suffer from common defects, including self-deception, cognitive dissonance, confabulations and many more cognitive biases that prevent humans from producing trustworthy information, which in turn prevents accurate behavioral analysis of a humanâ. The system disclosed in <figure-callout id="2" label="EP" filenames="US20190387365A1-20191219-D00001.png" state="{{state}}">EP</figure-callout> 2 677 484 A1 attempts to remedy these defects by combining human-generated data with observational data.</div>
+    </li> <li> <para-num num="[0005]"> </para-num> <div id="p-0006" num="0005" class="description-line">It has been found that such combining does not overcome all the defects in the employed human-generated data.</div>
+    </li> <heading id="h-0003">SUMMARY</heading>
+    <li> <para-num num="[0006]"> </para-num> <div id="p-0007" num="0006" class="description-line">It is an object of embodiments of the present invention to rely solely on observed data, and to make adequate decisions on that basis.</div>
+    </li> <li> <para-num num="[0007]"> </para-num> <div id="p-0008" num="0007" class="description-line">According to an aspect of the present invention, there is provided a method for classifying an activity of a user on the basis of measurements performed by a plurality of sensors comprised in a mobile device associated with the user, the method comprising: obtaining a set of measurements from the plurality of sensors; iteratively deriving user events from the set of measurements, the user events comprising time data, user location data, and user movement data; analyzing the iteratively derived user events to obtain predictions regarding the user events; analyzing the iteratively derived user events and the predictions to obtain circumstances of the user events, said circumstances comprising a classification of said user events as a certain activity; and outputting the circumstances to an information system.</div>
+    </li> <li> <para-num num="[0008]"> </para-num> <div id="p-0009" num="0008" class="description-line">The present invention is based inter alia on the insight of the inventors that while a correct interpretation of short-term observed data (user events; for example: being present at a certain location at a certain time, or being engaged in a specific detectable activity such as driving a car, . . . ) requires some knowledge of the user&#39;s profile to provide the necessary context, an adequate profile can actually be generated by judiciously analyzing user event observations gathered over a longer period of time. These user events are analyzed over time to obtain circumstances (hereinafter also referred to as âmomentsâ) that explain the observed user events (for example being present at a certain location that, based on prior observations, can be identified as the person&#39;s work place, at a point in time which falls within a time window that, based on prior observations, can be identified as the person&#39;s working hours, would thus be identified as âworkingâ; likewise, being engaged in the activity of driving a car, at a time and place that are consistent with the person&#39;s daily movements between a place identified as âhomeâ and a place identified as âworkâ, would thus be identified as âcommutingâ). It is an advantage of the invention that it relies solely on observed data. This advantage is obtained by combining observations acquired over different time scales.</div>
+    </li> <li> <para-num num="[0009]"> </para-num> <div id="p-0010" num="0009" class="description-line">In an embodiment, the method according to the present invention further comprises analyzing the circumstances and the user events to obtain observed user profiles.</div>
+    </li> <li> <para-num num="[0010]"> </para-num> <div id="p-0011" num="0010" class="description-line">It is an advantage of this embodiment that users can be categorized into one or more (optionally overlapping) segments of the population, based on automatically detected attributes that are derived from observed events and the associated circumstances (âmomentsâ), and that take on the role of an observed user profile. Each segment is a cluster in the attribute space. The segments are not necessarily static, but may be updated and/or refined over time on the basis of new observations. The combination of events, moments, and segments, may be referred to as the context of the observations.</div>
+    </li> <li> <para-num num="[0011]"> </para-num> <div id="p-0012" num="0011" class="description-line">In an embodiment, the method according to the present invention further comprises analyzing the iteratively derived user events and the predictions to detect a discrepancy between an observed user event and the predictions, and outputting an anomaly signal if such a discrepancy is detected.</div>
+    </li> <li> <para-num num="[0012]"> </para-num> <div id="p-0013" num="0012" class="description-line">It is an advantage of this embodiment that deviations from the observed user event patterns can easily be recognized, and that an information system can adequately respond to such deviations, for example by sending the user useful information based on inter alia the time, the user&#39;s location, and the user&#39;s history.</div>
+    </li> <li> <para-num num="[0013]"> </para-num> <div id="p-0014" num="0013" class="description-line">In an embodiment of the method according to the present invention, the measurements are performed by a location subsystem of the mobile device.</div>
+    </li> <li> <para-num num="[0014]"> </para-num> <div id="p-0015" num="0014" class="description-line">The inventors have found, surprisingly, that the data provided by the location subsystem of the mobile device is sufficient to paint an accurate picture of the activities of a mobile device user, when observed over a sufficiently long time. The location subsystem may in particular include one or more of a beacon signal receiver and a GPS or assisted GPS receiver.</div>
+    </li> <li> <para-num num="[0015]"> </para-num> <div id="p-0016" num="0015" class="description-line">In an embodiment of the method according to the present invention, the sensors comprise one or more of an accelerometer, a gyroscope, a magnetometer, a compass, and a barometer.</div>
+    </li> <li> <para-num num="[0016]"> </para-num> <div id="p-0017" num="0016" class="description-line">Sensors of the cited kinds have proven to be particularly useful for the objects of the present invention.</div>
+    </li> <li> <para-num num="[0017]"> </para-num> <div id="p-0018" num="0017" class="description-line">In an embodiment of the method according to the present invention, the measurements are performed by a wireless communication transceiver of the mobile device.</div>
+    </li> <li> <para-num num="[0018]"> </para-num> <div id="p-0019" num="0018" class="description-line">It is an advantage of this embodiment that it enhances the accuracy of the location detection by relying on wireless communication transceivers that are typically available in mobile devices, including a mobile telephony and data transceiver (e.g. GSM, GPRS, UMTS, 3G, LTE; used for example for cell tower triangulation), a wireless local area network transceiver (e.g. an IEEE 802.11 âWi-Fiâ transceiver, used for example for localization by âWi-Fi fingerprintingâ), a wireless local personal area network transceiver (e.g., a Bluetooth or Ultra-Wide Band transceiver).</div>
+    </li> <li> <para-num num="[0019]"> </para-num> <div id="p-0020" num="0019" class="description-line">In an embodiment of the method according to the present invention, the iteratively deriving user events comprises analyzing measurements obtained over a period of at least 48 hours.</div>
+    </li> <li> <para-num num="[0020]"> </para-num> <div id="p-0021" num="0020" class="description-line">The inventors have found that a 48-hour observation period is a minimum to ensure that a pattern of activities repeating on a daily basis can be detected.</div>
+    </li> <li> <para-num num="[0021]"> </para-num> <div id="p-0022" num="0021" class="description-line">In an embodiment of the method according to the present invention, the iteratively deriving user events comprises analyzing measurements obtained over a period of at least two weeks.</div>
+    </li> <li> <para-num num="[0022]"> </para-num> <div id="p-0023" num="0022" class="description-line">The inventors have found that a 2-week observation period is a minimum to ensure that a pattern of activities repeating on a weekly basis can be detected.</div>
+    </li> <li> <para-num num="[0023]"> </para-num> <div id="p-0024" num="0023" class="description-line">According to an aspect of the present invention, there is provided a mobile application comprising code means configured to cause a mobile device to carry out the obtaining and the deriving of the method described above, and to transmit the user events to an analysis engine configured to carry out the analyzing steps of the method described above.</div>
+    </li> <li> <para-num num="[0024]"> </para-num> <div id="p-0025" num="0024" class="description-line">According to an aspect of the present invention, there is provided a computer program product comprising code means configured to cause a processor to obtain user events from one or more mobile devices and to carry out the analyzing steps of the method described above.</div>
+    </li> <li> <para-num num="[0025]"> </para-num> <div id="p-0026" num="0025" class="description-line">According to an aspect of the present invention, there is provided a system for classifying an activity of a user, the system comprising: at least one mobile device comprising a processor and a plurality of sensors operatively connected to the processor, the processor being configured to: obtain a set of measurements from the plurality of sensors and iteratively derive user events from the set of measurements, the user events comprising time data, user location data, and user movement data; and an analysis engine, connected to the at least one mobile device via a wireless data network, the analysis engine being configured to: analyze the iteratively derived user events to obtain predictions regarding the user events, analyze the iteratively derived user events and the predictions to obtain circumstances of the user events, said circumstances comprising a classification of said user events as a certain activity, and output the circumstances to an information system.</div>
+    </li> <li> <para-num num="[0026]"> </para-num> <div id="p-0027" num="0026" class="description-line">The technical effects and advantages of embodiments of the mobile application, the computer program product, and the system according to the present invention correspond, mutatis mutandis, to those of the corresponding embodiments of the method according to the present invention.</div>
+    
+    
+    </li> <description-of-drawings>
+      <heading id="h-0004">BRIEF DESCRIPTION OF THE FIGURES</heading>
+      <li> <para-num num="[0027]"> </para-num> <div id="p-0028" num="0027" class="description-line">The and other technical features and advantages of embodiments of the present invention will now be described with reference to the accompanying drawings, in which:</div>
+      </li> <li> <para-num num="[0028]"> </para-num> <div id="p-0029" num="0028" class="description-line"> <figref idrefs="DRAWINGS">FIG. 1</figref> provides a flow chart of an embodiment of the method according to the present invention;</div>
+      </li> <li> <para-num num="[0029]"> </para-num> <div id="p-0030" num="0029" class="description-line"> <figref idrefs="DRAWINGS">FIG. 2</figref> schematically represents an embodiment of the system according to the present invention; and</div>
+      </li> <li> <para-num num="[0030]"> </para-num> <div id="p-0031" num="0030" class="description-line"> <figref idrefs="DRAWINGS">FIG. 3</figref> schematically illustrates a further embodiment of the system according to the present invention.</div>
+    </li> </description-of-drawings>
+    
+    
+    <heading id="h-0005">DETAILED DESCRIPTION OF EMBODIMENTS</heading>
+    <li> <para-num num="[0031]"> </para-num> <div id="p-0032" num="0031" class="description-line"> <figref idrefs="DRAWINGS">FIG. 1</figref> provides a flow chart of an embodiment of the method for classifying an activity of a user on the basis of measurements performed by a plurality of sensors comprised in a mobile device associated with said user, according to the present invention. The method comprises obtaining <b>1100</b> a set of measurements from the plurality of sensors (e.g., one or more of an accelerometer, a gyroscope, a magnetometer, a compass, and a barometer). Alternatively or additionally, sensors that are part of the location subsystem of the mobile device may be used (e.g. a GPS receiver or an assisted GPS receiver). Alternatively or additionally, sensors that are part of the communication subsystem may be used (e.g. a mobile telephony, WLAN, or WPAN receiver).</div>
+    </li> <li> <para-num num="[0032]"> </para-num> <div id="p-0033" num="0032" class="description-line">The sensor data undergoes signal processing, such as filtering, to remove noise and artefacts and to facilitate the extraction of useful data. This extraction includes iteratively deriving <b>1110</b> user events from the set of measurements, preferably using machine learning. The user events are data structures including at least time data (when did the event occur), user location data (where did the event occur), and user movement data (what occurred). The user movement data may include time-varying motion vectors and acceleration vectors, allowing the motion to be classified as, for example, resting or being idle, sitting, standing, walking, jogging/running, cycling, riding a motorcycle, driving a car, riding a tram or a train, flying aboard an aircraft, and the like, in known manners. The user event data may be augmented by data obtained from external data sources, such as current or predicted traffic information, current or predicted weather information, location-related information including points-of-interest, street names, road types, speed limits, shops and service providers, and the like (for example obtained via a web service).</div>
+    </li> <li> <para-num num="[0033]"> </para-num> <div id="p-0034" num="0033" class="description-line">The iteratively derived user events are then analyzed <b>1120</b> to obtain predictions regarding the user events; the predictions can be considered as an observed profile of the user. Once sufficient predictions are available (i.e., when patterns have emerged from the user events), the iteratively derived user events and the predictions are analyzed <b>1130</b> in combination to obtain âmomentsâ, i.e. circumstances of the user events. The circumstances are output to an information system <b>1190</b>.</div>
+    </li> <li> <para-num num="[0034]"> </para-num> <div id="p-0035" num="0034" class="description-line">The method may further comprise analyzing the circumstances and the user events to obtain <figure-callout id="1140" label="segments" filenames="US20190387365A1-20191219-D00000.png,US20190387365A1-20191219-D00001.png" state="{{state}}">segments</figure-callout> <b>1140</b>.</div>
+    </li> <li> <para-num num="[0035]"> </para-num> <div id="p-0036" num="0035" class="description-line">Segments may be based on automatically detected attributes that are derived from circumstances and user events. Each segment is a cluster in the attribute space, which may be labeled using a human-recognizable typology, thus creating variables defining semantic time and semantic space. For example, in function of the amount of time spent at a place identified as âworkâ (i.e., the person&#39;s âsemantic workâ), a person may be categorized as a âworkaholicâ; in function of the regularity of attending a place identified as an educational institution (i.e., the person&#39;s âsemantic schoolâ), a user may be categorized as a âstudentâ; in function of the regularity of attending places identified as quality restaurants, a person may be categorized as a âfoodyâ. For a person getting up each day at approximately 7 AM, that time may mark the start of that person&#39;s âsemantic morningâ. Another person may work the night shift and may get up every day at 7 PM; for that person, that point in time may mark the start of his âsemantic morningâ. The skilled person will immediately understand how this principle may be generalized across other types of categories or segments. Knowledge of the segment(s) to which a user belongs allows for more personally targeted services and messages to be offered to the user.</div>
+    </li> <li> <para-num num="[0036]"> </para-num> <div id="p-0037" num="0036" class="description-line">The method may further comprise analyzing <b>1150</b> the iteratively derived user events and the predictions to detect a discrepancy between an observed user event and the predictions, and outputting an anomaly signal if such a discrepancy is detected. In a similar way, discrepancies between an observed context and the predictions may be detected and reported.</div>
+    </li> <li> <para-num num="[0037]"> </para-num> <div id="p-0038" num="0037" class="description-line"> <figref idrefs="DRAWINGS">FIG. 2</figref> schematically represents an embodiment of the system according to the present invention. The system comprises a number of <figure-callout id="110" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="120" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="130" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="140" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="150" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="155" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">processing units</figure-callout> </figure-callout> </figure-callout> </figure-callout> </figure-callout> </figure-callout> <b>110</b>, <b>120</b>, <b>130</b>, <b>140</b>, <b>150</b>, <b>155</b> operating on different types of data present in <figure-callout id="210" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="220" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="230" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="240" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="250" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data stores</figure-callout> </figure-callout> </figure-callout> </figure-callout> </figure-callout> <b>210</b>, <b>220</b>, <b>230</b>, <b>240</b>, <b>250</b>. While the <figure-callout id="110" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="120" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="130" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="140" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="150" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="155" label="processing units" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">processing units</figure-callout> </figure-callout> </figure-callout> </figure-callout> </figure-callout> </figure-callout> <b>110</b>, <b>120</b>, <b>130</b>, <b>140</b>, <b>150</b>, <b>155</b> are depicted as separate elements in <figref idrefs="DRAWINGS">FIG. 2</figref> for clarity purposes, this is meant as an abstract, functional separation only; the skilled person will understand that the underlying functions may be carried out by a common processing platform. Likewise, while the <figure-callout id="210" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="220" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="230" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="240" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}"> <figure-callout id="250" label="data stores" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data stores</figure-callout> </figure-callout> </figure-callout> </figure-callout> </figure-callout> <b>210</b>, <b>220</b>, <b>230</b>, <b>240</b>, <b>250</b> are depicted as separate elements in <figref idrefs="DRAWINGS">FIG. 2</figref> for clarity purposes, this is meant as an abstract, functional separation only; the skilled person will understand that the underlying data may be contained in the same physical data storage or in several different physical data storages, which may be local to the system or accessible via a network. The data stores may provide access to the data structures via a database interface, an api, a feed, or similar means.</div>
+    </li> <li> <para-num num="[0038]"> </para-num> <div id="p-0039" num="0038" class="description-line"> <figure-callout id="210" label="Data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">Data store</figure-callout> <b>210</b> contains events (related to what happens or happened, when, and where), derived by a <figure-callout id="110" label="machine learning function" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">machine learning function</figure-callout> <b>110</b> from the observed and processed sensor data, which may include historic data. The events may be stored in the form of an event timeline. At any given time, the observed data lead to the classification of the ongoing actions as at most one specific event. Examples of events are âat 8:30 am, the user is driving on highway A1 Northbound, at location Xâ; âat 2:15 pm, the user is stationary in a coffee shop Yâ; âat 9:00 pm, the user is moving about in an area designated as âhomeââ.</div>
+    </li> <li> <para-num num="[0039]"> </para-num> <div id="p-0040" num="0039" class="description-line"> <figure-callout id="220" label="Data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">Data store</figure-callout> <b>220</b> contains predictions, derived by a <figure-callout id="120" label="machine learning function" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">machine learning function</figure-callout> <b>120</b> from the events in <figure-callout id="210" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>210</b>. These predictions may pertain to the type of âeventsâ or âmomentsâ that may be expected to take place at certain times and/or locations based on the past observations, and thus form an observed profile of the user.</div>
+    </li> <li> <para-num num="[0040]"> </para-num> <div id="p-0041" num="0040" class="description-line"> <figure-callout id="230" label="Data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">Data store</figure-callout> <b>230</b> contains circumstances (also referred to as âmomentsâ, related to why or how things happen or happened), derived by a <figure-callout id="130" label="rule engine" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">rule engine</figure-callout> <b>130</b> from the events in <figure-callout id="210" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>210</b> and the predictions in <figure-callout id="220" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>220</b>. The moments may be stored in the form of a moments timeline. At any given time, the observed data may lead to the classification of the ongoing actions as any number of moments. If the event âat 8:30 am, the user is driving on highway A1 Northbound, at location Xâ is detected, and if the <figure-callout id="220" label="prediction store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">prediction store</figure-callout> <b>220</b> indicates that this movement is on a path from an area designated as âhomeâ to an area designated as âworkâ and tends to happen every working day, the moment âcommuteâ may be concluded to be occurring. For example, if the event âat 2:15 pm, the user is stationary in a coffee shop Yâ is detected, and if the <figure-callout id="220" label="prediction store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">prediction store</figure-callout> <b>220</b> indicates that this location is at walking distance from the area designated as âworkâ and occurs every Friday, the moment âoutside coffee breakâ may be concluded to be occurring, notwithstanding the fact that an ongoing moment âat workâ remains active.</div>
+    </li> <li> <para-num num="[0041]"> </para-num> <div id="p-0042" num="0041" class="description-line"> <figure-callout id="240" label="Data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">Data store</figure-callout> <b>240</b> contains segments (related to who is/was involved in an event), derived by a <figure-callout id="140" label="machine learning function" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">machine learning function</figure-callout> <b>140</b> from the events in <figure-callout id="210" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>210</b> and moments stored in <figure-callout id="230" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>230</b>.</div>
+    </li> <li> <para-num num="[0042]"> </para-num> <div id="p-0043" num="0042" class="description-line"> <figure-callout id="250" label="Data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">Data store</figure-callout> <b>250</b> stores anomalies, derived by a <figure-callout id="150" label="machine learning function" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">machine learning function</figure-callout> <b>150</b> from the events (related to what happened, when, and where) in <figure-callout id="210" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>210</b> and the predictions in <figure-callout id="220" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>220</b>, and also derived by a <figure-callout id="155" label="machine learning function" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">machine learning function</figure-callout> <b>155</b> from the moments in <figure-callout id="230" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>230</b> and the predictions in <figure-callout id="220" label="data store" filenames="US20190387365A1-20191219-D00002.png" state="{{state}}">data store</figure-callout> <b>220</b>. The anomalies comprise divergences between observed events and predicted events (as derived by MLF <b>150</b>) and divergences between observed moments and predicted moments (as derived by MLF <b>155</b>). These anomalies may trigger any appropriate action, such as a notification to the user or the logging of the anomaly in an anomaly timeline.</div>
+    </li> <li> <para-num num="[0043]"> </para-num> <div id="p-0044" num="0043" class="description-line">An exemplary implementation of an embodiment of the system according to the present invention will now be described with reference to <figref idrefs="DRAWINGS">FIG. 3</figref>.</div>
+    </li> <li> <para-num num="[0044]"> </para-num> <div id="p-0045" num="0044" class="description-line">The illustrated system for classifying an activity of a user comprises at least one mobile device, associated with a user. Without loss of generality, three <figure-callout id="310" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="320" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="330" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">mobile devices</figure-callout> </figure-callout> </figure-callout> <b>310</b>, <b>320</b>, <b>330</b>, are illustrated, each of which would normally be associated with a different user, who carries the mobile device around during her daily activities, allowing the sensors to gather data about the user&#39;s movements. Each mobile device comprises a processor and a plurality of sensors operatively connected to said processor (not illustrated). The processor is configured, for example by means of an appropriate mobile application or âappâ, to obtain a set of measurements from the sensors and to iteratively derive user events from the set of measurements, said user events comprising time data, user location data, and user movement data.</div>
+    </li> <li> <para-num num="[0045]"> </para-num> <div id="p-0046" num="0045" class="description-line">The illustrated system further comprises an <figure-callout id="340" label="analysis engine" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">analysis engine</figure-callout> <b>340</b>, connected to the at least one <figure-callout id="310" label="mobile device" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="320" label="mobile device" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="330" label="mobile device" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">mobile device</figure-callout> </figure-callout> </figure-callout> <b>310</b>, <b>320</b>, <b>330</b>, via a wireless data network. The wireless data network may be a mobile internet infrastructure, such as an EDGE, GPRS, UMTS, LTE, or similar infrastructure, or a wireless LAN infrastructure, such as an IEEE 802.11 âWi-Fiâ infrastructure, or a combination of several such networks depending on the availability at a present location of the relevant user. The analysis engine may be a server connected to the internet, provided with an appropriate combination of hardware (including for example dedicated hardware such as ASICs, configurable hardware such as FPGAs, and/or programmable hardware such as processors) and software, to carry out the functions described hereinabove in the context of <figref idrefs="DRAWINGS">FIGS. 1 and 2</figref>: analyze the iteratively derived user events to obtain predictions regarding the user events; and analyze the iteratively derived user events and said predictions to obtain circumstances of the user events. The <figure-callout id="340" label="analysis engine" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">analysis engine</figure-callout> <b>340</b> is further connected (via the internet of any other appropriate internal or external interface as known to the skilled person) to an <figure-callout id="350" label="information system" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">information system</figure-callout> <b>350</b> to which the circumstances are provided for storage.</div>
+    </li> <li> <para-num num="[0046]"> </para-num> <div id="p-0047" num="0046" class="description-line">The obtained information regarding user events, circumstances, and segments, may be used by the <figure-callout id="350" label="information system" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">information system</figure-callout> <b>350</b> for a variety of purposes, including sending context-specific messages to the <figure-callout id="310" label="mobile device" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="320" label="mobile device" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="330" label="mobile device" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">mobile device</figure-callout> </figure-callout> </figure-callout> <b>310</b>, <b>320</b>, <b>330</b> of a particular user, or offering individually customized services to such users.</div>
+    </li> <li> <para-num num="[0047]"> </para-num> <div id="p-0048" num="0047" class="description-line">The <figure-callout id="310" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="320" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="330" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">mobile devices</figure-callout> </figure-callout> </figure-callout> <b>310</b>, <b>320</b>, <b>330</b> may be equipped with a mobile application (or âappâ) that controls the processor and the sensor to operate in accordance with the described methods. In particular, a mobile application according to the present invention comprises code means configured to cause the mobile device to carry out the obtaining <b>1100</b> and the deriving <b>1110</b> steps of the method described in the context of <figref idrefs="DRAWINGS">FIG. 1</figref>, and to transmit (via its mobile internet connection or other wireless data connection) the user events to an <figure-callout id="340" label="analysis engine" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">analysis engine</figure-callout> <b>340</b> configured to carry out the analyzing <figure-callout id="1120" label="steps" filenames="US20190387365A1-20191219-D00000.png,US20190387365A1-20191219-D00001.png" state="{{state}}">steps</figure-callout> <b>1120</b>; <b>1130</b> of the method described in the context of <figref idrefs="DRAWINGS">FIG. 1</figref>.</div>
+    </li> <li> <para-num num="[0048]"> </para-num> <div id="p-0049" num="0048" class="description-line">The <figure-callout id="340" label="analysis engine" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">analysis engine</figure-callout> <b>340</b> may be equipped with a computer program product that controls a processor to operate in accordance with the described methods. In particular, a computer program product according to the present invention comprises code means configured to cause a processor to obtain user events from one or more <figure-callout id="310" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="320" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="330" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">mobile devices</figure-callout> </figure-callout> </figure-callout> <b>310</b>, <b>320</b>, <b>330</b> and to carry out the analyzing <figure-callout id="1120" label="steps" filenames="US20190387365A1-20191219-D00000.png,US20190387365A1-20191219-D00001.png" state="{{state}}">steps</figure-callout> <b>1120</b>; <b>1130</b> of the method described in the context of <figref idrefs="DRAWINGS">FIG. 1</figref>.</div>
+    </li> <li> <para-num num="[0049]"> </para-num> <div id="p-0050" num="0049" class="description-line">It will be understood that if a different division of the steps of <figref idrefs="DRAWINGS">FIG. 1</figref> between the mobile devices and the analysis engine is chosen, the functions of the mobile application and the computer program product may be adapted accordingly. In particular, one or more of the analyzing <figure-callout id="1120" label="steps" filenames="US20190387365A1-20191219-D00000.png,US20190387365A1-20191219-D00001.png" state="{{state}}"> <figure-callout id="1130" label="steps" filenames="US20190387365A1-20191219-D00000.png,US20190387365A1-20191219-D00001.png" state="{{state}}"> <figure-callout id="1140" label="steps" filenames="US20190387365A1-20191219-D00000.png,US20190387365A1-20191219-D00001.png" state="{{state}}">steps</figure-callout> </figure-callout> </figure-callout> <b>1120</b>, <b>1130</b>, <b>1140</b>, may be carried out by the <figure-callout id="310" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="320" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}"> <figure-callout id="330" label="mobile devices" filenames="US20190387365A1-20191219-D00003.png" state="{{state}}">mobile devices</figure-callout> </figure-callout> </figure-callout> <b>310</b>, <b>320</b>, <b>330</b>.</div>
+    </li> <li> <para-num num="[0050]"> </para-num> <div id="p-0051" num="0050" class="description-line">A first exemplary use case in which the present invention may be applied, is the case of âsmart mobilityâ. In this application, sensor data is converted into real-life and real-time behavioral profiles, including rich insights into mobility, commute and driving patterns, in particular by recognizing patterns in âeventsâ and being able to predict the occurrence of âmomentsâ such as commuting, driving children to school, travelling to a holiday destination, and the like. By tracking multimodal transport activities, individualized mobility profiles and heat maps may be generated to provide a contextual view into transport trips and patterns, frequented places and common trajectories. In addition, using the motion sensor data, detailed and multi-layered driving profiles and scores may be generated. These mobility and driving related behavioral insights may be used to power innovative smart mobility services ranging from safe driving coaching, user-based car insurance (pay-how-you-drive), green mobility initiatives and smart city mobility engineering programs.</div>
+    </li> <li> <para-num num="[0051]"> </para-num> <div id="p-0052" num="0051" class="description-line">A second exemplary use case in which the present invention may be applied, is the case of âlifestyle based insuranceâ. Access to behavioral data and insights is shifting insurers to a more proactive way of interacting with their customers. By leveraging lifestyle behavioral data, which may include analyzing the occurrence of âmomentsâ such as resting, walking, working out, and the like, insurance companies will be able to reduce costs and claims by more accurately assessing clients&#39; risk levels. By offering discounts and rewards for safe and healthy behavior and improved habits, they can help change customer behavior and offer more personalized customer experiences tailored to individual lifestyles.</div>
+    </li> <li> <para-num num="[0052]"> </para-num> <div id="p-0053" num="0052" class="description-line">A third exemplary use case in which the present invention may be applied, is the case of âcontextual healthâ. Tracking of health-related behavior makes health coaching more personalized, pro-active and preventative. Sensor-based artificial intelligence can help users align care and assistance with real-life health and activity patterns, based on the recognition of âmomentsâ that are associated with varying levels of healthy activity, including detection of sudden or gradual changes in those patterns, allowing providers to personalize and contextualize their support and assistance depending on the observed habits and activities of an individual. Moreover, well-being and health coaching can be greatly enhanced by contextualizing health data and assistance, leveraging real-time behavioral insights.</div>
+    </li> <li> <para-num num="[0053]"> </para-num> <div id="p-0054" num="0053" class="description-line">A fourth exemplary use case in which the present invention may be applied, is the case of âcontextual marketing &amp; customer loyaltyâ.</div>
+    </li> <li> <para-num num="[0054]"> </para-num> <div id="p-0055" num="0054" class="description-line">Contextual marketing refers to the ability to tune marketing content and campaigns to customer context in real-time. Context, more than anything else, defines needs and intent. Understanding a customer&#39;s situational context, especially when enriched with other behavioral profile or demographic data, will enable companies and brands to deliver more relevant and engaging customer experiences. The customer is no longer just an identified user in a given place at a given time, but she may now for example be classified as a person belonging to a particular set of âsegmentsâ, known to be on her weekly tour of preferred shops.</div>
+    </li> <li> <para-num num="[0055]"> </para-num> <div id="p-0056" num="0055" class="description-line">While certain optional features have only been described in the context of embodiments of the method according to the present invention, the skilled person will appreciate that these features can be applied with the same effects and advantages in embodiments of the mobile application, the computer program product, and the system according to the present invention.</div>
+    </li> <li> <para-num num="[0056]"> </para-num> <div id="p-0057" num="0056" class="description-line">While the invention has been described hereinabove with respect to certain embodiments, this was done to illustrate and not to limit the invention, the scope of which is to be determined by reference to the enclosed claims.</div>
+    
+  </li> </ul>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims (<span itemprop="count">12</span>)</h2>
+    
+    <div itemprop="content" html><div mxw-id="PCLM224407164" lang="EN" load-source="patent-office" class="claims">
+    <div class="claim"> <div id="CLM-01-11" num="01-11" class="claim">
+      <div class="claim-text"> <b>1</b>.-<b>11</b>. (canceled)</div>
+    </div>
+    </div> <div class="claim"> <div id="CLM-00012" num="00012" class="claim">
+      <div class="claim-text"> <b>12</b>. A method for classifying an activity of a user on the basis of measurements performed by a plurality of sensors comprised in a mobile device associated with said user, the method comprising:
+<div class="claim-text">obtaining a set of measurements from said plurality of sensors;</div> <div class="claim-text">iteratively deriving user events from said set of measurements, said user events comprising time data, user location data, and user movement data;</div> <div class="claim-text">analyzing said iteratively derived user events to obtain predictions regarding said user events;</div> <div class="claim-text">analyzing said iteratively derived user events and said predictions to obtain circumstances regarding said user events, said circumstances comprising a classification of said user events as a certain activity; and</div> <div class="claim-text">outputting said circumstances to an information system.</div> </div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00013" num="00013" class="claim">
+      <div class="claim-text"> <b>13</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, further comprising analyzing said circumstances and said user events to obtain segments.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00014" num="00014" class="claim">
+      <div class="claim-text"> <b>14</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, further comprising analyzing said iteratively derived user events and said predictions to detect a discrepancy between an observed user event and said predictions, and outputting an anomaly signal if such a discrepancy is detected.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00015" num="00015" class="claim">
+      <div class="claim-text"> <b>15</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein said measurements are performed by a location subsystem of said mobile device.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00016" num="00016" class="claim">
+      <div class="claim-text"> <b>16</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein said sensors comprise one or more of an accelerometer, a gyroscope, a magnetometer, a compass, and a barometer.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00017" num="00017" class="claim">
+      <div class="claim-text"> <b>17</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein said measurements are performed by a wireless communication transceiver of said mobile device.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00018" num="00018" class="claim">
+      <div class="claim-text"> <b>18</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein said iteratively deriving user events comprises analyzing measurements obtained over a period of at least 48 hours.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00019" num="00019" class="claim">
+      <div class="claim-text"> <b>19</b>. The method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, wherein said iteratively deriving user events comprises analyzing measurements obtained over a period of at least two weeks.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00020" num="00020" class="claim">
+      <div class="claim-text"> <b>20</b>. A mobile application comprising code means configured to cause a mobile device to carry out the obtaining and the deriving of the method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>, and to transmit said user events to an analysis engine configured to carry out the analyzing steps of the method.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00021" num="00021" class="claim">
+      <div class="claim-text"> <b>21</b>. A computer program product comprising code means configured to cause a processor to obtain user events from one or more mobile devices and to carry out the analyzing steps of the method according to <claim-ref idref="CLM-00012">claim 12</claim-ref>.</div>
+    </div>
+    </div> <div class="claim"> <div id="CLM-00022" num="00022" class="claim">
+      <div class="claim-text"> <b>22</b>. A system for classifying an activity of a user, the system comprising:
+<div class="claim-text">at least one mobile device comprising a processor and a plurality of sensors operatively connected to said processor, said processor being configured to:</div> <div class="claim-text">obtain a set of measurements from said plurality of sensors; and</div> <div class="claim-text">iteratively derive user events from said set of measurements, said user events comprising time data, user location data, and user movement data; and</div> <div class="claim-text">an analysis engine, connected to said at least one mobile device via a wireless data network, said analysis engine being configured to:</div> <div class="claim-text">analyze said iteratively derived user events to obtain predictions regarding said user events;</div> <div class="claim-text">analyze said iteratively derived user events and said predictions to obtain circumstances of said user events, said circumstances comprising a classification of said user events as a certain activity; and</div> <div class="claim-text">output said circumstances to an information system.</div> </div>
+    </div>
+  </div> </div>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">US16/479,454</span>
+      <span itemprop="priorityDate">2017-01-20</span>
+      <span itemprop="filingDate">2018-01-22</span>
+      <span itemprop="title">Method and system for classifying an activity of a user 
+       </span>
+      <span itemprop="ifiStatus">Abandoned</span>
+      
+      <a href="/patent/US20190387365A1/en">
+        <span itemprop="representativePublication">US20190387365A1</span>
+        (<span itemprop="primaryLanguage">en</span>)
+      </a>
+    </section>
+
+    
+
+    <h2>Applications Claiming Priority (3)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">EP17152526.4A</span>
+            <a href="/patent/EP3352432A1/en">
+              <span itemprop="representativePublication">EP3352432A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2017-01-20</td>
+          <td itemprop="filingDate">2017-01-20</td>
+          <td itemprop="title">Method and system for classifying an activity of a user 
+       </td>
+        </tr>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">EP17152526.4</span>
+            
+          </td>
+          <td itemprop="priorityDate"></td>
+          <td itemprop="filingDate">2017-01-20</td>
+          <td itemprop="title"></td>
+        </tr>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">PCT/EP2018/051486</span>
+            <a href="/patent/WO2018134417A1/en">
+              <span itemprop="representativePublication">WO2018134417A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2017-01-20</td>
+          <td itemprop="filingDate">2018-01-22</td>
+          <td itemprop="title">Method and system for classifying an activity of a user 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">US20190387365A1</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/US20190387365A1/en">
+              US20190387365A1
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2019-12-19</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=57881995</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US16/479,454</span>
+            <span itemprop="ifiStatus">Abandoned</span>
+            
+            <a href="/patent/US20190387365A1/en">
+              <span itemprop="representativePublication">US20190387365A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2017-01-20</td>
+          <td itemprop="filingDate">2018-01-22</td>
+          <td itemprop="title">Method and system for classifying an activity of a user 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (4)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">US</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/US20190387365A1/en">
+              <span itemprop="representativePublication">US20190387365A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">EP</span>
+            (<span itemprop="num">2</span>)
+            
+          </td>
+          <td>
+            <a href="/patent/EP3352432A1/en">
+              <span itemprop="representativePublication">EP3352432A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">CN</span>
+            (<span itemprop="num">1</span>)
+            
+          </td>
+          <td>
+            <a href="/patent/CN110268696A/en">
+              <span itemprop="representativePublication">CN110268696A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">WO</span>
+            (<span itemprop="num">1</span>)
+            
+          </td>
+          <td>
+            <a href="/patent/WO2018134417A1/en">
+              <span itemprop="representativePublication">WO2018134417A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Cited By (6)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20200250001A1/en">
+              <span itemprop="publicationNumber">US20200250001A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2019-02-05</td>
+          <td itemprop="publicationDate">2020-08-06</td>
+          <td><span itemprop="assigneeOriginal">Bank Of America Corporation</span></td>
+          <td itemprop="title">System for assessing and prioritizing real time resource requirements 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN115168679A/en">
+              <span itemprop="publicationNumber">CN115168679A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2022-07-20</td>
+          <td itemprop="publicationDate">2022-10-11</td>
+          <td><span itemprop="assigneeOriginal">å¹¿å·èç¾æ´²ä¿¡æ¯ç§ææéå¬å¸</span></td>
+          <td itemprop="title">Smart city data analysis method based on cloud platform and data analysis system thereof 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/CN115440040A/en">
+              <span itemprop="publicationNumber">CN115440040A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2022-09-02</td>
+          <td itemprop="publicationDate">2022-12-06</td>
+          <td><span itemprop="assigneeOriginal">éåºå¤§å­¦</span></td>
+          <td itemprop="title">Commuting vehicle identification method based on highway traffic data 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20230027582A1/en">
+              <span itemprop="publicationNumber">US20230027582A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2021-07-21</td>
+          <td itemprop="publicationDate">2023-01-26</td>
+          <td><span itemprop="assigneeOriginal">Saverone 2014 Ltd.</span></td>
+          <td itemprop="title">System and method for classifying a type of interaction between a human user and a mobile communication device in a volume based on sensor fusion 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US11763206B2/en">
+              <span itemprop="publicationNumber">US11763206B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2018-08-07</td>
+          <td itemprop="publicationDate">2023-09-19</td>
+          <td><span itemprop="assigneeOriginal">Commissariat A L&#39;energie Atomique Et Aux Energies Alternatives</span></td>
+          <td itemprop="title">Device and method for multi-class classification by machine learning 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US11898865B1/en">
+              <span itemprop="publicationNumber">US11898865B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2021-06-03</td>
+          <td itemprop="publicationDate">2024-02-13</td>
+          <td><span itemprop="assigneeOriginal">Allstate Insurance Company</span></td>
+          <td itemprop="title">Using context based machine learning for generation of customized driving outputs 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Families Citing this family (4)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="forwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/EP3621002A1/en">
+              <span itemprop="publicationNumber">EP3621002A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2018-09-06</td>
+          <td itemprop="publicationDate">2020-03-11</td>
+          <td><span itemprop="assigneeOriginal">Koninklijke Philips N.V.</span></td>
+          <td itemprop="title">Monitoring moveable entities in a predetermined area 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/US11107305B2/en">
+              <span itemprop="publicationNumber">US11107305B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2019-03-14</td>
+          <td itemprop="publicationDate">2021-08-31</td>
+          <td><span itemprop="assigneeOriginal">Honda Motor Co., Ltd.</span></td>
+          <td itemprop="title">Ride-hailing vehicle identification 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/US11250650B2/en">
+              <span itemprop="publicationNumber">US11250650B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2019-03-14</td>
+          <td itemprop="publicationDate">2022-02-15</td>
+          <td><span itemprop="assigneeOriginal">Honda Motor Co., Ltd.</span></td>
+          <td itemprop="title">Ride-hailing vehicle identification 
+       </td>
+        </tr>
+        <tr itemprop="forwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/FR3094109A1/en">
+              <span itemprop="publicationNumber">FR3094109A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2019-03-21</td>
+          <td itemprop="publicationDate">2020-09-25</td>
+          <td><span itemprop="assigneeOriginal">Roofstreet</span></td>
+          <td itemprop="title">
+  Process and system for processing digital data from connected equipment while ensuring data security and protection of privacy
+ 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Citations (2)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/WO2016203298A1/en">
+              <span itemprop="publicationNumber">WO2016203298A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-06-16</td>
+          <td itemprop="publicationDate">2016-12-22</td>
+          <td>
+            <span itemprop="assigneeOriginal">Dataspark Pte, Ltd</span>
+          </td>
+          <td itemprop="title">Traffic prediction and real time analysis system 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20180231653A1/en">
+              <span itemprop="publicationNumber">US20180231653A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2017-02-14</td>
+          <td itemprop="publicationDate">2018-08-16</td>
+          <td>
+            <span itemprop="assigneeOriginal">Microsoft Technology Licensing, Llc</span>
+          </td>
+          <td itemprop="title">Entity-tracking computing system 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Family Cites Families (8)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/JP2011154410A/en">
+              <span itemprop="publicationNumber">JP2011154410A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2010-01-25</td>
+          <td itemprop="publicationDate">2011-08-11</td>
+          <td><span itemprop="assigneeOriginal">Sony Corp</span></td>
+          <td itemprop="title">Analysis server and method of analyzing data 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/KR101870773B1/en">
+              <span itemprop="publicationNumber">KR101870773B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2011-08-31</td>
+          <td itemprop="publicationDate">2018-06-26</td>
+          <td><span itemprop="assigneeOriginal">ì¼ì±ì ì ì£¼ìíì¬</span></td>
+          <td itemprop="title">Method and apparatus for managing schedule using optical character reader 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/US20130178241A1/en">
+              <span itemprop="publicationNumber">US20130178241A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2011-10-31</td>
+          <td itemprop="publicationDate">2013-07-11</td>
+          <td><span itemprop="assigneeOriginal">Inset, Inc.</span></td>
+          <td itemprop="title">System and method for context based user intent sensing and content or application delivery on mobile devices 
+     </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/CN103307658A/en">
+              <span itemprop="publicationNumber">CN103307658A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2012-03-13</td>
+          <td itemprop="publicationDate">2013-09-18</td>
+          <td><span itemprop="assigneeOriginal">åä¸ºææ¯æéå¬å¸</span></td>
+          <td itemprop="title">Heat exchanger and machine cabinet 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/LT2677484T/en">
+              <span itemprop="publicationNumber">LT2677484T</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            
+            
+          </td>
+          <td itemprop="priorityDate">2012-06-18</td>
+          <td itemprop="publicationDate">2017-12-27</td>
+          <td><span itemprop="assigneeOriginal">Sentiance</span></td>
+          <td itemprop="title">System and method for making personalised recommendations to a user of a mobile computing device, and computer program product 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/US10679131B2/en">
+              <span itemprop="publicationNumber">US10679131B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2012-07-12</td>
+          <td itemprop="publicationDate">2020-06-09</td>
+          <td><span itemprop="assigneeOriginal">Eaton Intelligent Power Limited</span></td>
+          <td itemprop="title">System and method for efficient data collection in distributed sensor measurement systems 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/EP2946587A4/en">
+              <span itemprop="publicationNumber">EP2946587A4</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2013-01-17</td>
+          <td itemprop="publicationDate">2016-09-28</td>
+          <td><span itemprop="assigneeOriginal">Intel Ip Corp</span></td>
+          <td itemprop="title">Centralized partitioning of user devices in a heterogeneous wireless network 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesFamily" itemscope repeat>
+          <td>
+            <a href="/patent/EP3045001B1/en">
+              <span itemprop="publicationNumber">EP3045001B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2013-09-13</td>
+          <td itemprop="publicationDate">2017-10-18</td>
+          <td><span itemprop="assigneeOriginal">Telefonaktiebolaget LM Ericsson (publ)</span></td>
+          <td itemprop="title">Methods, wireless device and network node for managing positioning method based on prediction 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2017</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2017-01-20</span>
+            <span itemprop="countryCode">EP</span>
+            <span itemprop="applicationNumber">EP17152526.4A</span>
+            <a href="/patent/EP3352432A1/en"><span itemprop="documentId">patent/EP3352432A1/en</span></a>
+            <span itemprop="legalStatusCat">not_active</span>
+            <span itemprop="legalStatus">Withdrawn</span>
+            
+          </li>
+        </ul>
+      </li>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2018</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2018-01-22</span>
+            <span itemprop="countryCode">EP</span>
+            <span itemprop="applicationNumber">EP18703917.7A</span>
+            <a href="/patent/EP3571827A1/en"><span itemprop="documentId">patent/EP3571827A1/en</span></a>
+            <span itemprop="legalStatusCat">not_active</span>
+            <span itemprop="legalStatus">Withdrawn</span>
+            
+          </li>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2018-01-22</span>
+            <span itemprop="countryCode">WO</span>
+            <span itemprop="applicationNumber">PCT/EP2018/051486</span>
+            <a href="/patent/WO2018134417A1/en"><span itemprop="documentId">patent/WO2018134417A1/en</span></a>
+            <span itemprop="legalStatusCat">unknown</span>
+            <span itemprop="legalStatus"></span>
+            
+          </li>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2018-01-22</span>
+            <span itemprop="countryCode">CN</span>
+            <span itemprop="applicationNumber">CN201880007956.0A</span>
+            <a href="/patent/CN110268696A/en"><span itemprop="documentId">patent/CN110268696A/en</span></a>
+            <span itemprop="legalStatusCat">not_active</span>
+            <span itemprop="legalStatus">Withdrawn</span>
+            
+          </li>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2018-01-22</span>
+            <span itemprop="countryCode">US</span>
+            <span itemprop="applicationNumber">US16/479,454</span>
+            <a href="/patent/US20190387365A1/en"><span itemprop="documentId">patent/US20190387365A1/en</span></a>
+            <span itemprop="legalStatusCat">not_active</span>
+            <span itemprop="legalStatus">Abandoned</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  <section>
+    <h2>Patent Citations (2)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/WO2016203298A1/en">
+              <span itemprop="publicationNumber">WO2016203298A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-06-16</td>
+          <td itemprop="publicationDate">2016-12-22</td>
+          <td><span itemprop="assigneeOriginal">Dataspark Pte, Ltd</span></td>
+          <td itemprop="title">Traffic prediction and real time analysis system 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20180231653A1/en">
+              <span itemprop="publicationNumber">US20180231653A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2017-02-14</td>
+          <td itemprop="publicationDate">2018-08-16</td>
+          <td><span itemprop="assigneeOriginal">Microsoft Technology Licensing, Llc</span></td>
+          <td itemprop="title">Entity-tracking computing system 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+
+  <h2>Cited By (7)</h2>
+  <table>
+    <caption>* Cited by examiner, â  Cited by third party</caption>
+    <thead>
+      <tr>
+        <th>Publication number</th>
+        <th>Priority date</th>
+        <th>Publication date</th>
+        <th>Assignee</th>
+        <th>Title</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US11763206B2/en">
+            <span itemprop="publicationNumber">US11763206B2</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2018-08-07</td>
+        <td itemprop="publicationDate">2023-09-19</td>
+        <td><span itemprop="assigneeOriginal">Commissariat A L&#39;energie Atomique Et Aux Energies Alternatives</span></td>
+        <td itemprop="title">Device and method for multi-class classification by machine learning 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US20200250001A1/en">
+            <span itemprop="publicationNumber">US20200250001A1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2019-02-05</td>
+        <td itemprop="publicationDate">2020-08-06</td>
+        <td><span itemprop="assigneeOriginal">Bank Of America Corporation</span></td>
+        <td itemprop="title">System for assessing and prioritizing real time resource requirements 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US10831548B2/en">
+            <span itemprop="publicationNumber">US10831548B2</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2019-02-05</td>
+        <td itemprop="publicationDate">2020-11-10</td>
+        <td><span itemprop="assigneeOriginal">Bank Of America Corporation</span></td>
+        <td itemprop="title">System for assessing and prioritizing real time resource requirements 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US11898865B1/en">
+            <span itemprop="publicationNumber">US11898865B1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          
+          
+        </td>
+        <td itemprop="priorityDate">2021-06-03</td>
+        <td itemprop="publicationDate">2024-02-13</td>
+        <td><span itemprop="assigneeOriginal">Allstate Insurance Company</span></td>
+        <td itemprop="title">Using context based machine learning for generation of customized driving outputs 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/US20230027582A1/en">
+            <span itemprop="publicationNumber">US20230027582A1</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2021-07-21</td>
+        <td itemprop="publicationDate">2023-01-26</td>
+        <td><span itemprop="assigneeOriginal">Saverone 2014 Ltd.</span></td>
+        <td itemprop="title">System and method for classifying a type of interaction between a human user and a mobile communication device in a volume based on sensor fusion 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN115168679A/en">
+            <span itemprop="publicationNumber">CN115168679A</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2022-07-20</td>
+        <td itemprop="publicationDate">2022-10-11</td>
+        <td><span itemprop="assigneeOriginal">å¹¿å·èç¾æ´²ä¿¡æ¯ç§ææéå¬å¸</span></td>
+        <td itemprop="title">Smart city data analysis method based on cloud platform and data analysis system thereof 
+       </td>
+      </tr>
+      <tr itemprop="forwardReferences" itemscope repeat>
+        <td>
+          <a href="/patent/CN115440040A/en">
+            <span itemprop="publicationNumber">CN115440040A</span>
+            (<span itemprop="primaryLanguage">en</span>)
+          </a>
+          <span itemprop="examinerCited">*</span>
+          
+        </td>
+        <td itemprop="priorityDate">2022-09-02</td>
+        <td itemprop="publicationDate">2022-12-06</td>
+        <td><span itemprop="assigneeOriginal">éåºå¤§å­¦</span></td>
+        <td itemprop="title">Commuting vehicle identification method based on highway traffic data 
+       </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h2>Also Published As</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Publication date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="docdbFamily" itemscope repeat>
+          <td>
+            <a href="/patent/EP3571827A1/en">
+              <span itemprop="publicationNumber">EP3571827A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2019-11-27</td>
+        </tr>
+        <tr itemprop="docdbFamily" itemscope repeat>
+          <td>
+            <a href="/patent/CN110268696A/en">
+              <span itemprop="publicationNumber">CN110268696A</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2019-09-20</td>
+        </tr>
+        <tr itemprop="docdbFamily" itemscope repeat>
+          <td>
+            <a href="/patent/WO2018134417A1/en">
+              <span itemprop="publicationNumber">WO2018134417A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2018-07-26</td>
+        </tr>
+        <tr itemprop="docdbFamily" itemscope repeat>
+          <td>
+            <a href="/patent/EP3352432A1/en">
+              <span itemprop="publicationNumber">EP3352432A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2018-07-25</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Similar Documents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication</th>
+          <th>Publication Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20190387365A1/en">
+                <span itemprop="publicationNumber">US20190387365A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2019-12-19">2019-12-19</time>
+            
+            
+          </td>
+          <td itemprop="title">Method and system for classifying an activity of a user 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="15332289489178294819">
+              <a href="/scholar/15332289489178294819"><span itemprop="scholarAuthors">Shin et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2015">2015</time>
+            
+          </td>
+          <td itemprop="title">Urban sensing: Using smartphones for transportation mode classification</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9141975B2/en">
+                <span itemprop="publicationNumber">US9141975B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-09-22">2015-09-22</time>
+            
+            
+          </td>
+          <td itemprop="title">Inferring user risk profile from travel patterns 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9037527B2/en">
+                <span itemprop="publicationNumber">US9037527B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-05-19">2015-05-19</time>
+            
+            
+          </td>
+          <td itemprop="title">Determining a dynamic user profile indicative of a user behavior context with a mobile device 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9135248B2/en">
+                <span itemprop="publicationNumber">US9135248B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-09-15">2015-09-15</time>
+            
+            
+          </td>
+          <td itemprop="title">Context demographic determination system 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US10257660B2/en">
+                <span itemprop="publicationNumber">US10257660B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2019-04-09">2019-04-09</time>
+            
+            
+          </td>
+          <td itemprop="title">Systems and methods of sourcing hours of operation for a location entity 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR102216049B1/en">
+                <span itemprop="publicationNumber">KR102216049B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-02-15">2021-02-15</time>
+            
+            
+          </td>
+          <td itemprop="title">System and method for semantic labeling 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="14241210790946282737">
+              <a href="/scholar/14241210790946282737"><span itemprop="scholarAuthors">Ahmad et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">A framework for crowd-sourced data collection and context-aware services in Hajj and Umrah</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20140280529A1/en">
+                <span itemprop="publicationNumber">US20140280529A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2014-09-18">2014-09-18</time>
+            
+            
+          </td>
+          <td itemprop="title">Context emotion determination system 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20200217677A1/en">
+                <span itemprop="publicationNumber">US20200217677A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-07-09">2020-07-09</time>
+            
+            
+          </td>
+          <td itemprop="title">Cognitive contextual route navigation 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US10304325B2/en">
+                <span itemprop="publicationNumber">US10304325B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2019-05-28">2019-05-28</time>
+            
+            
+          </td>
+          <td itemprop="title">Context health determination system 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="3970218013716711977">
+              <a href="/scholar/3970218013716711977"><span itemprop="scholarAuthors">Stojanovic et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2016">2016</time>
+            
+          </td>
+          <td itemprop="title">Mobile crowd sensing for smart urban mobility</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20220341746A1/en">
+                <span itemprop="publicationNumber">US20220341746A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-10-27">2022-10-27</time>
+            
+            
+          </td>
+          <td itemprop="title">Systems and methods for personalized ground transportation processing and user intent predictions 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20210409894A1/en">
+                <span itemprop="publicationNumber">US20210409894A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-12-30">2021-12-30</time>
+            
+            
+          </td>
+          <td itemprop="title">Automatic building detection and classification using elevator/escalator stairs modeling - smart cities 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20210142187A1/en">
+                <span itemprop="publicationNumber">US20210142187A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-05-13">2021-05-13</time>
+            
+            
+          </td>
+          <td itemprop="title">Method, apparatus, and system for providing social networking functions based on joint motion 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="15980100728081479722">
+              <a href="/scholar/15980100728081479722"><span itemprop="scholarAuthors">Ahmad et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2018">2018</time>
+            
+          </td>
+          <td itemprop="title">Context-aware services based on spatio-temporal zoning and crowdsourcing</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9785993B2/en">
+                <span itemprop="publicationNumber">US9785993B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2017-10-10">2017-10-10</time>
+            
+            
+          </td>
+          <td itemprop="title">Method for analyzing and ranking venues 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US11107175B2/en">
+                <span itemprop="publicationNumber">US11107175B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-08-31">2021-08-31</time>
+            
+            
+          </td>
+          <td itemprop="title">Method, apparatus, and system for providing ride-sharing functions based on joint motion 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="9818616808834798721">
+              <a href="/scholar/9818616808834798721"><span itemprop="scholarAuthors">Arslan et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2018">2018</time>
+            
+          </td>
+          <td itemprop="title">Spatio-temporal analysis of trajectories for safer construction sites</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20200245141A1/en">
+                <span itemprop="publicationNumber">US20200245141A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2020-07-30">2020-07-30</time>
+            
+            
+          </td>
+          <td itemprop="title">Privacy protection of entities in a transportation system 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN107750339B/en">
+                <span itemprop="publicationNumber">CN107750339B</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-09-21">2021-09-21</time>
+            
+            
+          </td>
+          <td itemprop="title">Detecting a context of a user using a mobile device based on wireless signal characteristics 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20210406612A1/en">
+                <span itemprop="publicationNumber">US20210406612A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-12-30">2021-12-30</time>
+            
+            
+          </td>
+          <td itemprop="title">Automatic building detection and classification using elevator/escalator stairs modeling - building classification 
+     </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="16698030196368057762">
+              <a href="/scholar/16698030196368057762"><span itemprop="scholarAuthors">Ahmad et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2015">2015</time>
+            
+          </td>
+          <td itemprop="title">Quality and context-aware data collection architecture from crowd-sourced data</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US11128982B1/en">
+                <span itemprop="publicationNumber">US11128982B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-09-21">2021-09-21</time>
+            
+            
+          </td>
+          <td itemprop="title">Automatic building detection and classification using elevator/escalator stairs modeling 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/JP6389583B1/en">
+                <span itemprop="publicationNumber">JP6389583B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2018-09-12">2018-09-12</time>
+            
+            
+          </td>
+          <td itemprop="title">
+  Behavior index evaluation system, behavior index evaluation method, and program
+ 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Legal Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2019-07-19">2019-07-19</time></td>
+          <td itemprop="code">AS</td>
+          <td itemprop="title">Assignment</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Owner name</strong>:
+              <span itemprop="value">SENTIANCE N.V., BELGIUM</span>
+            </p>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:SPRUYT, VINCENT;VERBIST, FRANK;JOCQUET, VINCENT;SIGNING DATES FROM 20180130 TO 20180205;REEL/FRAME:049809/0198</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2020-02-05">2020-02-05</time></td>
+          <td itemprop="code">STPP</td>
+          <td itemprop="title">Information on status: patent application and granting procedure in general</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">RESPONSE TO NON-FINAL OFFICE ACTION ENTERED AND FORWARDED TO EXAMINER</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2020-04-08">2020-04-08</time></td>
+          <td itemprop="code">STPP</td>
+          <td itemprop="title">Information on status: patent application and granting procedure in general</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">FINAL REJECTION MAILED</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2020-10-22">2020-10-22</time></td>
+          <td itemprop="code">STCB</td>
+          <td itemprop="title">Information on status: application discontinuation</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">ABANDONED  --  FAILURE TO RESPOND TO AN OFFICE ACTION</span>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
+
+    </search-app>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "72459301,72474719",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>
