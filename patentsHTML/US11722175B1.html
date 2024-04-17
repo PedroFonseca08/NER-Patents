@@ -1,0 +1,2450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>US11722175B1 - Contact tracing solution to combat the spread of infectious diseases using near field communications 
+        - Google Patents</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="canonical" href="https://patents.google.com/patent/US11722175B1/en">
+    <meta name="description" content="
+     This disclosure describes methods for contact tracing using information from devices for near-field communications (NFC), combined with auxiliary information from other (non-NFC) sensors such as inertial motion sensors (accelerometers and gyroscopes) and magnetometers. Methods using low-frequency NFC in the low MHz range of frequencies have the advantage of being robust in the presence of interfering objects, unlike other means of communication and proximity tracking using much higher frequency electromagnetic signals such as Bluetooth, GPS, and laser positioning. The method relies on unique features of NFC using inductively coupled devices to solve an optimization problem yielding the closest distance of approach of two NFC devices and can be adapted to handle multiple pairs of devices simultaneously. Location data is only required and generated in a local coordinate system (independent of absolute locations) which helps to preserve privacy. An individual device that determines the presence of another device within a prescribed distance (e.g., 2 meters or 6 feet) stores a unique identifier of the other device along with a timestamp in its memory in encrypted form and separately uploads this same information securely to a central database. The methods disclosed can also be used for other applications such as gaming where keeping track of contacts between participants in a local coordinate system, while maintaining privacy, is useful. 
+   
+   ">
+    <meta name="DC.type" content="patent">
+    <meta name="DC.title" content="Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       ">
+    <meta name="DC.date" content="2021-07-05" scheme="dateSubmitted">
+    <meta name="DC.description" content="
+     This disclosure describes methods for contact tracing using information from devices for near-field communications (NFC), combined with auxiliary information from other (non-NFC) sensors such as inertial motion sensors (accelerometers and gyroscopes) and magnetometers. Methods using low-frequency NFC in the low MHz range of frequencies have the advantage of being robust in the presence of interfering objects, unlike other means of communication and proximity tracking using much higher frequency electromagnetic signals such as Bluetooth, GPS, and laser positioning. The method relies on unique features of NFC using inductively coupled devices to solve an optimization problem yielding the closest distance of approach of two NFC devices and can be adapted to handle multiple pairs of devices simultaneously. Location data is only required and generated in a local coordinate system (independent of absolute locations) which helps to preserve privacy. An individual device that determines the presence of another device within a prescribed distance (e.g., 2 meters or 6 feet) stores a unique identifier of the other device along with a timestamp in its memory in encrypted form and separately uploads this same information securely to a central database. The methods disclosed can also be used for other applications such as gaming where keeping track of contacts between participants in a local coordinate system, while maintaining privacy, is useful. 
+   
+   ">
+    <meta name="citation_patent_application_number" content="US:17/367,551">
+    <meta name="citation_pdf_url" content="https://patentimages.storage.googleapis.com/f7/ef/c6/6ce441debeed2d/US11722175.pdf">
+    <meta name="citation_patent_number" content="US:11722175">
+    <meta name="DC.date" content="2023-08-08" scheme="issue">
+    <meta name="DC.contributor" content="Thorkild Hansen" scheme="inventor">
+    <meta name="DC.contributor" content="Michael Oristaglio" scheme="inventor">
+    <meta name="DC.contributor" content="Individual" scheme="assignee">
+    <meta name="DC.relation" content="US:20130002489:A1" scheme="references">
+    <meta name="DC.relation" content="US:9538336" scheme="references">
+    <meta name="DC.relation" content="US:9432361" scheme="references">
+    <meta name="DC.relation" content="US:10083319" scheme="references">
+    <meta name="DC.relation" content="US:10094663" scheme="references">
+    <meta name="DC.relation" content="US:20160198300:A1" scheme="references">
+    <meta name="DC.relation" content="US:20180052216:A1" scheme="references">
+    <meta name="DC.relation" content="US:10852917" scheme="references">
+    <meta name="DC.relation" content="US:9824248" scheme="references">
+    <meta name="DC.relation" content="US:9344436" scheme="references">
+    <meta name="DC.relation" content="US:9716964" scheme="references">
+    <meta name="DC.relation" content="US:11159932" scheme="references">
+    <meta name="DC.relation" content="US:20220038883:A1" scheme="references">
+    <meta name="DC.relation" content="US:20210136600:A1" scheme="references">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700">
+
+    <style>
+      body { transition: none; }
+    </style>
+
+    <script>
+      window.version = 'patent-search.search_20240108_RC01';
+
+      function sendFeedback() {
+        userfeedback.api.startFeedback({
+          'productId': '713680',
+          'bucket': 'patent-search-web',
+          'productVersion': window.version,
+        });
+      }
+
+      window.experiments = {};
+      window.experiments.patentCountries = "ae,ag,al,am,ao,ap,ar,at,au,aw,az,ba,bb,bd,be,bf,bg,bh,bj,bn,bo,br,bw,bx,by,bz,ca,cf,cg,ch,ci,cl,cm,cn,co,cr,cs,cu,cy,cz,dd,de,dj,dk,dm,do,dz,ea,ec,ee,eg,em,ep,es,fi,fr,ga,gb,gc,gd,ge,gh,gm,gn,gq,gr,gt,gw,hk,hn,hr,hu,ib,id,ie,il,in,ir,is,it,jo,jp,ke,kg,kh,km,kn,kp,kr,kw,kz,la,lc,li,lk,lr,ls,lt,lu,lv,ly,ma,mc,md,me,mg,mk,ml,mn,mo,mr,mt,mw,mx,my,mz,na,ne,ng,ni,nl,no,nz,oa,om,pa,pe,pg,ph,pl,pt,py,qa,ro,rs,ru,rw,sa,sc,sd,se,sg,si,sk,sl,sm,sn,st,su,sv,sy,sz,td,tg,th,tj,tm,tn,tr,tt,tw,tz,ua,ug,us,uy,uz,vc,ve,vn,wo,yu,za,zm,zw";
+      
+      
+      window.experiments.keywordWizard = true;
+      
+      
+      
+      window.experiments.definitions = true;
+
+      window.Polymer = {
+        dom: 'shady',
+        lazyRegister: true,
+      };
+    </script>
+
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20240108_RC01/scs/compiled_dir/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="//www.gstatic.com/patent-search/frontend/patent-search.search_20240108_RC01/scs/compiled_dir/search-app-vulcanized.html">
+  </head>
+  <body unresolved>
+    <script src="//www.gstatic.com/patent-search/frontend/patent-search.search_20240108_RC01/scs/compiled_dir/search-app-vulcanized.js"></script>
+    <search-app>
+      
+      
+
+      <article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <h1 itemprop="pageTitle">US11722175B1 - Contact tracing solution to combat the spread of infectious diseases using near field communications 
+        - Google Patents</h1>
+  <span itemprop="title">Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       </span>
+
+  <meta itemprop="type" content="patent">
+  <a href="https://patentimages.storage.googleapis.com/f7/ef/c6/6ce441debeed2d/US11722175.pdf" itemprop="pdfLink">Download PDF</a>
+  <h2>Info</h2>
+
+  <dl>
+    <dt>Publication number</dt>
+    <dd itemprop="publicationNumber">US11722175B1</dd>
+    <meta itemprop="numberWithoutCodes" content="11722175">
+    <meta itemprop="kindCode" content="B1">
+    <meta itemprop="publicationDescription" content="Patent ( no pre-grant publication)">
+    <span>US11722175B1</span>
+    <span>US17/367,551</span>
+    <span>US202117367551A</span>
+    <span>US11722175B1</span>
+    <span>US 11722175 B1</span>
+    <span>US11722175 B1</span>
+    <span>US 11722175B1</span>
+    <span>  </span>
+    <span> </span>
+    <span> </span>
+    <span>US 202117367551 A</span>
+    <span>US202117367551 A</span>
+    <span>US 202117367551A</span>
+    <span>US 11722175 B1</span>
+    <span>US11722175 B1</span>
+    <span>US 11722175B1</span>
+
+    <dt>Authority</dt>
+    <dd itemprop="countryCode">US</dd>
+    <dd itemprop="countryName">United States</dd>
+
+    <dt>Prior art keywords</dt>
+    <dd itemprop="priorArtKeywords" repeat>nfc</dd>
+    <dd itemprop="priorArtKeywords" repeat>devices</dd>
+    <dd itemprop="priorArtKeywords" repeat>auxiliary information</dd>
+    <dd itemprop="priorArtKeywords" repeat>information</dd>
+    <dd itemprop="priorArtKeywords" repeat>circumflex over</dd>
+
+    <dt>Prior art date</dt>
+    <dd><time itemprop="priorArtDate" datetime="2021-07-05">2021-07-05</time></dd>
+
+    <dt>Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)</dt>
+    <dd itemprop="legalStatusIfi" itemscope>
+      <span itemprop="status">Active</span>
+    </dd>
+  </dl>
+
+  <dt>Application number</dt>
+  <dd itemprop="applicationNumber">US17/367,551</dd>
+
+  
+
+  
+
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>Thorkild Hansen</dd>
+  <dd itemprop="inventor" repeat>Michael Oristaglio</dd>
+
+  <dt>Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    Individual
+  </dd>
+
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>Individual</dd>
+
+  <dt>Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)</dt>
+  <dd><time itemprop="priorityDate" datetime="2021-07-05">2021-07-05</time></dd>
+
+  <dt>Filing date</dt>
+  <dd><time itemprop="filingDate" datetime="2021-07-05">2021-07-05</time></dd>
+
+  <dt>Publication date</dt>
+  <dd><time itemprop="publicationDate" datetime="2023-08-08">2023-08-08</time></dd>
+
+  
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2021-07-05">2021-07-05</time>
+    <span itemprop="title">Application filed by Individual</span>
+    <span itemprop="type">filed</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    <span itemprop="assigneeSearch">Individual</span>
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2021-07-05">2021-07-05</time>
+    <span itemprop="title">Priority to US17/367,551</span>
+    <span itemprop="type">priority</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/US11722175B1/en</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2023-08-08">2023-08-08</time>
+    <span itemprop="title">Application granted</span>
+    <span itemprop="type">granted</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2023-08-08">2023-08-08</time>
+    <span itemprop="title">Publication of US11722175B1</span>
+    <span itemprop="type">publication</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    <span itemprop="documentId">patent/US11722175B1/en</span>
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date">Status</time>
+    <span itemprop="title">Active</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    <span itemprop="current" content="true" bool>Current</span>
+    
+    
+    
+  </dd>
+  <dd itemprop="events" itemscope repeat>
+    <time itemprop="date" datetime="2041-07-05">2041-07-05</time>
+    <span itemprop="title">Anticipated expiration</span>
+    <span itemprop="type">legal-status</span>
+    <span itemprop="critical" content="true" bool>Critical</span>
+    
+    
+    
+    
+  </dd>
+
+  <h2>Links</h2>
+  <ul>
+    
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoLink">
+          <a href="https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PALL&s1=11722175.PN." itemprop="url" target="_blank"><span itemprop="text">USPTO</span></a>
+        </li>
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoPatentCenterLink">
+          <a href="https://patentcenter.uspto.gov/applications/17367551" itemprop="url" target="_blank"><span itemprop="text">USPTO PatentCenter</span></a>
+        </li>
+        <li itemprop="links" itemscope repeat>
+          <meta itemprop="id" content="usptoAssignmentLink">
+          <a href="https://assignment.uspto.gov/patent/index.html#/patent/search/resultFilter?searchInput=11722175" itemprop="url" target="_blank"><span itemprop="text">USPTO Assignment</span></a>
+        </li>
+
+    <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="espacenetLink">
+        <a href="https://worldwide.espacenet.com/publicationDetails/biblio?CC=US&amp;NR=11722175B1&amp;KC=B1&amp;FT=D" itemprop="url" target="_blank"><span itemprop="text">Espacenet</span></a>
+      </li>
+      
+
+    
+
+    
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="globalDossierLink">
+        <a href="https://globaldossier.uspto.gov/#/result/patent/US/11722175/1" itemprop="url" target="_blank"><span itemprop="text">Global Dossier</span></a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      <li itemprop="links" itemscope repeat>
+        <meta itemprop="id" content="stackexchangeLink">
+        <a href="https://patents.stackexchange.com/questions/tagged/US11722175" itemprop="url"><span itemprop="text">Discuss</span></a>
+      </li>
+      
+  </ul>
+
+  <ul itemprop="concept" itemscope>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000004891</span>
+      <span itemprop="name">communication</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>title</span>
+      <span itemprop="sections" repeat>abstract</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">14</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">208000035473</span>
+      <span itemprop="name">Communicable disease</span>
+      <span itemprop="domain">Diseases</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>title</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">4</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000000034</span>
+      <span itemprop="name">method</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>claims</span>
+      <span itemprop="sections" repeat>abstract</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">24</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000033001</span>
+      <span itemprop="name">locomotion</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>claims</span>
+      <span itemprop="sections" repeat>abstract</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">6</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">239000013598</span>
+      <span itemprop="name">vector</span>
+      <span itemprop="domain">Substances</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>claims</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">19</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000005457</span>
+      <span itemprop="name">optimization</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>abstract</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">10</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000013459</span>
+      <span itemprop="name">approach</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>abstract</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">2</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000002452</span>
+      <span itemprop="name">interceptive effect</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>abstract</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000005516</span>
+      <span itemprop="name">engineering process</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">4</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000006870</span>
+      <span itemprop="name">function</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">4</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000005672</span>
+      <span itemprop="name">electromagnetic field</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">3</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000012544</span>
+      <span itemprop="name">monitoring process</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">2</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">206010011224</span>
+      <span itemprop="name">Cough</span>
+      <span itemprop="domain">Diseases</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">LFQSCWFLJHTTHZ-UHFFFAOYSA-N</span>
+      <span itemprop="name">Ethanol</span>
+      <span itemprop="domain">Chemical compound</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles">CCO</span>
+      <span itemprop="inchi_key">LFQSCWFLJHTTHZ-UHFFFAOYSA-N</span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">241000700605</span>
+      <span itemprop="name">Viruses</span>
+      <span itemprop="domain">Species</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000000386</span>
+      <span itemprop="name">athletic effect</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000005540</span>
+      <span itemprop="name">biological transmission</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000036772</span>
+      <span itemprop="name">blood pressure</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">206010012601</span>
+      <span itemprop="name">diabetes mellitus</span>
+      <span itemprop="domain">Diseases</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000037213</span>
+      <span itemprop="name">diet</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">235000005911</span>
+      <span itemprop="name">diet</span>
+      <span itemprop="domain">Nutrition</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000001914</span>
+      <span itemprop="name">filtration</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000036541</span>
+      <span itemprop="name">health</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">210000004072</span>
+      <span itemprop="name">lung</span>
+      <span itemprop="domain">Anatomy</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000006855</span>
+      <span itemprop="name">networking</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">210000001331</span>
+      <span itemprop="name">nose</span>
+      <span itemprop="domain">Anatomy</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000008569</span>
+      <span itemprop="name">process</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000000241</span>
+      <span itemprop="name">respiratory effect</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000010079</span>
+      <span itemprop="name">rubber tapping</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000007480</span>
+      <span itemprop="name">spreading</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">238000010561</span>
+      <span itemprop="name">standard procedure</span>
+      <span itemprop="domain">Methods</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000009897</span>
+      <span itemprop="name">systematic effect</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000036962</span>
+      <span itemprop="name">time dependent</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">230000007704</span>
+      <span itemprop="name">transition</span>
+      <span itemprop="domain">Effects</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles"></span>
+      <span itemprop="inchi_key"></span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+    <li itemprop="match" itemscope repeat>
+      <span itemprop="id">XLYOFNOQVPJJNP-UHFFFAOYSA-N</span>
+      <span itemprop="name">water</span>
+      <span itemprop="domain">Substances</span>
+      <span itemprop="svg_large"></span>
+      <span itemprop="svg_small"></span>
+      <span itemprop="smiles">O</span>
+      <span itemprop="inchi_key">XLYOFNOQVPJJNP-UHFFFAOYSA-N</span>
+      <span itemprop="similarity">0.000</span>
+      <span itemprop="sections" repeat>description</span>
+      <span itemprop="count">1</span>
+    </li>
+  </ul>
+
+  <section>
+    <h2>Images</h2>
+    <ul>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/ae/a6/bb/3aa19825718b7a/US11722175-20230808-D00000.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/0a/62/f7/3edb8cdfc2876d/US11722175-20230808-D00000.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/a7/0f/55/14a0244f3192c0/US11722175-20230808-D00001.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/c6/5c/1c/243f5bea11f93f/US11722175-20230808-D00001.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/35/c6/b3/fffe493dff3147/US11722175-20230808-D00002.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/fe/25/9f/9364109a16220e/US11722175-20230808-D00002.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/1d/c6/34/86bcb026a8de63/US11722175-20230808-D00003.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/8d/3a/36/bff6a8af058046/US11722175-20230808-D00003.png">
+        <ul>
+        </ul>
+      </li>
+      <li itemprop="images" itemscope repeat>
+        <img itemprop="thumbnail" src="https://patentimages.storage.googleapis.com/10/09/9f/5b129c845baa51/US11722175-20230808-D00004.png">
+        <meta itemprop="full" content="https://patentimages.storage.googleapis.com/1b/12/55/4ff55828c04f72/US11722175-20230808-D00004.png">
+        <ul>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Classifications</h2>
+    <ul>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H</span>&mdash;<span itemprop="Description">ELECTRICITY</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04</span>&mdash;<span itemprop="Description">ELECTRIC COMMUNICATION TECHNIQUE</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04B</span>&mdash;<span itemprop="Description">TRANSMISSION</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04B5/00</span>&mdash;<span itemprop="Description">Near-field transmission systems, e.g. inductive loop type</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04B5/0025</span>&mdash;<span itemprop="Description">Near field system adaptations</span>
+            <meta itemprop="IsCPC" content="true">
+          </li>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04B5/0031</span>&mdash;<span itemprop="Description">Near field system adaptations for data transfer</span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="FirstCode" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul itemprop="classifications" itemscope repeat>
+          <li itemprop="classifications" itemscope repeat>
+            <span itemprop="Code">H04B5/72</span>&mdash;<span itemprop="Description"></span>
+            <meta itemprop="Leaf" content="true"><meta itemprop="FirstCode" content="true"><meta itemprop="IsCPC" content="true">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  
+
+  
+
+  <section>
+    <h2>Definitions</h2>
+    <ul>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC</span>
+        <span itemprop="definition">Near Field Communication</span>
+        <meta itemprop="num_attr" content="0002">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC</span>
+        <span itemprop="definition">Near Field Communication</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">RFID</span>
+        <span itemprop="definition">Radio Frequency Identification</span>
+        <meta itemprop="num_attr" content="0003">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC</span>
+        <span itemprop="definition">has a wide range of applications such as the following possibilities:</span>
+        <meta itemprop="num_attr" content="0004">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC-enabled devices</span>
+        <span itemprop="definition">either NFC-enabled phones with stored data that act as a debit/credit payment card or NFC-powered contactless payment cards placed in proximity of readers.</span>
+        <meta itemprop="num_attr" content="0006">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC-enabled phones</span>
+        <span itemprop="definition">can be used to read RFID tags on commercial establishments&#39; signs for information or promotions or scan outdoor billboards.</span>
+        <meta itemprop="num_attr" content="0007">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Bluetooth pairing</span>
+        <span itemprop="definition">in the future, pairing of Bluetooth 2.1 devices with NFC support will be as easy as bringing them close together and accepting the pairing.</span>
+        <meta itemprop="num_attr" content="0008">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">P2P</span>
+        <span itemprop="definition">Peer to peer</span>
+        <meta itemprop="num_attr" content="0009">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">identity documents</span>
+        <span itemprop="definition">governments, employers, and other organizations will use NFC to power contactless identity cards.</span>
+        <meta itemprop="num_attr" content="0009">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the typical range for P2P transitions</span>
+        <span itemprop="definition">is 1 meter.</span>
+        <meta itemprop="num_attr" content="0009">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC-enabled phones</span>
+        <span itemprop="definition">can serve as replacements for physical car keys, house/office keys, and hotel room keys.</span>
+        <meta itemprop="num_attr" content="0010">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Health and safety applications</span>
+        <span itemprop="definition">such as water monitoring; diet, diabetes, blood pressure, and alcohol consumption monitoring.</span>
+        <meta itemprop="num_attr" content="0011">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Social networking</span>
+        <span itemprop="definition">users can exchange contacts, resumes, and location-based personal networks using NFC-enabled phones or smart business cards and P2P file exchange.</span>
+        <meta itemprop="num_attr" content="0013">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Smart mobility</span>
+        <span itemprop="definition">consumers can obtain access to shared car and bicycle services and search for rides with carpoolers; entertainment: consumers can use NFC-enabled phones to participate in multiplayer games, create and track athletic challenges and participate in urban games.</span>
+        <meta itemprop="num_attr" content="0014">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Infectious diseases</span>
+        <span itemprop="definition">can spread from person to person through respiratory droplets produced when an infected person coughs or sneezes. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another.</span>
+        <meta itemprop="num_attr" content="0016">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Contact tracing</span>
+        <span itemprop="definition">is a strategy to prevent a virus from spreading freely. With this strategy, one must identify and contact every individual who has been within a short distance of an infected person (typically about 2 meters or 6 feet).</span>
+        <meta itemprop="num_attr" content="0016">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Radio signals carrying the data to be transferred between NFC transceivers</span>
+        <span itemprop="definition">are not confined to the immediate vicinity of these transceivers.</span>
+        <meta itemprop="num_attr" content="0017">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">NFC communications</span>
+        <span itemprop="definition">can have a range of at least 5 meters which is sufficient to allow NFC transceivers to be used in close-contact tracing.</span>
+        <meta itemprop="num_attr" content="0017">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Seknion Inc.</span>
+        <span itemprop="definition">has developed technology related to security in wireless communications and radio frequency identification (RFID) disclosed in U.S. Pat. Nos. 7,398,078, 7,751,799, 7,456,726, 7,889,054, 7,605,684, and 8,909,141.</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">RFID</span>
+        <span itemprop="definition">radio frequency identification</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This technology</span>
+        <span itemprop="definition">includes the use of NFC signals for the precise location of RFID tags and the use of advanced coil systems for achieving desired decay rates of NFC signals.</span>
+        <meta itemprop="num_attr" content="0018">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the distance between two NFC devices</span>
+        <span itemprop="definition">may be estimated to high accuracy by analyzing the recorded output of one device due to an NFC signal transmitted by the second device, provided that auxiliary information about the relative orientations of the two devices and about the direction vector from one device to the other is known from data supplied by other (non-NFC) sensors, such as accelerometers and gyroscopes (collectively known as internal motion sensors) and magnetometers.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">non-NFC sensors</span>
+        <span itemprop="definition">such as accelerometers and gyroscopes (collectively known as internal motion sensors) and magnetometers.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the auxiliary data supplied by these non-NFC sensors</span>
+        <span itemprop="definition">can under certain conditions be used to estimate the distance between the two devices directly, without the use of NFC signals, but such estimates are subject to systematic errors (âdriftâ) which can significantly degrade their accuracy. Exchanging NFC signals between the two devices improves the robustness and accuracy of the estimation algorithm and maintains accuracy.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">auxiliary information</span>
+        <span itemprop="definition">there are myriad ways to obtain and process the auxiliary information from other sensors.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">inertial motion sensors</span>
+        <span itemprop="definition">are used to obtain this information.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">magnetometer data</span>
+        <span itemprop="definition">are used.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">various combinations of accelerometer, gyroscopic, and magnetometer data</span>
+        <span itemprop="definition">are used.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the distances between multiple devices</span>
+        <span itemprop="definition">are determined simultaneously by encoding transmitted signals so that a receiver can distinguish between multiple transmitters.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">distance</span>
+        <span itemprop="definition">may be estimated using an upper threshold for the received field to determine whether or not two devices have been in close proximity, and distance may be estimated directly from the NFC signal when the two devices are in a special relative orientation. All of these embodiments and modes of operation are available in modern smartphones.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the methods described in this disclosure</span>
+        <span itemprop="definition">operate in a local coordinate system that relies only on relative positioning information and does not require the tracking and storage of precise absolute positioning, thereby helping to guard privacy.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the two NFC devices</span>
+        <span itemprop="definition">have the option to exchange unique identifiers, such as a MAC address, allowing proximity data to be tagged to particular pairs of devices; the proximity information can be encrypted and stored on the individual devices and can be uploaded securely to a central database using standard network communications protocols.</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">unique identifiers</span>
+        <span itemprop="definition">such as a MAC address</span>
+        <meta itemprop="num_attr" content="0020">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 1</span>
+        <span itemprop="definition">is a schematic illustrating a transmitting cell phone that broadcasts an electromagnetic field to a receiving cell phone according to one embodiment of the disclosure.</span>
+        <meta itemprop="num_attr" content="0022">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 2</span>
+        <span itemprop="definition">is a schematic illustrating a transmitting cell phone with reference point at r T and magnetic-moment direction  â circumflex over (m) â  T that broadcasts an electromagnetic field to a receiving cell phone with reference point at r R and magnetic-moment direction  â circumflex over (m) â  R according to one embodiment of the disclosure.</span>
+        <meta itemprop="num_attr" content="0023">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 3</span>
+        <span itemprop="definition">is a schematic illustrating a rectangular coil in a planar geometry with current of strength I that produces a magnetic moment in the direction  â circumflex over (m) â  according to one embodiment of the disclosure.</span>
+        <meta itemprop="num_attr" content="0024">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 4</span>
+        <span itemprop="definition">is a schematic illustrating a moving transmitter and a moving receiver according to one embodiment of the disclosure.</span>
+        <meta itemprop="num_attr" content="0025">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the distance between two NFC devices</span>
+        <span itemprop="definition">may be estimated according to one embodiment by analyzing the recorded output of one device due to the known signal transmitted by the other.</span>
+        <meta itemprop="num_attr" content="0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">accelerometer data</span>
+        <span itemprop="definition">are used.</span>
+        <meta itemprop="num_attr" content="0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">gyroscopic data</span>
+        <span itemprop="definition">are used.</span>
+        <meta itemprop="num_attr" content="0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">accelerometer, gyroscopic, and magnetometer data</span>
+        <span itemprop="definition">are used.</span>
+        <meta itemprop="num_attr" content="0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the distances between multiple devices</span>
+        <span itemprop="definition">are determined simultaneously by encoding transmitted signals so that a receiver can distinguish between multiple transmitters.</span>
+        <meta itemprop="num_attr" content="0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Distance</span>
+        <span itemprop="definition">may further be estimated by another embodiment using an upper threshold for the received field as an estimation of whether or not two devices have been in close contact and by an embodiment using a simple formula that holds when the two devices are in a special relative orientation.</span>
+        <meta itemprop="num_attr" content="0026">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 1</span>
+        <span itemprop="definition">is a schematic illustrating one individual carrying a transmitter that broadcasts an electromagnetic field, which is recorded by a receiver carried by another individual.</span>
+        <meta itemprop="num_attr" content="0027">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 2</span>
+        <span itemprop="definition">shows the transmitter and receiver in a global (x, y, z) coordinate system.</span>
+        <meta itemprop="num_attr" content="0027">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the transmitter and receiver reference points</span>
+        <span itemprop="definition">are at r T and r R , respectively.</span>
+        <meta itemprop="num_attr" content="0027">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the corresponding directions of the magnetic moments of the transmitter and receiver</span>
+        <span itemprop="definition">are given by the unit vectors  â circumflex over (m) â  T and  â circumflex over (m) â  R , respectively.</span>
+        <meta itemprop="num_attr" content="0027">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">FIG. 3</span>
+        <span itemprop="definition">shows the direction indicated by the unit vector  â circumflex over (m) â  of the magnetic moment generated by a rectangular coil carrying electrical current I.</span>
+        <meta itemprop="num_attr" content="0027">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the signal induced in the receiver</span>
+        <span itemprop="definition">can be modeled as</span>
+        <meta itemprop="num_attr" content="0027">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">, r  â</span>
+        <span itemprop="definition">r  â  R - r  â  T r , ( E1 )</span>
+        <meta itemprop="num_attr" content="0028">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">K</span>
+        <span itemprop="definition">is a known scalar determined by the transmitter current and the known specifications of both the transmitter and receiver</span>
+        <meta itemprop="num_attr" content="0028">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">r</span>
+        <span itemprop="definition">is the distance between the transmitter and receiver reference points</span>
+        <meta itemprop="num_attr" content="0028">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">â circumflex over (r) â</span>
+        <span itemprop="definition">is the unit vector pointing from the reference point of the transmitter to the reference point of the receiver.</span>
+        <meta itemprop="num_attr" content="0028">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the phone</span>
+        <span itemprop="definition">knows its orientation and direction of movement at all times by continuously integrating results from gyroscope, accelerometers, and magnetometer.</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">â circumflex over (m) â  T (t) and  â circumflex over (m) â  R (t)</span>
+        <span itemprop="definition">are known.</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">r R (t) and r T (t)</span>
+        <span itemprop="definition">are known in the global coordinate system in FIG.</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">r R ( t )</span>
+        <span itemprop="definition">r RL ( t )&#43;( t â t 1 ) v R0 &#43; r R0</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">r T ( t )</span>
+        <span itemprop="definition">r TL ( t )&#43;( t â t 1 ) v T0 &#43; r T0</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">E2</span>
+        <span itemprop="definition">r TL (t) and r RL (t) are the known location vectors for the transmitter and receiver in local coordinate systems</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">v T0 and v R0</span>
+        <span itemprop="definition">are unknown time-independent velocity vectors</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">r T0 and r R0</span>
+        <span itemprop="definition">are unknown time-independent position vectors.</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the three rectangular components of each of the vectors v 0 and r 0</span>
+        <span itemprop="definition">are determined from an optimization procedure that minimizes the cost function</span>
+        <meta itemprop="num_attr" content="0030">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">Optimization of the cost function (E4)</span>
+        <span itemprop="definition">can be accomplished by standard methods of nonlinear optimization known to those skilled in the art. Such methods include but are not limited to nonlinear least-squares optimization by Gauss-Newton iteration, by Marquardt-Levenberg iteration, by Kalman filtering, and by gradient and conjugate gradient descent.</span>
+        <meta itemprop="num_attr" content="0032">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the output of the receiver I R</span>
+        <span itemprop="definition">is sufficient to determine the distance from</span>
+        <meta itemprop="num_attr" content="0033">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the methods described in this disclosure</span>
+        <span itemprop="definition">require the exchange of information between NFC devices, which can be accomplished using standard NFC communications protocols.</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">a minimum of information</span>
+        <span itemprop="definition">can be exchanged in order to ensure that privacy is protected. Privacy is further enhanced by the limited broadcast range of NFC devices, which typically extends to at most 10 meters.</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the information exchanged</span>
+        <span itemprop="definition">includes: a unique identifier (UI) for each device, such as the device&#39;s MAC address and the most recent information about its orientation and position necessary to solve the optimization problem (E4).</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">UI</span>
+        <span itemprop="definition">unique identifier</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">E4</span>
+        <span itemprop="definition">the most recent information about its orientation and position necessary to solve the optimization problem</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the exchange of UIs between devices</span>
+        <span itemprop="definition">allows an individual device to solve the optimization problem (E4) for each device in its vicinity separately.</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">the information stored on device D1</span>
+        <span itemprop="definition">can consist of the UI of each device that came within a prescribed distance (e.g., 2 meters or 6 feet) of D1 and a time stamp of when such close approach occurred.</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+      <li itemprop="definitions" itemscope repeat>
+        <span itemprop="subject">This information</span>
+        <span itemprop="definition">can be transmitted securely to a central database, using standard protocols for secure transmission; this same information can also be encrypted and stored securely on the device itself. All other information is securely deleted from the device&#39;s memory.</span>
+        <meta itemprop="num_attr" content="0035">
+      </li>
+    </ul>
+  </section>
+
+  
+
+
+  <section itemprop="abstract" itemscope>
+    <h2>Abstract</h2>
+    
+    <div itemprop="content" html><abstract mxw-id="PA618924897" lang="EN" source="national office" load-source="docdb">
+    <div class="abstract">This disclosure describes methods for contact tracing using information from devices for near-field communications (NFC), combined with auxiliary information from other (non-NFC) sensors such as inertial motion sensors (accelerometers and gyroscopes) and magnetometers. Methods using low-frequency NFC in the low MHz range of frequencies have the advantage of being robust in the presence of interfering objects, unlike other means of communication and proximity tracking using much higher frequency electromagnetic signals such as Bluetooth, GPS, and laser positioning. The method relies on unique features of NFC using inductively coupled devices to solve an optimization problem yielding the closest distance of approach of two NFC devices and can be adapted to handle multiple pairs of devices simultaneously. Location data is only required and generated in a local coordinate system (independent of absolute locations) which helps to preserve privacy. An individual device that determines the presence of another device within a prescribed distance (e.g., 2 meters or 6 feet) stores a unique identifier of the other device along with a timestamp in its memory in encrypted form and separately uploads this same information securely to a central database. The methods disclosed can also be used for other applications such as gaming where keeping track of contacts between participants in a local coordinate system, while maintaining privacy, is useful.</div>
+  </abstract>
+  </div>
+  </section>
+
+  <section itemprop="description" itemscope>
+    <h2>Description</h2>
+    
+    <div itemprop="content" html><div mxw-id="PDES424915871" lang="EN" load-source="patent-office" class="description">
+    
+    <heading id="h-0001">PRIORITY CLAIM</heading>
+    <div id="p-0002" num="0001" class="description-paragraph">This application claims priority to U.S. Provisional Patent Application No. 63/050,230 entitled âContact Tracing Solution to Combat the Spread of Infectious Diseases using Near Field Communicationsâ to Thorkild Hansen et al. and filed on Jul. 10, 2020.</div>
+    <heading id="h-0002">TECHNICAL FIELD</heading>
+    <div id="p-0003" num="0002" class="description-paragraph">This disclosure relates to Near Field Communication (âNFCâ). More particularly, the disclosure relates to a method and apparatus for determining the distance between two NFC devices, storing the information in encrypted format on the device, and relaying this information securely to a central database.</div>
+    <heading id="h-0003">BACKGROUND</heading>
+    <div id="p-0004" num="0003" class="description-paragraph">Near Field Communication (NFC) is a set of short-range wireless technologies that operate within the globally available and unlicensed radio frequency ISM band of 13.56 MHz. The air interface for NFC is standardized in ISO/IEC 18092/ECMA-340, âNear Field Communication Interface and Protocol-1 (NFCIP-1)â and ISO/IEC 21481/ECMA-352 âNear Field Communication Interface and Protocol-2 (NFCIP-2)â, available from www.ecma-international.org. NFC is an extension to Radio Frequency Identification (RFID), and the standards governing NFC originated in RFID.</div>
+    <div id="p-0005" num="0004" class="description-paragraph">NFC has a wide range of applications such as the following possibilities:</div>
+    <div id="p-0006" num="0005" class="description-paragraph">Mobile ticketing for public transport, movies, concerts, and sporting events.</div>
+    <div id="p-0007" num="0006" class="description-paragraph">Mobile payment where users can pay for goods using NFC-enabled devices, either NFC-enabled phones with stored data that act as a debit/credit payment card or NFC-powered contactless payment cards placed in proximity of readers.</div>
+    <div id="p-0008" num="0007" class="description-paragraph">Smart posters and objects: NFC-enabled phones can be used to read RFID tags on commercial establishments&#39; signs for information or promotions or scan outdoor billboards.</div>
+    <div id="p-0009" num="0008" class="description-paragraph">Bluetooth pairing: in the future, pairing of Bluetooth 2.1 devices with NFC support will be as easy as bringing them close together and accepting the pairing.</div>
+    <div id="p-0010" num="0009" class="description-paragraph">Peer to peer (P2P) payment: users can make payment to each other by tapping phones together and entering the amount of money to be transferred; identity documents: governments, employers, and other organizations will use NFC to power contactless identity cards. The typical range for P2P transitions is 1 meter.</div>
+    <div id="p-0011" num="0010" class="description-paragraph">Electronic keys: NFC-enabled phones can serve as replacements for physical car keys, house/office keys, and hotel room keys.</div>
+    <div id="p-0012" num="0011" class="description-paragraph">Health and safety applications, such as water monitoring; diet, diabetes, blood pressure, and alcohol consumption monitoring.</div>
+    <div id="p-0013" num="0012" class="description-paragraph">Home healthcare visits and campus safety check-ins.</div>
+    <div id="p-0014" num="0013" class="description-paragraph">Social networking: users can exchange contacts, resumes, and location-based personal networks using NFC-enabled phones or smart business cards and P2P file exchange.</div>
+    <div id="p-0015" num="0014" class="description-paragraph">Smart mobility: consumers can obtain access to shared car and bicycle services and search for rides with carpoolers; entertainment: consumers can use NFC-enabled phones to participate in multiplayer games, create and track athletic challenges and participate in urban games.</div>
+    <div id="p-0016" num="0015" class="description-paragraph">P2P communication in gaming.</div>
+    <div id="p-0017" num="0016" class="description-paragraph">Infectious diseases can spread from person to person through respiratory droplets produced when an infected person coughs or sneezes. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another. Contact tracing is a strategy to prevent a virus from spreading freely. With this strategy, one must identify and contact every individual who has been within a short distance of an infected person (typically about 2 meters or 6 feet).</div>
+    <div id="p-0018" num="0017" class="description-paragraph">Radio signals carrying the data to be transferred between NFC transceivers (a transceiver is a device such as a cell phone that can both transmit and receive) are not confined to the immediate vicinity of these transceivers. Studies have revealed that NFC communications can have a range of at least 5 meters which is sufficient to allow NFC transceivers to be used in close-contact tracing.</div>
+    <div id="p-0019" num="0018" class="description-paragraph">Seknion Inc. has developed technology related to security in wireless communications and radio frequency identification (RFID) disclosed in U.S. Pat. Nos. 7,398,078, 7,751,799, 7,456,726, 7,889,054, 7,605,684, and 8,909,141. This technology includes the use of NFC signals for the precise location of RFID tags and the use of advanced coil systems for achieving desired decay rates of NFC signals.</div>
+    <div id="p-0020" num="0019" class="description-paragraph">Cell phones with NFC capabilities, inertial motion sensors, such as three-axis accelerometers and three-axis gyroscopes, and magnetometers (magnetic compasses) are ubiquitous, thereby making them capable of recording and relaying the information that is required for widespread precision contact tracing. This disclosure describes a reliable system that takes into account both the coil orientations and the vector nature and decay rate of the NFC signals emitted by cell phones. Such a system is better than methods that rely on GPS, cell-phone positioning, and Bluetoothâwhich due to scattering and blockages of their high-frequency signals are prone to produce many false positives and false negatives. The NFC solution is less susceptible to scattering and blockages due to its much lower operating frequency. This solution can be designed to work in a local coordinate system that does not require tracking precise absolute locations of the NFC devices, thereby helping to guard privacy.</div>
+    <heading id="h-0004">BRIEF SUMMARY</heading>
+    <div id="p-0021" num="0020" class="description-paragraph">The distance between two NFC devices may be estimated to high accuracy by analyzing the recorded output of one device due to an NFC signal transmitted by the second device, provided that auxiliary information about the relative orientations of the two devices and about the direction vector from one device to the other is known from data supplied by other (non-NFC) sensors, such as accelerometers and gyroscopes (collectively known as internal motion sensors) and magnetometers. In fact, the auxiliary data supplied by these non-NFC sensors can under certain conditions be used to estimate the distance between the two devices directly, without the use of NFC signals, but such estimates are subject to systematic errors (âdriftâ) which can significantly degrade their accuracy. Exchanging NFC signals between the two devices improves the robustness and accuracy of the estimation algorithm and maintains accuracy. There are myriad ways to obtain and process the auxiliary information from other sensors. In one embodiment, inertial motion sensors are used to obtain this information. In another embodiment, magnetometer data are used. In other embodiments, various combinations of accelerometer, gyroscopic, and magnetometer data are used. In yet another embodiment, the distances between multiple devices are determined simultaneously by encoding transmitted signals so that a receiver can distinguish between multiple transmitters. In other embodiments: distance may be estimated using an upper threshold for the received field to determine whether or not two devices have been in close proximity, and distance may be estimated directly from the NFC signal when the two devices are in a special relative orientation. All of these embodiments and modes of operation are available in modern smartphones. The methods described in this disclosure operate in a local coordinate system that relies only on relative positioning information and does not require the tracking and storage of precise absolute positioning, thereby helping to guard privacy. In all of the embodiments, the two NFC devices have the option to exchange unique identifiers, such as a MAC address, allowing proximity data to be tagged to particular pairs of devices; the proximity information can be encrypted and stored on the individual devices and can be uploaded securely to a central database using standard network communications protocols. The methods described in this disclosure can be used in applications outside of contract tracing for infectious diseases such as gaming where keeping track of contacts between participants is useful.</div>
+    
+    
+    <description-of-drawings>
+      <heading id="h-0005">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+      <div id="p-0022" num="0021" class="description-paragraph">For a more complete understanding of the present disclosure, reference is now made to the following descriptions taken in conjunction with the accompanying drawings.</div>
+      <div id="p-0023" num="0022" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. <b>1</b> </figref> is a schematic illustrating a transmitting cell phone that broadcasts an electromagnetic field to a receiving cell phone according to one embodiment of the disclosure.</div>
+      <div id="p-0024" num="0023" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. <b>2</b> </figref> is a schematic illustrating a transmitting cell phone with reference point at <o>r</o> <sub>T </sub>and magnetic-moment direction {circumflex over (m)}<sub>T </sub>that broadcasts an electromagnetic field to a receiving cell phone with reference point at <o>r</o> <sub>R </sub>and magnetic-moment direction {circumflex over (m)}<sub>R </sub>according to one embodiment of the disclosure.</div>
+      <div id="p-0025" num="0024" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. <b>3</b> </figref> is a schematic illustrating a rectangular coil in a planar geometry with current of strength I that produces a magnetic moment in the direction {circumflex over (m)} according to one embodiment of the disclosure.</div>
+      <div id="p-0026" num="0025" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. <b>4</b> </figref> is a schematic illustrating a moving transmitter and a moving receiver according to one embodiment of the disclosure.</div>
+    </description-of-drawings>
+    
+    
+    <heading id="h-0006">DETAILED DESCRIPTION</heading>
+    <div id="p-0027" num="0026" class="description-paragraph">The distance between two NFC devices may be estimated according to one embodiment by analyzing the recorded output of one device due to the known signal transmitted by the other. In another embodiment, accelerometer data are used. In another embodiment, gyroscopic data are used. In another embodiment, accelerometer, gyroscopic, and magnetometer data are used. In yet another embodiment, the distances between multiple devices are determined simultaneously by encoding transmitted signals so that a receiver can distinguish between multiple transmitters. Distance may further be estimated by another embodiment using an upper threshold for the received field as an estimation of whether or not two devices have been in close contact and by an embodiment using a simple formula that holds when the two devices are in a special relative orientation.</div>
+    <div id="p-0028" num="0027" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. <b>1</b> </figref> is a schematic illustrating one individual carrying a transmitter that broadcasts an electromagnetic field, which is recorded by a receiver carried by another individual. <figref idrefs="DRAWINGS">FIG. <b>2</b> </figref> shows the transmitter and receiver in a global (x, y, z) coordinate system. The transmitter and receiver reference points are at <o>r</o> <sub>T </sub>and <o>r</o> <sub>R</sub>, respectively. The corresponding directions of the magnetic moments of the transmitter and receiver are given by the unit vectors {circumflex over (m)}<sub>T </sub>and {circumflex over (m)}<sub>R</sub>, respectively. <figref idrefs="DRAWINGS">FIG. <b>3</b> </figref> shows the direction indicated by the unit vector {circumflex over (m)} of the magnetic moment generated by a rectangular coil carrying electrical current I. According to one embodiment, the signal induced in the receiver can be modeled as</div>
+    <div id="p-0029" num="0028" class="description-paragraph"> <maths id="MATH-US-00001" num="00001"> <math overflow="scroll"> <mtable> <mtr> <mtd> <mrow> <mrow> <msub> <mi>I</mi> <mi>R</mi> </msub> <mo>=</mo> <mrow> <mi>K</mi> <mo>â¢</mo> <mfrac> <mrow> <mrow> <mn>3</mn> <mo>â¢</mo> <mrow> <mo>(</mo> <mrow> <msub> <mover accent="true"> <mi>m</mi> <mi>Ë</mi> </mover> <mi>T</mi> </msub> <mo>Â·</mo> <mover accent="true"> <mi>r</mi> <mi>Ë</mi> </mover> </mrow> <mo>)</mo> </mrow> <mo>â¢</mo> <mrow> <mo>(</mo> <mrow> <msub> <mover accent="true"> <mi>m</mi> <mi>Ë</mi> </mover> <mi>R</mi> </msub> <mo>Â·</mo> <mover accent="true"> <mi>r</mi> <mi>Ë</mi> </mover> </mrow> <mo>)</mo> </mrow> </mrow> <mo>-</mo> <mrow> <msub> <mover accent="true"> <mi>m</mi> <mi>Ë</mi> </mover> <mi>T</mi> </msub> <mo>Â·</mo> <msub> <mover accent="true"> <mi>m</mi> <mi>Ë</mi> </mover> <mi>R</mi> </msub> </mrow> </mrow> <mrow> <mn>4</mn> <mo>â¢</mo> <mi>Ï</mi> <mo>â¢</mo> <msup> <mi>r</mi> <mn>3</mn> </msup> </mrow> </mfrac> </mrow> </mrow> <mo>,</mo> <mrow> <mi>r</mi> <mo>=</mo> <mrow> <mo>|</mo> <mrow> <msub> <mover accent="true"> <mi>r</mi> <mi>Â¯</mi> </mover> <mi>R</mi> </msub> <mo>-</mo> <msub> <mover accent="true"> <mi>r</mi> <mi>Â¯</mi> </mover> <mi>T</mi> </msub> </mrow> <mo>|</mo> </mrow> </mrow> <mo>,</mo> <mrow> <mover accent="true"> <mi>r</mi> <mi>Ë</mi> </mover> <mo>=</mo> <mfrac> <mrow> <msub> <mover accent="true"> <mi>r</mi> <mi>Â¯</mi> </mover> <mi>R</mi> </msub> <mo>-</mo> <msub> <mover accent="true"> <mi>r</mi> <mi>Â¯</mi> </mover> <mi>T</mi> </msub> </mrow> <mi>r</mi> </mfrac> </mrow> <mo>,</mo> </mrow> </mtd> <mtd> <mrow> <mo>(</mo> <mi>E1</mi> <mo>)</mo> </mrow> </mtd> </mtr> </mtable> </math> </maths> <br/>
+where K is a known scalar determined by the transmitter current and the known specifications of both the transmitter and receiver; r is the distance between the transmitter and receiver reference points; and {circumflex over (r)} is the unit vector pointing from the reference point of the transmitter to the reference point of the receiver.
+</div>
+    <div id="p-0030" num="0029" class="description-paragraph">The unit vectors {circumflex over (m)}<sub>T </sub>and {circumflex over (m)}<sub>R </sub>can be expressed in terms of spherical coordinates (r, Î¸, Ï) as
+<br/>
+<i>{circumflex over (m)}</i> <sub>T</sub> <i>={circumflex over (x)}</i> cos Ï<sub>T </sub>sin Î¸<sub>T</sub> <i>+Å·</i> sin Ï<sub>T </sub>sin Î¸<sub>T</sub> <i>+{circumflex over (z)}</i> cos Î¸<sub>T </sub>
+<br/>
+and
+<br/>
+<i>{circumflex over (m)}</i> <sub>R</sub> <i>={circumflex over (x)}</i> cos Ï<sub>R </sub>sin Î¸<sub>R</sub> <i>+Å·</i> sin Ï<sub>R </sub>sin Î¸<sub>R</sub> <i>+{circumflex over (z)}</i> cos Î¸<sub>R </sub>
+<br/>
+where {circumflex over (x)}, Å·, and {circumflex over (z)} are the unit vectors of the rectangular (x, y, z) coordinate system.
+</div>
+    <div id="p-0031" num="0030" class="description-paragraph"> <figref idrefs="DRAWINGS">FIG. <b>4</b> </figref> is a schematic illustrating the top view of possible paths taken by the transmitter and receiver with positions and magnetic-moment directions shown at three different times t=t<sub>1</sub>, t=t<sub>2</sub>, and t=t<sub>3</sub>. The phone knows its orientation and direction of movement at all times by continuously integrating results from gyroscope, accelerometers, and magnetometer. Hence, {circumflex over (m)}<sub>T</sub>(t) and {circumflex over (m)}<sub>R</sub>(t) are known. Moreover, <o>r</o> <sub>R </sub>(t) and <o>r</o> <sub>T </sub>(t) are known in the global coordinate system in <figref idrefs="DRAWINGS">FIG. <b>2</b> </figref> up to constant velocity and position vectors:
+<br/>
+<i> <o>r</o> </i> <sub>R</sub>(<i>t</i>)=<i> <o>r</o> </i> <sub>RL</sub>(<i>t</i>)+(<i>tât</i> <sub>1</sub>)<i> <o>v</o> </i> <sub>R0</sub> <i>+<o>r</o> </i> <sub>R0</sub> <i>, <o>r</o> </i> <sub>T</sub>(<i>t</i>)=<i> <o>r</o> </i> <sub>TL</sub>(<i>t</i>)+(<i>tât</i> <sub>1</sub>)<i> <o>v</o> </i> <sub>T0</sub> <i>+<o>r</o> </i> <sub>T0</sub>,ââ(E2)
+<br/>
+where <o>r</o> <sub>TL</sub>(t) and <o>r</o> <sub>RL</sub>(t) are the known location vectors for the transmitter and receiver in local coordinate systems, <o>v</o> <sub>T0 </sub>and <o>v</o> <sub>R0 </sub>are unknown time-independent velocity vectors, and <o>r</o> <sub>T0 </sub>and <o>r</o> <sub>R0 </sub>are unknown time-independent position vectors. Therefore, <o>r</o> <sub>R</sub>(t)â<o>r</o> <sub>T</sub>(t) can be written in terms of a known time-dependent vector <o>r</o> <sub>K</sub>(t) as
+<br/>
+<i> <o>r</o> </i> <sub>R</sub>(<i>t</i>)â<i> <o>r</o> </i> <sub>T</sub>(<i>t</i>)=(<i>tât</i> <sub>1</sub>)<i> <o>v</o> </i> <sub>0</sub> <i>+<o>r</o> </i> <sub>0</sub> <i>+<o>r</o> </i> <sub>K</sub>(<i>t</i>)ââ(E3)
+<br/>
+where <o>r</o> <sub>0 </sub>and <o>v</o> <sub>0 </sub>are time-independent position and velocity vectors, which can be determined from the recorded receiver output I<sub>R</sub> <sup>r</sup>(t) as follows. Assume that I<sub>R</sub> <sup>r</sup>(t<sub>n</sub>), <o>r</o> <sub>K</sub>(t<sub>n</sub>), {circumflex over (m)}<sub>T </sub>(t<sub>n</sub>), and {circumflex over (m)}<sub>R</sub>(t<sub>n</sub>) are known for n=1,2,3, . . . , N, so that (E1) in combination with (E3) produce N equations for determining the six unknowns in the velocity and position vectors <o>v</o> <sub>0 </sub>and <o>r</o> <sub>0</sub>. In one embodiment of the invention, the three rectangular components of each of the vectors <o>v</o> <sub>0 </sub>and <o>r</o> <sub>0 </sub>are determined from an optimization procedure that minimizes the cost function
+</div>
+    <div id="p-0032" num="0031" class="description-paragraph"> <maths id="MATH-US-00002" num="00002"> <math overflow="scroll"> <mtable> <mtr> <mtd> <mrow> <mrow> <mrow> <mi>C</mi> <mo>â¡</mo> <mo>(</mo> <mrow> <msub> <mover accent="true"> <mi>v</mi> <mi>Â¯</mi> </mover> <mn>0</mn> </msub> <mo>,</mo> <msub> <mover accent="true"> <mi>r</mi> <mi>Â¯</mi> </mover> <mn>0</mn> </msub> </mrow> <mo>)</mo> </mrow> <mo>=</mo> <mrow> <munderover> <mo>â</mo> <mrow> <mi>n</mi> <mo>=</mo> <mn>1</mn> </mrow> <mi>N</mi> </munderover> <mrow> <semantics definitionURL="" encoding=""> <mo>â</mo> <annotation encoding="Mathematica">&#34;\[LeftBracketingBar]&#34;</annotation> </semantics> <mrow> <mrow> <msub> <mi>I</mi> <mi>R</mi> </msub> <mo>(</mo> <mrow> <msub> <mi>t</mi> <mi>n</mi> </msub> <mo>,</mo> <msub> <mover accent="true"> <mi>v</mi> <mi>Â¯</mi> </mover> <mn>0</mn> </msub> <mo>,</mo> <msub> <mover accent="true"> <mi>r</mi> <mi>Â¯</mi> </mover> <mn>0</mn> </msub> </mrow> <mo>)</mo> </mrow> <mo>-</mo> <mrow> <msubsup> <mi>I</mi> <mi>R</mi> <mi>r</mi> </msubsup> <mo>(</mo> <msub> <mi>t</mi> <mi>n</mi> </msub> <mo>)</mo> </mrow> </mrow> <semantics definitionURL="" encoding=""> <mo>â</mo> <annotation encoding="Mathematica">&#34;\[RightBracketingBar]&#34;</annotation> </semantics> </mrow> </mrow> </mrow> <mo>,</mo> </mrow> </mtd> <mtd> <mrow> <mo>(</mo> <mi>E4</mi> <mo>)</mo> </mrow> </mtd> </mtr> </mtable> </math> </maths> <br/>
+where I<sub>R</sub>(t<sub>n</sub>, <o>v</o> <sub>0</sub>, <o>r</o> <sub>0</sub>) is the model-receiver output (E1) with (E3) inserted. Once <o>v</o> <sub>0 </sub>and <o>r</o> <sub>0 </sub>are known, one can compute r(t)=|<o>r</o> <sub>R</sub>(t)â<o>r</o> <sub>T</sub>(t)| from (E3) and determine the minimum distance between the transmitter and receiver. In another embodiment, the vector <o>v</o> <sub>0 </sub>is zero. In yet another embodiment, the vector <o>r</o> <sub>0 </sub>is zero. In a further embodiment, the model constant K in (E3) is included as an unknown in the optimization of the cost function.
+</div>
+    <div id="p-0033" num="0032" class="description-paragraph">Optimization of the cost function (E4) can be accomplished by standard methods of nonlinear optimization known to those skilled in the art. Such methods include but are not limited to nonlinear least-squares optimization by Gauss-Newton iteration, by Marquardt-Levenberg iteration, by Kalman filtering, and by gradient and conjugate gradient descent.</div>
+    <div id="p-0034" num="0033" class="description-paragraph">A special case of (E1) occurs when either one of the magnetic moments {circumflex over (m)}<sub>T </sub>or {circumflex over (m)}<sub>R </sub>is perpendicular to the direction vector {circumflex over (r)} pointing from one device to the other (so that either {circumflex over (m)}<sub>T</sub>Â·{circumflex over (r)}=0 or {circumflex over (m)}<sub>R</sub>Â·{circumflex over (r)}=0). In this special case, the output of the receiver I<sub>R </sub>is sufficient to determine the distance from</div>
+    <div id="p-0035" num="0034" class="description-paragraph"> <maths id="MATH-US-00003" num="00003"> <math overflow="scroll"> <mtable> <mtr> <mtd> <mrow> <mi>r</mi> <mo>=</mo> <mrow> <msup> <mrow> <mo>(</mo> <mrow> <mfrac> <mrow> <mn>4</mn> <mo>â¢</mo> <mi>Ï</mi> </mrow> <mi>K</mi> </mfrac> <mo>â¢</mo> <mrow> <semantics definitionURL="" encoding=""> <mo>â</mo> <annotation encoding="Mathematica">&#34;\[LeftBracketingBar]&#34;</annotation> </semantics> <msub> <mi>I</mi> <mi>R</mi> </msub> <semantics definitionURL="" encoding=""> <mo>â</mo> <annotation encoding="Mathematica">&#34;\[RightBracketingBar]&#34;</annotation> </semantics> </mrow> </mrow> <mo>)</mo> </mrow> <mrow> <mn>1</mn> <mo>/</mo> <mn>3</mn> </mrow> </msup> <mo>.</mo> </mrow> </mrow> </mtd> <mtd> <mrow> <mo>(</mo> <mi>E5</mi> <mo>)</mo> </mrow> </mtd> </mtr> </mtable> </math> </maths> <br/>
+This direct formula can be used as a check on the results of the optimization of the cost function (E4).
+</div>
+    <div id="p-0036" num="0035" class="description-paragraph">The methods described in this disclosure require the exchange of information between NFC devices, which can be accomplished using standard NFC communications protocols. A minimum of information can be exchanged in order to ensure that privacy is protected. Privacy is further enhanced by the limited broadcast range of NFC devices, which typically extends to at most 10 meters. The information exchanged includes: a unique identifier (UI) for each device, such as the device&#39;s MAC address and the most recent information about its orientation and position necessary to solve the optimization problem (E4). The exchange of UIs between devices allows an individual device to solve the optimization problem (E4) for each device in its vicinity separately. Once a particular device, call it D1, has solved the optimization problem for other devices in its vicinity and determined the distances from itself to the other devices, the information stored on device D1 can consist of the UI of each device that came within a prescribed distance (e.g., 2 meters or 6 feet) of D1 and a time stamp of when such close approach occurred. This information can be transmitted securely to a central database, using standard protocols for secure transmission; this same information can also be encrypted and stored securely on the device itself. All other information is securely deleted from the device&#39;s memory.</div>
+    <div id="p-0037" num="0036" class="description-paragraph">The methods described in this disclosure can be further enhanced by using the methods described in the following U.S. patents: U.S. Pat. Nos. 7,398,078, 7,751,799, 7,456,726, 7,889,054, 7,605,684, and 8,909,141. This technology includes the use of advanced coil systems for achieving desired decay rates of NFC signals and broadcasting a combination of information signals and scramble or cloaking signals designed to limit the range at which NFC signals are decodable and thereby enhance the security of communications.</div>
+    
+  </div>
+  </div>
+  </section>
+
+  <section itemprop="claims" itemscope>
+    <h2>Claims (<span itemprop="count">10</span>)</h2>
+    
+    <div itemprop="content" html><div mxw-id="PCLM420762162" lang="EN" load-source="patent-office" class="claims">
+    <claim-statement>What is claimed is:</claim-statement>
+    <div class="claim"> <div id="CLM-00001" num="00001" class="claim">
+      <div class="claim-text">1. A method for determining distances between devices, comprising: transmitting a wireless signal by a first device; receiving said wireless signal by a second device; recording, by the second device, auxiliary information comprising the relative orientations of the first and second devices and the direction vectors from the first device to the second device and from the second device to the first device; and processing, by the second device, said received signal and said auxiliary information.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00002" num="00002" class="claim">
+      <div class="claim-text">2. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of recording said auxiliary information comprises the use of internal motion sensors.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00003" num="00003" class="claim">
+      <div class="claim-text">3. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of recording said auxiliary information comprises the use of magnetometers.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00004" num="00004" class="claim">
+      <div class="claim-text">4. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of transmitting said signal comprises transmitting an encoded signal.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00005" num="00005" class="claim">
+      <div class="claim-text">5. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which said devices exchange unique identifiers.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00006" num="00006" class="claim">
+      <div class="claim-text">6. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of processing said received signal and said auxiliary information comprises encryption.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00007" num="00007" class="claim">
+      <div class="claim-text">7. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of processing said received signal and said auxiliary information comprises uploading to a central database.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00008" num="00008" class="claim">
+      <div class="claim-text">8. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of processing said received signal and said auxiliary information comprises the use of fixed orientations of said devices.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00009" num="00009" class="claim">
+      <div class="claim-text">9. The method of <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of processing said received signal and said auxiliary information comprises the use of an upper threshold for said received signal.</div>
+    </div>
+    </div> <div class="claim-dependent"> <div id="CLM-00010" num="00010" class="claim">
+      <div class="claim-text">10. The method in <claim-ref idref="CLM-00001">claim 1</claim-ref>, in which the step of processing said received signal and said auxiliary information comprises minimizing a cost function.</div>
+    </div>
+  </div> </div>
+  </div>
+  </section>
+
+  <section itemprop="application" itemscope>
+
+    <section itemprop="metadata" itemscope>
+      <span itemprop="applicationNumber">US17/367,551</span>
+      <span itemprop="priorityDate">2021-07-05</span>
+      <span itemprop="filingDate">2021-07-05</span>
+      <span itemprop="title">Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       </span>
+      <span itemprop="ifiStatus">Active</span>
+      
+      <a href="/patent/US11722175B1/en">
+        <span itemprop="representativePublication">US11722175B1</span>
+        (<span itemprop="primaryLanguage">en</span>)
+      </a>
+    </section>
+
+    <h2>Priority Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="priorityApps" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US17/367,551</span>
+            
+            <a href="/patent/US11722175B1/en">
+              <span itemprop="representativePublication">US11722175B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2021-07-05</td>
+          <td itemprop="filingDate">2021-07-05</td>
+          <td itemprop="title">Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Applications Claiming Priority (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="appsClaimingPriority" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US17/367,551</span>
+            <a href="/patent/US11722175B1/en">
+              <span itemprop="representativePublication">US11722175B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2021-07-05</td>
+          <td itemprop="filingDate">2021-07-05</td>
+          <td itemprop="title">Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Publications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication Number</th>
+          <th>Publication Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="pubs" itemscope repeat>
+          <td>
+            <span itemprop="publicationNumber">US11722175B1</span>
+            
+            <span itemprop="thisPatent">true</span>
+            <a href="/patent/US11722175B1/en">
+              US11722175B1
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="publicationDate">2023-08-08</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <section itemprop="family" itemscope>
+    <h1>Family</h1>
+    <h2>ID=87522399</h2>
+
+    <h2>Family Applications (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Application Number</th>
+          <th>Title</th>
+          <th>Priority Date</th>
+          <th>Filing Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="applications" itemscope repeat>
+          <td>
+            <span itemprop="applicationNumber">US17/367,551</span>
+            <span itemprop="ifiStatus">Active</span>
+            
+            <a href="/patent/US11722175B1/en">
+              <span itemprop="representativePublication">US11722175B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+          <td itemprop="priorityDate">2021-07-05</td>
+          <td itemprop="filingDate">2021-07-05</td>
+          <td itemprop="title">Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Country Status (1)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="countryStatus" itemscope repeat>
+          <td>
+            <span itemprop="countryCode">US</span>
+            (<span itemprop="num">1</span>)
+            <meta itemprop="thisCountry" content="true">
+          </td>
+          <td>
+            <a href="/patent/US11722175B1/en">
+              <span itemprop="representativePublication">US11722175B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    
+
+    <h2>Citations (12)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20130002489A1/en">
+              <span itemprop="publicationNumber">US20130002489A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2010-03-17</td>
+          <td itemprop="publicationDate">2013-01-03</td>
+          <td>
+            <span itemprop="assigneeOriginal">Hisep Technology Ltd.</span>
+          </td>
+          <td itemprop="title">Direction finding system device and method 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US9344436B1/en">
+              <span itemprop="publicationNumber">US9344436B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-11-03</td>
+          <td itemprop="publicationDate">2016-05-17</td>
+          <td>
+            <span itemprop="assigneeOriginal">Fmr Llc</span>
+          </td>
+          <td itemprop="title">Proximity-based and user-based access control using wearable devices 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20160198300A1/en">
+              <span itemprop="publicationNumber">US20160198300A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-01-06</td>
+          <td itemprop="publicationDate">2016-07-07</td>
+          <td>
+            <span itemprop="assigneeOriginal">Shimon Rothschild</span>
+          </td>
+          <td itemprop="title">Mobile Device Distance Measurement and Object Identification by Utilizing the Rotation Vector and Accelerometer 
+     </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US9432361B2/en">
+              <span itemprop="publicationNumber">US9432361B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2013-03-13</td>
+          <td itemprop="publicationDate">2016-08-30</td>
+          <td>
+            <span itemprop="assigneeOriginal">Lookout, Inc.</span>
+          </td>
+          <td itemprop="title">System and method for changing security behavior of a device based on proximity to another device 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US9538336B2/en">
+              <span itemprop="publicationNumber">US9538336B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2012-12-28</td>
+          <td itemprop="publicationDate">2017-01-03</td>
+          <td>
+            <span itemprop="assigneeOriginal">Trimble Inc.</span>
+          </td>
+          <td itemprop="title">Performing data collection based on internal raw observables using a mobile data collection platform 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US9716964B1/en">
+              <span itemprop="publicationNumber">US9716964B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2016-04-26</td>
+          <td itemprop="publicationDate">2017-07-25</td>
+          <td>
+            <span itemprop="assigneeOriginal">Fmr Llc</span>
+          </td>
+          <td itemprop="title">Modifying operation of computing devices to mitigate short-term impaired judgment 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20180052216A1/en">
+              <span itemprop="publicationNumber">US20180052216A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-04-22</td>
+          <td itemprop="publicationDate">2018-02-22</td>
+          <td>
+            <span itemprop="assigneeOriginal">Hisep Technology Ltd.</span>
+          </td>
+          <td itemprop="title">Direction finding system device and method 
+     </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US10083319B2/en">
+              <span itemprop="publicationNumber">US10083319B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2014-02-24</td>
+          <td itemprop="publicationDate">2018-09-25</td>
+          <td>
+            <span itemprop="assigneeOriginal">Hewlett-Packard Development Company, L.P.</span>
+          </td>
+          <td itemprop="title">Privacy zone 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US10094663B2/en">
+              <span itemprop="publicationNumber">US10094663B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2014-04-03</td>
+          <td itemprop="publicationDate">2018-10-09</td>
+          <td>
+            <span itemprop="assigneeOriginal">Nokia Technologies Oy</span>
+          </td>
+          <td itemprop="title">Magnetometer apparatus and associated methods 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US10852917B2/en">
+              <span itemprop="publicationNumber">US10852917B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-06-30</td>
+          <td itemprop="publicationDate">2020-12-01</td>
+          <td>
+            <span itemprop="assigneeOriginal">Motorola Mobility Llc</span>
+          </td>
+          <td itemprop="title">Method and apparatus for controlling sharing of selected content between a portable communication device and a target device 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US20210136600A1/en">
+              <span itemprop="publicationNumber">US20210136600A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2019-10-30</td>
+          <td itemprop="publicationDate">2021-05-06</td>
+          <td>
+            <span itemprop="assigneeOriginal">Zebra Technologies Corporation</span>
+          </td>
+          <td itemprop="title">Sensor-assisted technique for rf power normalization in locationing applications 
+     </td>
+        </tr>
+        <tr itemprop="backwardReferencesOrig" itemscope repeat>
+          <td>
+            <a href="/patent/US11159932B1/en">
+              <span itemprop="publicationNumber">US11159932B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2016-09-16</td>
+          <td itemprop="publicationDate">2021-10-26</td>
+          <td>
+            <span itemprop="assigneeOriginal">Apple Inc.</span>
+          </td>
+          <td itemprop="title">Electronic devices with intuitive sharing capabilities 
+       </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+    <ul>
+      <li itemprop="applicationsByYear" itemscope repeat>
+        <span itemprop="year">2021</span>
+        <ul>
+          <li itemprop="application" itemscope repeat>
+            <span itemprop="filingDate">2021-07-05</span>
+            <span itemprop="countryCode">US</span>
+            <span itemprop="applicationNumber">US17/367,551</span>
+            <a href="/patent/US11722175B1/en"><span itemprop="documentId">patent/US11722175B1/en</span></a>
+            <span itemprop="legalStatusCat">active</span>
+            <span itemprop="legalStatus">Active</span>
+            <span itemprop="thisApp" content="true" bool></span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    </section>
+
+  <section>
+    <h2>Patent Citations (14)</h2>
+    <table>
+      <caption>* Cited by examiner, â  Cited by third party</caption>
+      <thead>
+        <tr>
+          <th>Publication number</th>
+          <th>Priority date</th>
+          <th>Publication date</th>
+          <th>Assignee</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20130002489A1/en">
+              <span itemprop="publicationNumber">US20130002489A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2010-03-17</td>
+          <td itemprop="publicationDate">2013-01-03</td>
+          <td><span itemprop="assigneeOriginal">Hisep Technology Ltd.</span></td>
+          <td itemprop="title">Direction finding system device and method 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US9538336B2/en">
+              <span itemprop="publicationNumber">US9538336B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2012-12-28</td>
+          <td itemprop="publicationDate">2017-01-03</td>
+          <td><span itemprop="assigneeOriginal">Trimble Inc.</span></td>
+          <td itemprop="title">Performing data collection based on internal raw observables using a mobile data collection platform 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US9432361B2/en">
+              <span itemprop="publicationNumber">US9432361B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2013-03-13</td>
+          <td itemprop="publicationDate">2016-08-30</td>
+          <td><span itemprop="assigneeOriginal">Lookout, Inc.</span></td>
+          <td itemprop="title">System and method for changing security behavior of a device based on proximity to another device 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US10083319B2/en">
+              <span itemprop="publicationNumber">US10083319B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2014-02-24</td>
+          <td itemprop="publicationDate">2018-09-25</td>
+          <td><span itemprop="assigneeOriginal">Hewlett-Packard Development Company, L.P.</span></td>
+          <td itemprop="title">Privacy zone 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US10094663B2/en">
+              <span itemprop="publicationNumber">US10094663B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2014-04-03</td>
+          <td itemprop="publicationDate">2018-10-09</td>
+          <td><span itemprop="assigneeOriginal">Nokia Technologies Oy</span></td>
+          <td itemprop="title">Magnetometer apparatus and associated methods 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20160198300A1/en">
+              <span itemprop="publicationNumber">US20160198300A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-01-06</td>
+          <td itemprop="publicationDate">2016-07-07</td>
+          <td><span itemprop="assigneeOriginal">Shimon Rothschild</span></td>
+          <td itemprop="title">Mobile Device Distance Measurement and Object Identification by Utilizing the Rotation Vector and Accelerometer 
+     </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20180052216A1/en">
+              <span itemprop="publicationNumber">US20180052216A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-04-22</td>
+          <td itemprop="publicationDate">2018-02-22</td>
+          <td><span itemprop="assigneeOriginal">Hisep Technology Ltd.</span></td>
+          <td itemprop="title">Direction finding system device and method 
+     </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US10852917B2/en">
+              <span itemprop="publicationNumber">US10852917B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-06-30</td>
+          <td itemprop="publicationDate">2020-12-01</td>
+          <td><span itemprop="assigneeOriginal">Motorola Mobility Llc</span></td>
+          <td itemprop="title">Method and apparatus for controlling sharing of selected content between a portable communication device and a target device 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US9824248B2/en">
+              <span itemprop="publicationNumber">US9824248B2</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-11-03</td>
+          <td itemprop="publicationDate">2017-11-21</td>
+          <td><span itemprop="assigneeOriginal">Fmr Llc</span></td>
+          <td itemprop="title">Proximity-based and user-based access control using wearable devices 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US9344436B1/en">
+              <span itemprop="publicationNumber">US9344436B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2015-11-03</td>
+          <td itemprop="publicationDate">2016-05-17</td>
+          <td><span itemprop="assigneeOriginal">Fmr Llc</span></td>
+          <td itemprop="title">Proximity-based and user-based access control using wearable devices 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US9716964B1/en">
+              <span itemprop="publicationNumber">US9716964B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2016-04-26</td>
+          <td itemprop="publicationDate">2017-07-25</td>
+          <td><span itemprop="assigneeOriginal">Fmr Llc</span></td>
+          <td itemprop="title">Modifying operation of computing devices to mitigate short-term impaired judgment 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US11159932B1/en">
+              <span itemprop="publicationNumber">US11159932B1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2016-09-16</td>
+          <td itemprop="publicationDate">2021-10-26</td>
+          <td><span itemprop="assigneeOriginal">Apple Inc.</span></td>
+          <td itemprop="title">Electronic devices with intuitive sharing capabilities 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20220038883A1/en">
+              <span itemprop="publicationNumber">US20220038883A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2016-09-16</td>
+          <td itemprop="publicationDate">2022-02-03</td>
+          <td><span itemprop="assigneeOriginal">Apple Inc.</span></td>
+          <td itemprop="title">Electronic Devices with Intuitive Sharing Capabilities 
+       </td>
+        </tr>
+        <tr itemprop="backwardReferences" itemscope repeat>
+          <td>
+            <a href="/patent/US20210136600A1/en">
+              <span itemprop="publicationNumber">US20210136600A1</span>
+              (<span itemprop="primaryLanguage">en</span>)
+            </a>
+            <span itemprop="examinerCited">*</span>
+            
+          </td>
+          <td itemprop="priorityDate">2019-10-30</td>
+          <td itemprop="publicationDate">2021-05-06</td>
+          <td><span itemprop="assigneeOriginal">Zebra Technologies Corporation</span></td>
+          <td itemprop="title">Sensor-assisted technique for rf power normalization in locationing applications 
+     </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  
+
+  
+
+  
+
+  <section>
+    <h2>Similar Documents</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Publication</th>
+          <th>Publication Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="12368458282185364104">
+              <a href="/scholar/12368458282185364104"><span itemprop="scholarAuthors">Deng et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2013">2013</time>
+            
+          </td>
+          <td itemprop="title">Situation and development tendency of indoor positioning</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="13989521787241319016">
+              <a href="/scholar/13989521787241319016"><span itemprop="scholarAuthors">Abrudan et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2015">2015</time>
+            
+          </td>
+          <td itemprop="title">Distortion rejecting magneto-inductive three-dimensional localization (MagLoc)</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="1250565923420821697">
+              <a href="/scholar/1250565923420821697"><span itemprop="scholarAuthors">Wang et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2018">2018</time>
+            
+          </td>
+          <td itemprop="title">Light positioning: A high-accuracy visible light indoor positioning system based on attitude identification and propagation model</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="2714463977009961928">
+              <a href="/scholar/2714463977009961928"><span itemprop="scholarAuthors">Usman et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2018">2018</time>
+            
+          </td>
+          <td itemprop="title">Technologies and solutions for location-based services in smart cities: Past, present, and future</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="15431313872888235345">
+              <a href="/scholar/15431313872888235345"><span itemprop="scholarAuthors">Opperman et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2011">2011</time>
+            
+          </td>
+          <td itemprop="title">Using NFC-enabled phones for remote data acquisition and digital control</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101522393B1/en">
+                <span itemprop="publicationNumber">KR101522393B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2015-05-21">2015-05-21</time>
+            
+            
+          </td>
+          <td itemprop="title">Method, mobile terminal and system for providing different authentication values according to contact method of mobile terminal 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101318042B1/en">
+                <span itemprop="publicationNumber">KR101318042B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2013-10-14">2013-10-14</time>
+            
+            
+          </td>
+          <td itemprop="title">A system and a method for preventing a lost child 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US8004461B2/en">
+                <span itemprop="publicationNumber">US8004461B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2011-08-23">2011-08-23</time>
+            
+            
+          </td>
+          <td itemprop="title">Multi-functional system for extending and modulating 130dBm frequency of GPS terminal for life jacket 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="6531484049643329466">
+              <a href="/scholar/6531484049643329466"><span itemprop="scholarAuthors">Bai</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2016">2016</time>
+            
+          </td>
+          <td itemprop="title">Development of a WiFi and RFID based indoor location and mobility tracking system</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR20130020061A/en">
+                <span itemprop="publicationNumber">KR20130020061A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2013-02-27">2013-02-27</time>
+            
+            
+          </td>
+          <td itemprop="title">System, mobile communication terminal and method for transferring information 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="14623344697060413175">
+              <a href="/scholar/14623344697060413175"><span itemprop="scholarAuthors">Schindhelm et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2011">2011</time>
+            
+          </td>
+          <td itemprop="title">Overview of indoor positioning technologies for context aware AAL applications</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="12460755630834847917">
+              <a href="/scholar/12460755630834847917"><span itemprop="scholarAuthors">Wilkinson</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">Digital terrestrial tracking: The future of surveillance</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CA2650239A1/en">
+                <span itemprop="publicationNumber">CA2650239A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2007-11-08">2007-11-08</time>
+            
+            
+          </td>
+          <td itemprop="title">Complex wireless communication system 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US11722175B1/en">
+                <span itemprop="publicationNumber">US11722175B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2023-08-08">2023-08-08</time>
+            
+            
+          </td>
+          <td itemprop="title">Contact tracing solution to combat the spread of infectious diseases using near field communications 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US9412090B2/en">
+                <span itemprop="publicationNumber">US9412090B2</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2016-08-09">2016-08-09</time>
+            
+            
+          </td>
+          <td itemprop="title">System, mobile communication terminal and method for providing information 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101814606B1/en">
+                <span itemprop="publicationNumber">KR101814606B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2018-01-05">2018-01-05</time>
+            
+            
+          </td>
+          <td itemprop="title">Method and apparatus for controlling device 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/US20210348949A1/en">
+                <span itemprop="publicationNumber">US20210348949A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2021-11-11">2021-11-11</time>
+            
+            
+          </td>
+          <td itemprop="title">Devices, Systems and Methods for Sensing and Tracing Proximity Contacts 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="4411110749800128288">
+              <a href="/scholar/4411110749800128288"><span itemprop="scholarAuthors">Jain et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2013">2013</time>
+            
+          </td>
+          <td itemprop="title">A study on Indoor navigation techniques using smartphones</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/CN106405494A/en">
+                <span itemprop="publicationNumber">CN106405494A</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2017-02-15">2017-02-15</time>
+            
+            
+          </td>
+          <td itemprop="title">Indoor prisoner positioning system based on fingerprint identification 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101708124B1/en">
+                <span itemprop="publicationNumber">KR101708124B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2017-02-17">2017-02-17</time>
+            
+            
+          </td>
+          <td itemprop="title">Method for geo-fencing using route of beacon trakked by crowd sourcing 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/WO2022228059A1/en">
+                <span itemprop="publicationNumber">WO2022228059A1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2022-11-03">2022-11-03</time>
+            
+            
+          </td>
+          <td itemprop="title">Positioning method and apparatus 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="17731227274020406196">
+              <a href="/scholar/17731227274020406196"><span itemprop="scholarAuthors">Mostafa et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2023">2023</time>
+            
+          </td>
+          <td itemprop="title">A survey of indoor localization systems in multi-floor environments</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            <meta itemprop="isPatent" content="true">
+              <a href="/patent/KR101768685B1/en">
+                <span itemprop="publicationNumber">KR101768685B1</span>
+                (<span itemprop="primaryLanguage">en</span>)
+              </a>
+            
+            
+          </td>
+          <td>
+            <time itemprop="publicationDate" datetime="2017-08-16">2017-08-16</time>
+            
+            
+          </td>
+          <td itemprop="title">Apparatus And Computer-Readable Recording Medium for Inferencing Location 
+       </td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="10300051944167620449">
+              <a href="/scholar/10300051944167620449"><span itemprop="scholarAuthors">Dai et al.</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2020">2020</time>
+            
+          </td>
+          <td itemprop="title">A power-efficient BLE augmented GNSS approach to site-specific navigation</td>
+        </tr>
+        <tr itemprop="similarDocuments" itemscope repeat>
+          <td>
+            
+            <meta itemprop="isScholar" content="true">
+              <meta itemprop="scholarID" content="9747504194455487110">
+              <a href="/scholar/9747504194455487110"><span itemprop="scholarAuthors">Sole</span></a>
+            
+          </td>
+          <td>
+            
+            <time itemprop="publicationDate" datetime="2014">2014</time>
+            
+          </td>
+          <td itemprop="title">Communication technologies and data processing for safety</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Legal Events</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Code</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2021-07-05">2021-07-05</time></td>
+          <td itemprop="code">FEPP</td>
+          <td itemprop="title">Fee payment procedure</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">ENTITY STATUS SET TO UNDISCOUNTED (ORIGINAL EVENT CODE: BIG.); ENTITY STATUS OF PATENT OWNER: SMALL ENTITY</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2021-07-16">2021-07-16</time></td>
+          <td itemprop="code">FEPP</td>
+          <td itemprop="title">Fee payment procedure</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">ENTITY STATUS SET TO SMALL (ORIGINAL EVENT CODE: SMAL); ENTITY STATUS OF PATENT OWNER: SMALL ENTITY</span>
+            </p>
+          </td>
+        </tr>
+        <tr itemprop="legalEvents" itemscope repeat>
+          <td><time itemprop="date" datetime="2023-07-19">2023-07-19</time></td>
+          <td itemprop="code">STCF</td>
+          <td itemprop="title">Information on status: patent grant</td>
+          <td>
+            <p itemprop="attributes" itemscope repeat>
+              <strong itemprop="label">Free format text</strong>:
+              <span itemprop="value">PATENTED CASE</span>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</article>
+
+    </search-app>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/api.js"></script>
+    <script type="text/javascript" src="//www.gstatic.com/feedback/js/help/prod/service/lazy.min.js"></script>
+    <script type="text/javascript">
+      if (window.help && window.help.service) {
+        helpApi = window.help.service.Lazy.create(0, {apiKey: 'AIzaSyDTEI_0tLX4varJ7bwK8aT-eOI5qr3BmyI', locale: 'en-US'});
+        window.requestedSurveys = new Set();
+        window.requestSurvey = function(triggerId) {
+          if (window.requestedSurveys.has(triggerId)) {
+            return;
+          }
+          window.requestedSurveys.add(triggerId);
+          helpApi.requestSurvey({
+            triggerId: triggerId,
+            enableTestingMode: false,
+            callback: (requestSurveyCallbackParam) => {
+              if (!requestSurveyCallbackParam.surveyData) {
+                return;
+              }
+              helpApi.presentSurvey({
+                productData: {
+                  productVersion: window.version,
+                  customData: {
+                    "experiments": "72459301,72474719",
+                  },
+                },
+                surveyData: requestSurveyCallbackParam.surveyData,
+                colorScheme: 1,
+                customZIndex: 10000,
+              });
+            }
+          });
+        };
+
+        window.requestSurvey('YXTwAsvoW0kedxbuTdH0RArc9VhT');
+      }
+    </script>
+    <script src="/sw/null_loader.js"></script>
+  </body>
+</html>
