@@ -1,0 +1,857 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><style id="xml-viewer-style">/* Copyright 2014 The Chromium Authors
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+:root {
+  color-scheme: light dark;
+}
+
+div.header {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  div.header {
+    border-bottom: 2px solid white;
+  }
+}
+
+div.folder &gt; div.hidden {
+    display:none;
+}
+
+div.folder &gt; span.hidden {
+    display:none;
+}
+
+.pretty-print {
+    margin-top: 1em;
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#webkit-xml-viewer-source-xml {
+    display: none;
+}
+
+.opened {
+    margin-left: 1em;
+}
+
+.comment {
+    white-space: pre;
+}
+
+.folder-button {
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    vertical-align: bottom;
+}
+
+.fold {
+    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L8 0 L4 7 Z'/&gt;&lt;/svg&gt;");
+    height: 10px;
+}
+
+.open {
+    background: url("data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'&gt;&lt;path d='M0 0 L0 8 L7 4 Z'/&gt;&lt;/svg&gt;");
+    height: 10px;
+}
+</style></head><body><div id="webkit-xml-viewer-source-xml"><us-patent-grant xmlns="" lang="EN" dtd-version="v4.5 2014-04-03" file="US10057534-20180821.XML" status="PRODUCTION" id="us-patent-grant" country="US" date-produced="20180806" date-publ="20180821">
+<us-bibliographic-data-grant>
+<publication-reference>
+<document-id>
+<country>US</country>
+<doc-number>10057534</doc-number>
+<kind>B2</kind>
+<date>20180821</date>
+</document-id>
+</publication-reference>
+<application-reference appl-type="utility">
+<document-id>
+<country>US</country>
+<doc-number>14634460</doc-number>
+<date>20150227</date>
+</document-id>
+</application-reference>
+<us-application-series-code>14</us-application-series-code>
+<us-term-of-grant>
+<us-term-extension>172</us-term-extension>
+</us-term-of-grant>
+<classifications-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>5</main-group>
+<subgroup>64</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20180821</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+<classification-ipcr>
+<ipc-version-indicator><date>20060101</date></ipc-version-indicator>
+<classification-level>A</classification-level>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>5</main-group>
+<subgroup>655</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20180821</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+</classification-ipcr>
+</classifications-ipcr>
+<classifications-cpc>
+<main-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>5</main-group>
+<subgroup>655</subgroup>
+<symbol-position>F</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20180821</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</main-cpc>
+<further-cpc>
+<classification-cpc>
+<cpc-version-indicator><date>20130101</date></cpc-version-indicator>
+<section>H</section>
+<class>04</class>
+<subclass>N</subclass>
+<main-group>5</main-group>
+<subgroup>64</subgroup>
+<symbol-position>L</symbol-position>
+<classification-value>I</classification-value>
+<action-date><date>20180821</date></action-date>
+<generating-office><country>US</country></generating-office>
+<classification-status>B</classification-status>
+<classification-data-source>H</classification-data-source>
+<scheme-origination-code>C</scheme-origination-code>
+</classification-cpc>
+</further-cpc>
+</classifications-cpc>
+<invention-title id="d2e53">Hybrid modular device</invention-title>
+<us-references-cited>
+<us-citation>
+<patcit num="00001">
+<document-id>
+<country>US</country>
+<doc-number>4281909</doc-number>
+<kind>A</kind>
+<name>Ishibashi</name>
+<date>19810800</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-cpc-text>G03B 17/02</classification-cpc-text>
+<classification-national><country>US</country><main-classification>348 E5024</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00002">
+<document-id>
+<country>US</country>
+<doc-number>8525924</doc-number>
+<kind>B2</kind>
+<name>Jannard</name>
+<date>20130900</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-cpc-text>H04N 5/2251</classification-cpc-text>
+<classification-national><country>US</country><main-classification>348372</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00003">
+<document-id>
+<country>US</country>
+<doc-number>2004/0259587</doc-number>
+<kind>A1</kind>
+<name>Chadha</name>
+<date>20041200</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-cpc-text>H04M 1/0254</classification-cpc-text>
+<classification-national><country>US</country><main-classification>4555501</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00004">
+<document-id>
+<country>US</country>
+<doc-number>2014/0337621</doc-number>
+<kind>A1</kind>
+<name>Nakhimov</name>
+<date>20141100</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-cpc-text>G06F 1/163</classification-cpc-text>
+<classification-national><country>US</country><main-classification>713168</main-classification></classification-national>
+</us-citation>
+<us-citation>
+<patcit num="00005">
+<document-id>
+<country>US</country>
+<doc-number>2016/0100758</doc-number>
+<kind>A1</kind>
+<name>Jeong</name>
+<date>20160400</date>
+</document-id>
+</patcit>
+<category>cited by examiner</category>
+<classification-cpc-text>G06F 1/1684</classification-cpc-text>
+<classification-national><country>US</country><main-classification>34087007</main-classification></classification-national>
+</us-citation>
+</us-references-cited>
+<number-of-claims>2</number-of-claims>
+<us-exemplary-claim>1</us-exemplary-claim>
+<us-field-of-classification-search>
+<classification-national>
+<country>US</country>
+<main-classification>348839</main-classification>
+</classification-national>
+<classification-cpc-text>H04N 5/655</classification-cpc-text>
+<classification-cpc-text>H04N 5/64</classification-cpc-text>
+</us-field-of-classification-search>
+<figures>
+<number-of-drawing-sheets>3</number-of-drawing-sheets>
+<number-of-figures>3</number-of-figures>
+</figures>
+<us-related-documents>
+<related-publication>
+<document-id>
+<country>US</country>
+<doc-number>20160255301</doc-number>
+<kind>A1</kind>
+<date>20160901</date>
+</document-id>
+</related-publication>
+</us-related-documents>
+<us-parties>
+<us-applicants>
+<us-applicant sequence="001" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Vadura</last-name>
+<first-name>Dennis</first-name>
+<address>
+<city>Trabuco Canyon</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="002" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Tsai</last-name>
+<first-name>Wei Kang</first-name>
+<address>
+<city>Irvine</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+<us-applicant sequence="003" app-type="applicant" designation="us-only">
+<addressbook>
+<last-name>Nelson</last-name>
+<first-name>Timothy Hayden</first-name>
+<address>
+<city>Orange</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+<residence>
+<country>US</country>
+</residence>
+</us-applicant>
+</us-applicants>
+<inventors>
+<inventor sequence="001" designation="us-only">
+<addressbook>
+<last-name>Vadura</last-name>
+<first-name>Dennis</first-name>
+<address>
+<city>Trabuco Canyon</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="002" designation="us-only">
+<addressbook>
+<last-name>Tsai</last-name>
+<first-name>Wei Kang</first-name>
+<address>
+<city>Irvine</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+<inventor sequence="003" designation="us-only">
+<addressbook>
+<last-name>Nelson</last-name>
+<first-name>Timothy Hayden</first-name>
+<address>
+<city>Orange</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</inventor>
+</inventors>
+</us-parties>
+<assignees>
+<assignee>
+<addressbook>
+<orgname>Badu Networks, Inc.</orgname>
+<role>02</role>
+<address>
+<city>Irvine</city>
+<state>CA</state>
+<country>US</country>
+</address>
+</addressbook>
+</assignee>
+</assignees>
+<examiners>
+<primary-examiner>
+<last-name>Torrente</last-name>
+<first-name>Richard</first-name>
+<department>2485</department>
+</primary-examiner>
+</examiners>
+</us-bibliographic-data-grant>
+<abstract id="abstract">
+<p id="p-0001" num="0000">A hybrid modular appliance or electronic device allows a user to plug a number of snap-together component modules of different types into a base device, so that the resulting assembly performs a custom-designed functionality. With no attached component modules, the base device functions as a standalone consumer or office appliance. At least one component module has its functionality not supporting the functionality of the base device, thereby allowing the resulting assembly a hybrid device. Examples of the hybrid modular devices include a TV-Wi-Fi-router, and a TV-storage-DVR-Wi-Fi-router. A hybrid modular device can serve as a videoconference device, a music jukebox, or a home theater unit.</p>
+</abstract>
+<drawings id="DRAWINGS">
+<figure id="Fig-EMI-D00000" num="00000">
+<img id="EMI-D00000" he="123.53mm" wi="186.10mm" file="US10057534-20180821-D00000.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00001" num="00001">
+<img id="EMI-D00001" he="131.40mm" wi="185.25mm" file="US10057534-20180821-D00001.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00002" num="00002">
+<img id="EMI-D00002" he="226.40mm" wi="166.37mm" file="US10057534-20180821-D00002.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+<figure id="Fig-EMI-D00003" num="00003">
+<img id="EMI-D00003" he="141.65mm" wi="161.88mm" file="US10057534-20180821-D00003.TIF" alt="embedded image" img-content="drawing" img-format="tif"/>
+</figure>
+</drawings>
+<description id="description">
+<?BRFSUM description="Brief Summary" end="lead"?>
+<heading id="h-0001" level="1">CROSS REFERENCES TO RELATED APPLICATIONS</heading>
+<p id="p-0002" num="0001">The present Application claims priority to U.S. Provisional Patent Application No. 61/946,648, entitled HYBRID MODULAR DEVICE, filed on Feb. 28, 2014, which is hereby incorporated by reference in its entirety.</p>
+<heading id="h-0002" level="1">FIELD OF THE INVENTION</heading>
+<p id="p-0003" num="0002">The present invention relates in general to electronic devices, and in particular, to consumer electronic devices that automates, facilitates, or makes convenient the daily activities in a home or small office.</p>
+<heading id="h-0003" level="1">BACKGROUND OF THE INVENTION</heading>
+<p id="p-0004" num="0003">Consumer electronic devices are essential for the modern home or small office. The range of application is broad as it includes entertainment, communications, personal productivity, energy management, home safety and security, health and wellness, convenience and automation, etc.</p>
+<p id="p-0005" num="0004">A problem with consumer electronic devices today is the short product life. Invariably, soon after a product has been purchased, a newer and better version of the same product is available in the market. Further, the vendor that manufactured the original product may stop the support or abandon the development of the original product.</p>
+<p id="p-0006" num="0005">Most device makers have adopted the business model of planned obsolescence. Most devices are now designed to last only for a limited useful life. The manufacturer makes sure that, when a device is broken, the repair cost is about the same as the replacement cost of a newer and better device.</p>
+<p id="p-0007" num="0006">Today, a consumer replaces a complete device simply because a “desirable or needed” functionality, which might only be 10% of the overall functionality, is damaged. As the life expectancy of all consumer products has declined steadily, most consumers regularly replace their devices at various frequencies. In the end, consumers pay more for their lifestyle.</p>
+<p id="p-0008" num="0007">A second concern for consumer electronic devices is the lack of customization. As every home or small office is unique in its own way, the requirement for matching equipment varies greatly. However, for volumetric efficiency, device makers offer only a limited choice of features, in the effort to drive down the manufacturing cost. As a result, a consumer often buys a product with redundant or even unwanted features.</p>
+<p id="p-0009" num="0008">On the other hand, customized products are available only at significantly higher prices. The middle-of-the-road solution is modular consumer devices. A modular device is hardware reconfigurable and allows an end user to insert and assemble different hardware modules on a fixed platform, in order that the final assembly performs a customized set of functions.</p>
+<p id="p-0010" num="0009">Possibly, the first modular consumer electronic device is the modular handset planned by Google under the Ara project. With an Ara base platform, a user is allowed to build a wireless communicator with a collection of snap-together parts. For example, a customer who prefers a hard keyboard will be able to add one. Another customer who desires a high-end camera will be able to upgrade to a specialty camera.</p>
+<p id="p-0011" num="0010">However, there are simply no modular consumer electronic devices in the market other than the proposed Google handsets. For example, there are no modular TV sets that allow insertion of a digital camera, a temperature sensor, or other custom parts into a flat-panel display. There are also no custom buildable Wi-Fi routers, which can be expanded to include a TV tuner, a cable-TV modem, or a wireless data modem connecting to a mobile carrier.</p>
+<p id="p-0012" num="0011">In fact, there is no fundamental difference between a modular TV set and a modular Wi-Fi router from a modular device point of view. Both are hybrid modular consumer devices. A TV set as a modular base can be inserted with a modular Wi-Fi router; a Wi-Fi router as a modular base can also be inserted with a modular TV set. In one aspect, both can be considered as a special case of a hybrid modular consumer appliance in the home or small office. However, such a generic and hybrid modular device simply does not exist today.</p>
+<p id="p-0013" num="0012">Therefore, there is a need for a hybrid modular and customizable consumer electronic device in the home of small office, which is not a wireless communicator.</p>
+<heading id="h-0004" level="1">BRIEF SUMMARY OF THE INVENTION</heading>
+<p id="p-0014" num="0013">Aspects of the present invention relate to a plurality of hybrid modular consumer electronic devices, called hybrid modular devices (HMDs), wherein each said HMD comprises a base platform and a plurality of inserted snap-together functional modules so that the resulting assembly performs a custom-designed functionality.</p>
+<p id="p-0015" num="0014">In accordance with one aspect of the present invention, an HMD may not be a handheld device.</p>
+<p id="p-0016" num="0015">In accordance with one aspect of the present invention, the base platform of an HMD comprises at least a housing, or a physical platform, or a physical backplane, or a physical skeleton frame that provides the mechanical support for holding all the inserted modules of the HMD together, through mechanical constraints, with or without the help of magnetic force.</p>
+<p id="p-0017" num="0016">In accordance with one aspect of the present invention, the base platform of an HMD may be integrated with a plurality of component interconnect structures, which allow modular devices to be attached (inserted) to the base platform. Examples of interconnect structures include power strips, peripheral component expansion buses, audio or video input-output sockets, serial-bus or parallel-bus interfaces, etc.</p>
+<p id="p-0018" num="0017">Additionally in accordance with an embodiment of the present invention, an HMD base platform further comprises a computer, and an optional video subsystem. The computer acts as the controller of the component interconnect structures housed on the base platform. The computer may comprise CPUs (central processing units), GPUs (graphics processing units), memory, and a boot device. The optional video subsystem may be a physical device separate from the said computer, or be embedded in the said computer, housed on the HMD base platform.</p>
+<p id="p-0019" num="0018">Additionally in accordance with an embodiment of the present invention, physical modules that may be plugged into an HMD base platform may include, but are not restricted to the following list: computer system, Wi-Fi AP (access point), Wi-Fi terminal, wireless modem, wired-line modem, memory device (hard drive or solid-state drive), camera, speaker, tuner, DVR (digital video recorder), IoT (Internet-of-things) device, smart-home device, set-top box, display unit, sensor of all kinds, positioning device (such as GPS or global positioning system receiver), battery unit, game controller, antenna system, standalone consumer appliance, human interface device, etc.</p>
+<?BRFSUM description="Brief Summary" end="tail"?>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?>
+<description-of-drawings>
+<heading id="h-0005" level="1">BRIEF DESCRIPTION OF THE DRAWINGS</heading>
+<p id="p-0020" num="0019">The above and other objects and features in accordance with the present invention will become apparent from the following descriptions of embodiments in conjunction with the accompanying drawings, and in which:</p>
+<p id="p-0021" num="0020"><figref idref="DRAWINGS">FIG. 1</figref> is a simplified illustration that shows component-interconnect structures attached to the base platform of an HMD, in accordance with an embodiment of the present invention.</p>
+<p id="p-0022" num="0021"><figref idref="DRAWINGS">FIG. 2</figref> is a simplified illustration of an HMD, which is a hybrid TV set with a Wi-Fi router and computer storage, in accordance with an embodiment of the present invention.</p>
+<p id="p-0023" num="0022"><figref idref="DRAWINGS">FIG. 3</figref> is a simplified illustration of an HMD, which is a hybrid Wi-Fi router with multiple modems and a server computer, in accordance with an embodiment of the present invention.</p>
+</description-of-drawings>
+<?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?>
+<?DETDESC description="Detailed Description" end="lead"?>
+<heading id="h-0006" level="1">DETAILED DESCRIPTION OF EXEMPLARY EMBODIMENTS</heading>
+<p id="p-0024" num="0023">A system and apparatus to function as a hybrid modular appliance or electronic device, called a hybrid modular device (HMD), allows a user to plug a plurality of snap-together modules of different types into a base platform, so that the resulting assembly performs a custom-designed functionality.</p>
+<p id="p-0025" num="0024">For simplicity of description, the words “module” and “modular device” will be used interchangeably in the rest of the present specification.</p>
+<p id="p-0026" num="0025">In an HMD, the base platform is integrated with open-standard (or proprietary) interfaces. These interfaces allow the modules complying with open standards (or proprietary specifications) to be inserted (or plugged) into the base platform. As a result, the inserted modules function as integrated subsystems of the overall HMD. Any vendor is allowed to provide standards-complying (or proprietary) modular devices to be plugged into an HMD. Each pluggable module can be swapped out and replaced by an end user, without special tools or a static-free environment.</p>
+<p id="p-0027" num="0026">A major consideration for HMDs as commercial products is the tradeoff between volumetric efficiency in manufacturing, and the degree of customizability. The per-unit cost of manufacturing drops exponentially as the volume is expanded. However, as the volume is expanded, customizability of the product is also reduced.</p>
+<p id="p-0028" num="0027">Therefore, in accordance with one aspect of the present invention, the base platform of an HMD may, as an option, further comprise a fully functional and standalone consumer appliance. In accordance with an embodiment of the present invention, an HMD TV set is a fully standalone TV set with its own display unit, a TV core system, and perhaps a TV tuner. The HMD TV is different from an ordinary TV in that its bezel is integrated with additional racks or sockets that allow snap-together modules to be plugged into the frame of the TV.</p>
+<p id="p-0029" num="0028">In accordance with one aspect of the present invention, an HMD may comprise both modular and non-modular components. In accordance with an embodiment of the present invention, an HMD Wi-Fi router is a fully standalone Wi-Fi access point and router that allows additional modular components to be plugged into the frame of the router.</p>
+<p id="p-0030" num="0029">In accordance with one aspect of the present invention, an HMD may not be a handheld device.</p>
+<p id="p-0031" num="0030">In an HMD, the base platform comprises at least a physical frame or housing, which is integrated with component interconnect structures housed in the frame. These structures are exposed on an outside surface of the base platform so that external modules can be plugged into the base platform. Therefore, these component-connecting structures are also referred to as the external interconnect structures.</p>
+<p id="p-0032" num="0031">In accordance with one aspect of the present invention, the base platform of an HMD comprises at least a housing, or a physical platform, or a physical backplane, or a physical skeleton frame that provides the mechanical support for holding all the inserted modules of the HMD together, through mechanical constraints. Optionally, magnetic force is activated once a module device is snapped into a connector socket in the base platform.</p>
+<p id="p-0033" num="0032">In accordance with one aspect of the present invention, the external interconnect structures integrated in the base platform of an HMD may comprise power strips, peripheral component expansion buses, audio or video input/output structures, serial-bus interfaces, parallel-bus interfaces, etc.</p>
+<p id="p-0034" num="0033">In accordance with one aspect of the present invention, the base platform of an HMD may further comprise an internal data interconnect structure, which is coupled with the external interconnect structures, which are integrated into the base platform. The internal interconnect structure may comprise a system bus, or a switch fabric, or a combination thereof. An object of the internal interconnect structure is to provide data paths for various component subsystems of an HMD to communicate with one another.</p>
+<p id="p-0035" num="0034">In accordance with an embodiment of the current invention, as of this writing, the internal interconnect structure allows data transfer at a speed which is at least 10 Gb/s (gigabits per second).</p>
+<p id="p-0036" num="0035">In accordance with an embodiment of the present invention, as of this writing, the external component interconnect structures in an HMD may include the interfaces complying with the PCI (Peripheral Component Interconnect) series of standards, for example, PCIe (PCI Express); the interconnect structures may further include the interfaces complying with the HDMI (High-Definition Multimedia Interface) series of standards; the interconnect structures may further include the interfaces complying with the USB (universal serial bus) series of standards; the connect structures may further include the interfaces complying with the SATA (Serial Advanced Technology Attachment) series of standards for connecting a hard drive or an SSD (solid-state drive) to a computer; the interconnect structures may further include a display port (such as a mini DisplayPort or MDP).</p>
+<p id="p-0037" num="0036">In accordance with one aspect of the present invention, an HMD base platform further comprises a computer, and an optional video subsystem. The computer acts as the controller of both the internal data-interconnect structure and the external component interconnect structures housed on the base platform. The computer may comprise CPUs (central processing units), GPUs (graphics processing units), memory, and a boot device. The optional video subsystem may be a physical device separate from the said computer, or be embedded in the said computer, which is housed in the HMD base platform.</p>
+<p id="p-0038" num="0037">Additionally in accordance with an embodiment of the present invention, physical modules that may be plugged into an HMD base platform may include, but are not restricted to the following list: computer system, Wi-Fi AP (access point), Wi-Fi terminal, wireless modem, wired-line modem, memory device (hard-drive or solid state device), camera, speaker, tuner, DVR (digital video recorder), IoT (Internet-of-things) device, smart-home device, set-top box, display unit, sensor of all kinds, positioning device, game controller, antenna system, standalone consumer electronic appliance, human interface device (HID), etc.</p>
+<p id="p-0039" num="0038">In accordance with one aspect of the present invention, HMDs can be classified into generic and non-generic HMDs. A non-generic HMD is one that the base platform comprises a standalone consumer appliance. In accordance with one aspect of the present invention, hybrid TVs form a major class of non-generic HMDs—the base platform of a hybrid HMD TV further comprises a TV set. In accordance with another aspect of the present invention, hybrid Wi-Fi APs form another major class of non-generic HMDs—the base platform of a hybrid HMD Wi-Fi AP further comprises a Wi-Fi AP.</p>
+<p id="p-0040" num="0039">One exemplary embodiment of an HMD is an HMD TV-Router: this is an HMD with a TV set as the base platform, with a modular Wi-Fi router unit pluggable into the display or base of the TV set.</p>
+<p id="p-0041" num="0040">Another exemplary embodiment of an HMD is an HMD TV-DVR-Router: this is an HMD with a TV set as the base platform, with a modular Wi-Fi router unit, a modular DVR unit, both pluggable into the display or the base of the TV set.</p>
+<p id="p-0042" num="0041">Yet another exemplary embodiment of an HMD is an HMD TV-router-storage: this is an HMD with a TV set as the base platform, with a modular Wi-Fi router unit, a modular network-attached storage (NAS) server unit, both pluggable into the display or the base of the TV set.</p>
+<p id="p-0043" num="0042">Yet another exemplary embodiment of an HMD is an HMD router-DVR-storage: this is an HMD with a Wi-Fi router as the base platform, with a modular network DVR unit, a modular NAS server unit, a modular Cable-TV modem unit, a modular mobile data modem unit, a modular fixed broadband data modem unit, a modular display unit, a modular keyboard unit, a modular Internet acceleration unit, all pluggable into the frame of the router base.</p>
+<p id="p-0044" num="0043">In yet another exemplary embodiment, an HMD TV set is used as a transformer. In the living room, an HMD TV set is configured as a home theater unit, while another HMD TV is configured as a videoconferencing device in the home office, and yet another HMD TV is set up as a music jukebox in the den.</p>
+<p id="p-0045" num="0044">In all these embodiments, the choices are not limiting. The number of attached (plugged or inserted) modules is also not limiting.</p>
+<p id="p-0046" num="0045">Reference is now made to <figref idref="DRAWINGS">FIG. 1</figref>, which is a simplified illustration showing the external component interconnect structures integrated within the base platform of an HMD, in accordance with an embodiment of the present invention. The surface of a base platform <b>100</b> contains a power strip <b>110</b>, a PCIe (PCI Express) interface bus <b>160</b>, a number of HDMI sockets <b>150</b>, and a number of USB sockets <b>140</b>, a SMARC (smart mobility architecture) card socket <b>120</b>, and another serial bus <b>130</b>.</p>
+<p id="p-0047" num="0046"><figref idref="DRAWINGS">FIG. 2</figref> is a simplified illustration of an HMD <b>200</b>, which is a hybrid TV set with <b>4</b> plugged module devices. In the figure, the backside of a TV display unit is employed as the base platform. In the top half of <figref idref="DRAWINGS">FIG. 2, 4</figref> slots <b>210</b> for inserting modular devices are shown. In the bottom half of <figref idref="DRAWINGS">FIG. 2</figref>, a modular Wi-Fi AP <b>220</b>, a modular wireless modem <b>240</b>, a modular storage device <b>250</b>, and a modular NAS server unit <b>230</b> are plugged into the HMD TV set <b>200</b>.</p>
+<p id="p-0048" num="0047"><figref idref="DRAWINGS">FIG. 3</figref> is a simplified illustration of an HMD <b>300</b>, which is a hybrid Wi-Fi router with multiple modems and a server computer, in accordance with an embodiment of the present invention. A modular wireless modem <b>310</b> connecting to a mobile data operator, another modular wireless (Bluetooth) modem <b>320</b>, a modular wired-line broadband modem <b>330</b>, and a modular server computer <b>340</b>, are plugged into the base platform (the top side) of the HMD Wi-Fi router <b>300</b>.</p>
+<p id="p-0049" num="0048">In the foregoing specification, the invention has been described with reference to specific exemplary embodiments thereof It will, however, be evident that various modification and changes may be made to the specific exemplary embodiments without departing from the broader spirit and scope of the invention as set forth in the appended claims. Accordingly, the specification and drawings are to be regarded in an illustrative rather than a restrictive sense.</p>
+<?DETDESC description="Detailed Description" end="tail"?>
+</description>
+<us-claim-statement>What is claimed is:</us-claim-statement>
+<claims id="claims">
+<claim id="CLM-00001" num="00001">
+<claim-text>1. A reconfigurable hybrid TV set comprising:
+<claim-text>a base device;</claim-text>
+<claim-text>a TV core system integrated into the base device, wherein the core system supports a TV set without being a display screen and/or TV tuner;</claim-text>
+<claim-text>a plurality of component modules, each of said module attachable on a surface of the base device, each said module becoming a module subsystem of the hybrid device upon attachment to the base device, wherein said attachable modules include a device that accelerates Internet traffic through the hybrid TV set;</claim-text>
+<claim-text>a plurality of module interconnect structures integrated into the base device, each said module interconnect structure allowing a number of said modules to be snapped onto or plugged into the module interconnect structure;</claim-text>
+<claim-text>a data interconnect structure integrated into the base device, the data interconnect structure coupled with the plurality of module interconnect structures; and</claim-text>
+<claim-text>a computing unit comprising at least a CPU (central processing unit) or a GPU (graphics processing unit), and a memory unit, wherein</claim-text>
+<claim-text>the computing unit is integrated into the base device, and is configured to control all data communication between any 2 of the module subsystems, and between the base device and any of the module subsystems.</claim-text>
+</claim-text>
+</claim>
+<claim id="CLM-00002" num="00002">
+<claim-text>2. A reconfigurable hybrid TV box comprising:
+<claim-text>a base device;</claim-text>
+<claim-text>a TV box system integrated into the base device, wherein the TV box supports streaming movies or TV shows from a service to a TV set;</claim-text>
+<claim-text>a plurality of component modules, each of said module attachable on a surface of the base device, each said module becoming a module subsystem of the hybrid device upon attachment to the base device, wherein said attachable modules include a device that accelerates Internet traffic through the hybrid TV box;</claim-text>
+<claim-text>a plurality of module interconnect structures integrated into the base device, each said module interconnect structure allowing a number of said modules to be snapped onto or plugged into the module interconnect structure;</claim-text>
+<claim-text>a data interconnect structure integrated into the base device, the data interconnect structure coupled with the plurality of module interconnect structures; and</claim-text>
+<claim-text>a computing unit comprising at least a CPU or a GPU, and a memory unit, wherein</claim-text>
+<claim-text>the computing unit is integrated into the base device, and is configured to control all data communication between any 2 of the module subsystems, and between the base device and any of the module subsystem.</claim-text>
+</claim-text>
+</claim>
+</claims>
+</us-patent-grant></div><div class="header"><span>This XML file does not appear to have any style information associated with it. The document tree is shown below.</span><br /></div><div class="pretty-print"><div class="folder" id="folder0"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-patent-grant<span class="html-attribute"> <span class="html-attribute-name">lang</span>="<span class="html-attribute-value">EN</span>"</span><span class="html-attribute"> <span class="html-attribute-name">dtd-version</span>="<span class="html-attribute-value">v4.5 2014-04-03</span>"</span><span class="html-attribute"> <span class="html-attribute-name">file</span>="<span class="html-attribute-value">US10057534-20180821.XML</span>"</span><span class="html-attribute"> <span class="html-attribute-name">status</span>="<span class="html-attribute-value">PRODUCTION</span>"</span><span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">us-patent-grant</span>"</span><span class="html-attribute"> <span class="html-attribute-name">country</span>="<span class="html-attribute-value">US</span>"</span><span class="html-attribute"> <span class="html-attribute-name">date-produced</span>="<span class="html-attribute-value">20180806</span>"</span><span class="html-attribute"> <span class="html-attribute-name">date-publ</span>="<span class="html-attribute-value">20180821</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder1"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-bibliographic-data-grant&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder2"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;publication-reference&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder3"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>10057534</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>B2</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20180821</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/publication-reference&gt;</span></div></div><span>
+</span><div class="folder" id="folder4"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;application-reference<span class="html-attribute"> <span class="html-attribute-name">appl-type</span>="<span class="html-attribute-value">utility</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder5"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>14634460</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20150227</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/application-reference&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;us-application-series-code&gt;</span><span>14</span><span class="html-tag">&lt;/us-application-series-code&gt;</span></div><span>
+</span><div class="folder" id="folder6"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-term-of-grant&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;us-term-extension&gt;</span><span>172</span><span class="html-tag">&lt;/us-term-extension&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-term-of-grant&gt;</span></div></div><span>
+</span><div class="folder" id="folder7"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classifications-ipcr&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder8"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-ipcr&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder9"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;ipc-version-indicator&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20060101</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/ipc-version-indicator&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-level&gt;</span><span>A</span><span class="html-tag">&lt;/classification-level&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;section&gt;</span><span>H</span><span class="html-tag">&lt;/section&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;class&gt;</span><span>04</span><span class="html-tag">&lt;/class&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subclass&gt;</span><span>N</span><span class="html-tag">&lt;/subclass&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;main-group&gt;</span><span>5</span><span class="html-tag">&lt;/main-group&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subgroup&gt;</span><span>64</span><span class="html-tag">&lt;/subgroup&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;symbol-position&gt;</span><span>F</span><span class="html-tag">&lt;/symbol-position&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-value&gt;</span><span>I</span><span class="html-tag">&lt;/classification-value&gt;</span></div><span>
+</span><div class="folder" id="folder10"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;action-date&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20180821</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/action-date&gt;</span></div></div><span>
+</span><div class="folder" id="folder11"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;generating-office&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/generating-office&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-status&gt;</span><span>B</span><span class="html-tag">&lt;/classification-status&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-data-source&gt;</span><span>H</span><span class="html-tag">&lt;/classification-data-source&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-ipcr&gt;</span></div></div><span>
+</span><div class="folder" id="folder12"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-ipcr&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder13"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;ipc-version-indicator&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20060101</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/ipc-version-indicator&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-level&gt;</span><span>A</span><span class="html-tag">&lt;/classification-level&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;section&gt;</span><span>H</span><span class="html-tag">&lt;/section&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;class&gt;</span><span>04</span><span class="html-tag">&lt;/class&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subclass&gt;</span><span>N</span><span class="html-tag">&lt;/subclass&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;main-group&gt;</span><span>5</span><span class="html-tag">&lt;/main-group&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subgroup&gt;</span><span>655</span><span class="html-tag">&lt;/subgroup&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;symbol-position&gt;</span><span>L</span><span class="html-tag">&lt;/symbol-position&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-value&gt;</span><span>I</span><span class="html-tag">&lt;/classification-value&gt;</span></div><span>
+</span><div class="folder" id="folder14"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;action-date&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20180821</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/action-date&gt;</span></div></div><span>
+</span><div class="folder" id="folder15"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;generating-office&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/generating-office&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-status&gt;</span><span>B</span><span class="html-tag">&lt;/classification-status&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-data-source&gt;</span><span>H</span><span class="html-tag">&lt;/classification-data-source&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-ipcr&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classifications-ipcr&gt;</span></div></div><span>
+</span><div class="folder" id="folder16"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classifications-cpc&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder17"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;main-cpc&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder18"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-cpc&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder19"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;cpc-version-indicator&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20130101</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/cpc-version-indicator&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;section&gt;</span><span>H</span><span class="html-tag">&lt;/section&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;class&gt;</span><span>04</span><span class="html-tag">&lt;/class&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subclass&gt;</span><span>N</span><span class="html-tag">&lt;/subclass&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;main-group&gt;</span><span>5</span><span class="html-tag">&lt;/main-group&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subgroup&gt;</span><span>655</span><span class="html-tag">&lt;/subgroup&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;symbol-position&gt;</span><span>F</span><span class="html-tag">&lt;/symbol-position&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-value&gt;</span><span>I</span><span class="html-tag">&lt;/classification-value&gt;</span></div><span>
+</span><div class="folder" id="folder20"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;action-date&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20180821</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/action-date&gt;</span></div></div><span>
+</span><div class="folder" id="folder21"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;generating-office&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/generating-office&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-status&gt;</span><span>B</span><span class="html-tag">&lt;/classification-status&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-data-source&gt;</span><span>H</span><span class="html-tag">&lt;/classification-data-source&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;scheme-origination-code&gt;</span><span>C</span><span class="html-tag">&lt;/scheme-origination-code&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-cpc&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/main-cpc&gt;</span></div></div><span>
+</span><div class="folder" id="folder22"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;further-cpc&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder23"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-cpc&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder24"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;cpc-version-indicator&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20130101</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/cpc-version-indicator&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;section&gt;</span><span>H</span><span class="html-tag">&lt;/section&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;class&gt;</span><span>04</span><span class="html-tag">&lt;/class&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subclass&gt;</span><span>N</span><span class="html-tag">&lt;/subclass&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;main-group&gt;</span><span>5</span><span class="html-tag">&lt;/main-group&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;subgroup&gt;</span><span>64</span><span class="html-tag">&lt;/subgroup&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;symbol-position&gt;</span><span>L</span><span class="html-tag">&lt;/symbol-position&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-value&gt;</span><span>I</span><span class="html-tag">&lt;/classification-value&gt;</span></div><span>
+</span><div class="folder" id="folder25"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;action-date&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20180821</span><span class="html-tag">&lt;/date&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/action-date&gt;</span></div></div><span>
+</span><div class="folder" id="folder26"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;generating-office&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/generating-office&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-status&gt;</span><span>B</span><span class="html-tag">&lt;/classification-status&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-data-source&gt;</span><span>H</span><span class="html-tag">&lt;/classification-data-source&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;scheme-origination-code&gt;</span><span>C</span><span class="html-tag">&lt;/scheme-origination-code&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-cpc&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/further-cpc&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classifications-cpc&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;invention-title<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">d2e53</span>"</span>&gt;</span><span>Hybrid modular device</span><span class="html-tag">&lt;/invention-title&gt;</span></div><span>
+</span><div class="folder" id="folder27"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-references-cited&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder28"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-citation&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder29"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;patcit<span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00001</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder30"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>4281909</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>A</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;name&gt;</span><span>Ishibashi</span><span class="html-tag">&lt;/name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>19810800</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/patcit&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;category&gt;</span><span>cited by examiner</span><span class="html-tag">&lt;/category&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>G03B 17/02</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span><div class="folder" id="folder31"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-national&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><div class="line"><span class="html-tag">&lt;main-classification&gt;</span><span>348 E5024</span><span class="html-tag">&lt;/main-classification&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-national&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-citation&gt;</span></div></div><span>
+</span><div class="folder" id="folder32"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-citation&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder33"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;patcit<span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00002</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder34"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>8525924</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>B2</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;name&gt;</span><span>Jannard</span><span class="html-tag">&lt;/name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20130900</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/patcit&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;category&gt;</span><span>cited by examiner</span><span class="html-tag">&lt;/category&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>H04N 5/2251</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span><div class="folder" id="folder35"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-national&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><div class="line"><span class="html-tag">&lt;main-classification&gt;</span><span>348372</span><span class="html-tag">&lt;/main-classification&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-national&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-citation&gt;</span></div></div><span>
+</span><div class="folder" id="folder36"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-citation&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder37"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;patcit<span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00003</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder38"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>2004/0259587</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>A1</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;name&gt;</span><span>Chadha</span><span class="html-tag">&lt;/name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20041200</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/patcit&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;category&gt;</span><span>cited by examiner</span><span class="html-tag">&lt;/category&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>H04M 1/0254</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span><div class="folder" id="folder39"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-national&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><div class="line"><span class="html-tag">&lt;main-classification&gt;</span><span>4555501</span><span class="html-tag">&lt;/main-classification&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-national&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-citation&gt;</span></div></div><span>
+</span><div class="folder" id="folder40"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-citation&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder41"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;patcit<span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00004</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder42"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>2014/0337621</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>A1</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;name&gt;</span><span>Nakhimov</span><span class="html-tag">&lt;/name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20141100</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/patcit&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;category&gt;</span><span>cited by examiner</span><span class="html-tag">&lt;/category&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>G06F 1/163</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span><div class="folder" id="folder43"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-national&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><div class="line"><span class="html-tag">&lt;main-classification&gt;</span><span>713168</span><span class="html-tag">&lt;/main-classification&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-national&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-citation&gt;</span></div></div><span>
+</span><div class="folder" id="folder44"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-citation&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder45"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;patcit<span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00005</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder46"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>2016/0100758</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>A1</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;name&gt;</span><span>Jeong</span><span class="html-tag">&lt;/name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20160400</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/patcit&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;category&gt;</span><span>cited by examiner</span><span class="html-tag">&lt;/category&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>G06F 1/1684</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span><div class="folder" id="folder47"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-national&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><div class="line"><span class="html-tag">&lt;main-classification&gt;</span><span>34087007</span><span class="html-tag">&lt;/main-classification&gt;</span></div></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-national&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-citation&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-references-cited&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;number-of-claims&gt;</span><span>2</span><span class="html-tag">&lt;/number-of-claims&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;us-exemplary-claim&gt;</span><span>1</span><span class="html-tag">&lt;/us-exemplary-claim&gt;</span></div><span>
+</span><div class="folder" id="folder48"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-field-of-classification-search&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder49"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;classification-national&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;main-classification&gt;</span><span>348839</span><span class="html-tag">&lt;/main-classification&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/classification-national&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>H04N 5/655</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;classification-cpc-text&gt;</span><span>H04N 5/64</span><span class="html-tag">&lt;/classification-cpc-text&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-field-of-classification-search&gt;</span></div></div><span>
+</span><div class="folder" id="folder50"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;figures&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;number-of-drawing-sheets&gt;</span><span>3</span><span class="html-tag">&lt;/number-of-drawing-sheets&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;number-of-figures&gt;</span><span>3</span><span class="html-tag">&lt;/number-of-figures&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/figures&gt;</span></div></div><span>
+</span><div class="folder" id="folder51"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-related-documents&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder52"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;related-publication&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder53"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;document-id&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;doc-number&gt;</span><span>20160255301</span><span class="html-tag">&lt;/doc-number&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;kind&gt;</span><span>A1</span><span class="html-tag">&lt;/kind&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;date&gt;</span><span>20160901</span><span class="html-tag">&lt;/date&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/document-id&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/related-publication&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-related-documents&gt;</span></div></div><span>
+</span><div class="folder" id="folder54"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-parties&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder55"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-applicants&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder56"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-applicant<span class="html-attribute"> <span class="html-attribute-name">sequence</span>="<span class="html-attribute-value">001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">app-type</span>="<span class="html-attribute-value">applicant</span>"</span><span class="html-attribute"> <span class="html-attribute-name">designation</span>="<span class="html-attribute-value">us-only</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder57"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Vadura</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Dennis</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="folder" id="folder58"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Trabuco Canyon</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span><div class="folder" id="folder59"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;residence&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/residence&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-applicant&gt;</span></div></div><span>
+</span><div class="folder" id="folder60"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-applicant<span class="html-attribute"> <span class="html-attribute-name">sequence</span>="<span class="html-attribute-value">002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">app-type</span>="<span class="html-attribute-value">applicant</span>"</span><span class="html-attribute"> <span class="html-attribute-name">designation</span>="<span class="html-attribute-value">us-only</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder61"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Tsai</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Wei Kang</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="folder" id="folder62"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Irvine</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span><div class="folder" id="folder63"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;residence&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/residence&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-applicant&gt;</span></div></div><span>
+</span><div class="folder" id="folder64"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;us-applicant<span class="html-attribute"> <span class="html-attribute-name">sequence</span>="<span class="html-attribute-value">003</span>"</span><span class="html-attribute"> <span class="html-attribute-name">app-type</span>="<span class="html-attribute-value">applicant</span>"</span><span class="html-attribute"> <span class="html-attribute-name">designation</span>="<span class="html-attribute-value">us-only</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder65"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Nelson</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Timothy Hayden</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="folder" id="folder66"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Orange</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span><div class="folder" id="folder67"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;residence&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/residence&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-applicant&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-applicants&gt;</span></div></div><span>
+</span><div class="folder" id="folder68"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;inventors&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder69"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;inventor<span class="html-attribute"> <span class="html-attribute-name">sequence</span>="<span class="html-attribute-value">001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">designation</span>="<span class="html-attribute-value">us-only</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder70"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Vadura</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Dennis</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="folder" id="folder71"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Trabuco Canyon</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/inventor&gt;</span></div></div><span>
+</span><div class="folder" id="folder72"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;inventor<span class="html-attribute"> <span class="html-attribute-name">sequence</span>="<span class="html-attribute-value">002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">designation</span>="<span class="html-attribute-value">us-only</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder73"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Tsai</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Wei Kang</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="folder" id="folder74"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Irvine</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/inventor&gt;</span></div></div><span>
+</span><div class="folder" id="folder75"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;inventor<span class="html-attribute"> <span class="html-attribute-name">sequence</span>="<span class="html-attribute-value">003</span>"</span><span class="html-attribute"> <span class="html-attribute-name">designation</span>="<span class="html-attribute-value">us-only</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder76"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Nelson</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Timothy Hayden</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="folder" id="folder77"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Orange</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/inventor&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/inventors&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-parties&gt;</span></div></div><span>
+</span><div class="folder" id="folder78"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;assignees&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder79"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;assignee&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder80"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;addressbook&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;orgname&gt;</span><span>Badu Networks, Inc.</span><span class="html-tag">&lt;/orgname&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;role&gt;</span><span>02</span><span class="html-tag">&lt;/role&gt;</span></div><span>
+</span><div class="folder" id="folder81"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;address&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;city&gt;</span><span>Irvine</span><span class="html-tag">&lt;/city&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;state&gt;</span><span>CA</span><span class="html-tag">&lt;/state&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;country&gt;</span><span>US</span><span class="html-tag">&lt;/country&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/address&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/addressbook&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/assignee&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/assignees&gt;</span></div></div><span>
+</span><div class="folder" id="folder82"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;examiners&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder83"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;primary-examiner&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;last-name&gt;</span><span>Torrente</span><span class="html-tag">&lt;/last-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;first-name&gt;</span><span>Richard</span><span class="html-tag">&lt;/first-name&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;department&gt;</span><span>2485</span><span class="html-tag">&lt;/department&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/primary-examiner&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/examiners&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-bibliographic-data-grant&gt;</span></div></div><span>
+</span><div class="folder" id="folder84"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;abstract<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">abstract</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0000</span>"</span>&gt;</span><span>A hybrid modular appliance or electronic device allows a user to plug a number of snap-together component modules of different types into a base device, so that the resulting assembly performs a custom-designed functionality. With no attached component modules, the base device functions as a standalone consumer or office appliance. At least one component module has its functionality not supporting the functionality of the base device, thereby allowing the resulting assembly a hybrid device. Examples of the hybrid modular devices include a TV-Wi-Fi-router, and a TV-storage-DVR-Wi-Fi-router. A hybrid modular device can serve as a videoconference device, a music jukebox, or a home theater unit.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/abstract&gt;</span></div></div><span>
+</span><div class="folder" id="folder85"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;drawings<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder86"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;figure<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Fig-EMI-D00000</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00000</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;img<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">EMI-D00000</span>"</span><span class="html-attribute"> <span class="html-attribute-name">he</span>="<span class="html-attribute-value">123.53mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">wi</span>="<span class="html-attribute-value">186.10mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">file</span>="<span class="html-attribute-value">US10057534-20180821-D00000.TIF</span>"</span><span class="html-attribute"> <span class="html-attribute-name">alt</span>="<span class="html-attribute-value">embedded image</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-content</span>="<span class="html-attribute-value">drawing</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-format</span>="<span class="html-attribute-value">tif</span>"</span>/&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/figure&gt;</span></div></div><span>
+</span><div class="folder" id="folder87"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;figure<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Fig-EMI-D00001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00001</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;img<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">EMI-D00001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">he</span>="<span class="html-attribute-value">131.40mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">wi</span>="<span class="html-attribute-value">185.25mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">file</span>="<span class="html-attribute-value">US10057534-20180821-D00001.TIF</span>"</span><span class="html-attribute"> <span class="html-attribute-name">alt</span>="<span class="html-attribute-value">embedded image</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-content</span>="<span class="html-attribute-value">drawing</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-format</span>="<span class="html-attribute-value">tif</span>"</span>/&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/figure&gt;</span></div></div><span>
+</span><div class="folder" id="folder88"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;figure<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Fig-EMI-D00002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00002</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;img<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">EMI-D00002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">he</span>="<span class="html-attribute-value">226.40mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">wi</span>="<span class="html-attribute-value">166.37mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">file</span>="<span class="html-attribute-value">US10057534-20180821-D00002.TIF</span>"</span><span class="html-attribute"> <span class="html-attribute-name">alt</span>="<span class="html-attribute-value">embedded image</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-content</span>="<span class="html-attribute-value">drawing</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-format</span>="<span class="html-attribute-value">tif</span>"</span>/&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/figure&gt;</span></div></div><span>
+</span><div class="folder" id="folder89"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;figure<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Fig-EMI-D00003</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00003</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;img<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">EMI-D00003</span>"</span><span class="html-attribute"> <span class="html-attribute-name">he</span>="<span class="html-attribute-value">141.65mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">wi</span>="<span class="html-attribute-value">161.88mm</span>"</span><span class="html-attribute"> <span class="html-attribute-name">file</span>="<span class="html-attribute-value">US10057534-20180821-D00003.TIF</span>"</span><span class="html-attribute"> <span class="html-attribute-name">alt</span>="<span class="html-attribute-value">embedded image</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-content</span>="<span class="html-attribute-value">drawing</span>"</span><span class="html-attribute"> <span class="html-attribute-name">img-format</span>="<span class="html-attribute-value">tif</span>"</span>/&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/figure&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/drawings&gt;</span></div></div><span>
+</span><div class="folder" id="folder90"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">description</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="comment html-comment">&lt;?BRFSUM description="Brief Summary" end="lead"?&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;heading<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">h-0001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">level</span>="<span class="html-attribute-value">1</span>"</span>&gt;</span><span>CROSS REFERENCES TO RELATED APPLICATIONS</span><span class="html-tag">&lt;/heading&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0001</span>"</span>&gt;</span><span>The present Application claims priority to U.S. Provisional Patent Application No. 61/946,648, entitled HYBRID MODULAR DEVICE, filed on Feb. 28, 2014, which is hereby incorporated by reference in its entirety.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;heading<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">h-0002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">level</span>="<span class="html-attribute-value">1</span>"</span>&gt;</span><span>FIELD OF THE INVENTION</span><span class="html-tag">&lt;/heading&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0003</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0002</span>"</span>&gt;</span><span>The present invention relates in general to electronic devices, and in particular, to consumer electronic devices that automates, facilitates, or makes convenient the daily activities in a home or small office.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;heading<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">h-0003</span>"</span><span class="html-attribute"> <span class="html-attribute-name">level</span>="<span class="html-attribute-value">1</span>"</span>&gt;</span><span>BACKGROUND OF THE INVENTION</span><span class="html-tag">&lt;/heading&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0004</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0003</span>"</span>&gt;</span><span>Consumer electronic devices are essential for the modern home or small office. The range of application is broad as it includes entertainment, communications, personal productivity, energy management, home safety and security, health and wellness, convenience and automation, etc.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0005</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0004</span>"</span>&gt;</span><span>A problem with consumer electronic devices today is the short product life. Invariably, soon after a product has been purchased, a newer and better version of the same product is available in the market. Further, the vendor that manufactured the original product may stop the support or abandon the development of the original product.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0006</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0005</span>"</span>&gt;</span><span>Most device makers have adopted the business model of planned obsolescence. Most devices are now designed to last only for a limited useful life. The manufacturer makes sure that, when a device is broken, the repair cost is about the same as the replacement cost of a newer and better device.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0007</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0006</span>"</span>&gt;</span><span>Today, a consumer replaces a complete device simply because a “desirable or needed” functionality, which might only be 10% of the overall functionality, is damaged. As the life expectancy of all consumer products has declined steadily, most consumers regularly replace their devices at various frequencies. In the end, consumers pay more for their lifestyle.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0008</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0007</span>"</span>&gt;</span><span>A second concern for consumer electronic devices is the lack of customization. As every home or small office is unique in its own way, the requirement for matching equipment varies greatly. However, for volumetric efficiency, device makers offer only a limited choice of features, in the effort to drive down the manufacturing cost. As a result, a consumer often buys a product with redundant or even unwanted features.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0009</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0008</span>"</span>&gt;</span><span>On the other hand, customized products are available only at significantly higher prices. The middle-of-the-road solution is modular consumer devices. A modular device is hardware reconfigurable and allows an end user to insert and assemble different hardware modules on a fixed platform, in order that the final assembly performs a customized set of functions.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0010</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0009</span>"</span>&gt;</span><span>Possibly, the first modular consumer electronic device is the modular handset planned by Google under the Ara project. With an Ara base platform, a user is allowed to build a wireless communicator with a collection of snap-together parts. For example, a customer who prefers a hard keyboard will be able to add one. Another customer who desires a high-end camera will be able to upgrade to a specialty camera.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0011</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0010</span>"</span>&gt;</span><span>However, there are simply no modular consumer electronic devices in the market other than the proposed Google handsets. For example, there are no modular TV sets that allow insertion of a digital camera, a temperature sensor, or other custom parts into a flat-panel display. There are also no custom buildable Wi-Fi routers, which can be expanded to include a TV tuner, a cable-TV modem, or a wireless data modem connecting to a mobile carrier.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0012</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0011</span>"</span>&gt;</span><span>In fact, there is no fundamental difference between a modular TV set and a modular Wi-Fi router from a modular device point of view. Both are hybrid modular consumer devices. A TV set as a modular base can be inserted with a modular Wi-Fi router; a Wi-Fi router as a modular base can also be inserted with a modular TV set. In one aspect, both can be considered as a special case of a hybrid modular consumer appliance in the home or small office. However, such a generic and hybrid modular device simply does not exist today.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0013</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0012</span>"</span>&gt;</span><span>Therefore, there is a need for a hybrid modular and customizable consumer electronic device in the home of small office, which is not a wireless communicator.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;heading<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">h-0004</span>"</span><span class="html-attribute"> <span class="html-attribute-name">level</span>="<span class="html-attribute-value">1</span>"</span>&gt;</span><span>BRIEF SUMMARY OF THE INVENTION</span><span class="html-tag">&lt;/heading&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0014</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0013</span>"</span>&gt;</span><span>Aspects of the present invention relate to a plurality of hybrid modular consumer electronic devices, called hybrid modular devices (HMDs), wherein each said HMD comprises a base platform and a plurality of inserted snap-together functional modules so that the resulting assembly performs a custom-designed functionality.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0015</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0014</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, an HMD may not be a handheld device.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0016</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0015</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, the base platform of an HMD comprises at least a housing, or a physical platform, or a physical backplane, or a physical skeleton frame that provides the mechanical support for holding all the inserted modules of the HMD together, through mechanical constraints, with or without the help of magnetic force.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0017</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0016</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, the base platform of an HMD may be integrated with a plurality of component interconnect structures, which allow modular devices to be attached (inserted) to the base platform. Examples of interconnect structures include power strips, peripheral component expansion buses, audio or video input-output sockets, serial-bus or parallel-bus interfaces, etc.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0018</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0017</span>"</span>&gt;</span><span>Additionally in accordance with an embodiment of the present invention, an HMD base platform further comprises a computer, and an optional video subsystem. The computer acts as the controller of the component interconnect structures housed on the base platform. The computer may comprise CPUs (central processing units), GPUs (graphics processing units), memory, and a boot device. The optional video subsystem may be a physical device separate from the said computer, or be embedded in the said computer, housed on the HMD base platform.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0019</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0018</span>"</span>&gt;</span><span>Additionally in accordance with an embodiment of the present invention, physical modules that may be plugged into an HMD base platform may include, but are not restricted to the following list: computer system, Wi-Fi AP (access point), Wi-Fi terminal, wireless modem, wired-line modem, memory device (hard drive or solid-state drive), camera, speaker, tuner, DVR (digital video recorder), IoT (Internet-of-things) device, smart-home device, set-top box, display unit, sensor of all kinds, positioning device (such as GPS or global positioning system receiver), battery unit, game controller, antenna system, standalone consumer appliance, human interface device, etc.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="comment html-comment">&lt;?BRFSUM description="Brief Summary" end="tail"?&gt;</span></div><span>
+</span><div class="line"><span class="comment html-comment">&lt;?brief-description-of-drawings description="Brief Description of Drawings" end="lead"?&gt;</span></div><span>
+</span><div class="folder" id="folder91"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;description-of-drawings&gt;</span></div><div class="opened"><span>
+</span><div class="line"><span class="html-tag">&lt;heading<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">h-0005</span>"</span><span class="html-attribute"> <span class="html-attribute-name">level</span>="<span class="html-attribute-value">1</span>"</span>&gt;</span><span>BRIEF DESCRIPTION OF THE DRAWINGS</span><span class="html-tag">&lt;/heading&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0020</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0019</span>"</span>&gt;</span><span>The above and other objects and features in accordance with the present invention will become apparent from the following descriptions of embodiments in conjunction with the accompanying drawings, and in which:</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="folder" id="folder92"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0021</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0020</span>"</span>&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 1</span><span class="html-tag">&lt;/figref&gt;</span></div><span> is a simplified illustration that shows component-interconnect structures attached to the base platform of an HMD, in accordance with an embodiment of the present invention.</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/p&gt;</span></div></div><span>
+</span><div class="folder" id="folder93"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0022</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0021</span>"</span>&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 2</span><span class="html-tag">&lt;/figref&gt;</span></div><span> is a simplified illustration of an HMD, which is a hybrid TV set with a Wi-Fi router and computer storage, in accordance with an embodiment of the present invention.</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/p&gt;</span></div></div><span>
+</span><div class="folder" id="folder94"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0023</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0022</span>"</span>&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 3</span><span class="html-tag">&lt;/figref&gt;</span></div><span> is a simplified illustration of an HMD, which is a hybrid Wi-Fi router with multiple modems and a server computer, in accordance with an embodiment of the present invention.</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/p&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description-of-drawings&gt;</span></div></div><span>
+</span><div class="line"><span class="comment html-comment">&lt;?brief-description-of-drawings description="Brief Description of Drawings" end="tail"?&gt;</span></div><span>
+</span><div class="line"><span class="comment html-comment">&lt;?DETDESC description="Detailed Description" end="lead"?&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;heading<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">h-0006</span>"</span><span class="html-attribute"> <span class="html-attribute-name">level</span>="<span class="html-attribute-value">1</span>"</span>&gt;</span><span>DETAILED DESCRIPTION OF EXEMPLARY EMBODIMENTS</span><span class="html-tag">&lt;/heading&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0024</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0023</span>"</span>&gt;</span><span>A system and apparatus to function as a hybrid modular appliance or electronic device, called a hybrid modular device (HMD), allows a user to plug a plurality of snap-together modules of different types into a base platform, so that the resulting assembly performs a custom-designed functionality.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0025</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0024</span>"</span>&gt;</span><span>For simplicity of description, the words “module” and “modular device” will be used interchangeably in the rest of the present specification.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0026</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0025</span>"</span>&gt;</span><span>In an HMD, the base platform is integrated with open-standard (or proprietary) interfaces. These interfaces allow the modules complying with open standards (or proprietary specifications) to be inserted (or plugged) into the base platform. As a result, the inserted modules function as integrated subsystems of the overall HMD. Any vendor is allowed to provide standards-complying (or proprietary) modular devices to be plugged into an HMD. Each pluggable module can be swapped out and replaced by an end user, without special tools or a static-free environment.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0027</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0026</span>"</span>&gt;</span><span>A major consideration for HMDs as commercial products is the tradeoff between volumetric efficiency in manufacturing, and the degree of customizability. The per-unit cost of manufacturing drops exponentially as the volume is expanded. However, as the volume is expanded, customizability of the product is also reduced.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0028</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0027</span>"</span>&gt;</span><span>Therefore, in accordance with one aspect of the present invention, the base platform of an HMD may, as an option, further comprise a fully functional and standalone consumer appliance. In accordance with an embodiment of the present invention, an HMD TV set is a fully standalone TV set with its own display unit, a TV core system, and perhaps a TV tuner. The HMD TV is different from an ordinary TV in that its bezel is integrated with additional racks or sockets that allow snap-together modules to be plugged into the frame of the TV.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0029</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0028</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, an HMD may comprise both modular and non-modular components. In accordance with an embodiment of the present invention, an HMD Wi-Fi router is a fully standalone Wi-Fi access point and router that allows additional modular components to be plugged into the frame of the router.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0030</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0029</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, an HMD may not be a handheld device.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0031</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0030</span>"</span>&gt;</span><span>In an HMD, the base platform comprises at least a physical frame or housing, which is integrated with component interconnect structures housed in the frame. These structures are exposed on an outside surface of the base platform so that external modules can be plugged into the base platform. Therefore, these component-connecting structures are also referred to as the external interconnect structures.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0032</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0031</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, the base platform of an HMD comprises at least a housing, or a physical platform, or a physical backplane, or a physical skeleton frame that provides the mechanical support for holding all the inserted modules of the HMD together, through mechanical constraints. Optionally, magnetic force is activated once a module device is snapped into a connector socket in the base platform.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0033</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0032</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, the external interconnect structures integrated in the base platform of an HMD may comprise power strips, peripheral component expansion buses, audio or video input/output structures, serial-bus interfaces, parallel-bus interfaces, etc.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0034</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0033</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, the base platform of an HMD may further comprise an internal data interconnect structure, which is coupled with the external interconnect structures, which are integrated into the base platform. The internal interconnect structure may comprise a system bus, or a switch fabric, or a combination thereof. An object of the internal interconnect structure is to provide data paths for various component subsystems of an HMD to communicate with one another.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0035</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0034</span>"</span>&gt;</span><span>In accordance with an embodiment of the current invention, as of this writing, the internal interconnect structure allows data transfer at a speed which is at least 10 Gb/s (gigabits per second).</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0036</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0035</span>"</span>&gt;</span><span>In accordance with an embodiment of the present invention, as of this writing, the external component interconnect structures in an HMD may include the interfaces complying with the PCI (Peripheral Component Interconnect) series of standards, for example, PCIe (PCI Express); the interconnect structures may further include the interfaces complying with the HDMI (High-Definition Multimedia Interface) series of standards; the interconnect structures may further include the interfaces complying with the USB (universal serial bus) series of standards; the connect structures may further include the interfaces complying with the SATA (Serial Advanced Technology Attachment) series of standards for connecting a hard drive or an SSD (solid-state drive) to a computer; the interconnect structures may further include a display port (such as a mini DisplayPort or MDP).</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0037</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0036</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, an HMD base platform further comprises a computer, and an optional video subsystem. The computer acts as the controller of both the internal data-interconnect structure and the external component interconnect structures housed on the base platform. The computer may comprise CPUs (central processing units), GPUs (graphics processing units), memory, and a boot device. The optional video subsystem may be a physical device separate from the said computer, or be embedded in the said computer, which is housed in the HMD base platform.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0038</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0037</span>"</span>&gt;</span><span>Additionally in accordance with an embodiment of the present invention, physical modules that may be plugged into an HMD base platform may include, but are not restricted to the following list: computer system, Wi-Fi AP (access point), Wi-Fi terminal, wireless modem, wired-line modem, memory device (hard-drive or solid state device), camera, speaker, tuner, DVR (digital video recorder), IoT (Internet-of-things) device, smart-home device, set-top box, display unit, sensor of all kinds, positioning device, game controller, antenna system, standalone consumer electronic appliance, human interface device (HID), etc.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0039</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0038</span>"</span>&gt;</span><span>In accordance with one aspect of the present invention, HMDs can be classified into generic and non-generic HMDs. A non-generic HMD is one that the base platform comprises a standalone consumer appliance. In accordance with one aspect of the present invention, hybrid TVs form a major class of non-generic HMDs—the base platform of a hybrid HMD TV further comprises a TV set. In accordance with another aspect of the present invention, hybrid Wi-Fi APs form another major class of non-generic HMDs—the base platform of a hybrid HMD Wi-Fi AP further comprises a Wi-Fi AP.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0040</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0039</span>"</span>&gt;</span><span>One exemplary embodiment of an HMD is an HMD TV-Router: this is an HMD with a TV set as the base platform, with a modular Wi-Fi router unit pluggable into the display or base of the TV set.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0041</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0040</span>"</span>&gt;</span><span>Another exemplary embodiment of an HMD is an HMD TV-DVR-Router: this is an HMD with a TV set as the base platform, with a modular Wi-Fi router unit, a modular DVR unit, both pluggable into the display or the base of the TV set.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0042</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0041</span>"</span>&gt;</span><span>Yet another exemplary embodiment of an HMD is an HMD TV-router-storage: this is an HMD with a TV set as the base platform, with a modular Wi-Fi router unit, a modular network-attached storage (NAS) server unit, both pluggable into the display or the base of the TV set.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0043</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0042</span>"</span>&gt;</span><span>Yet another exemplary embodiment of an HMD is an HMD router-DVR-storage: this is an HMD with a Wi-Fi router as the base platform, with a modular network DVR unit, a modular NAS server unit, a modular Cable-TV modem unit, a modular mobile data modem unit, a modular fixed broadband data modem unit, a modular display unit, a modular keyboard unit, a modular Internet acceleration unit, all pluggable into the frame of the router base.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0044</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0043</span>"</span>&gt;</span><span>In yet another exemplary embodiment, an HMD TV set is used as a transformer. In the living room, an HMD TV set is configured as a home theater unit, while another HMD TV is configured as a videoconferencing device in the home office, and yet another HMD TV is set up as a music jukebox in the den.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0045</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0044</span>"</span>&gt;</span><span>In all these embodiments, the choices are not limiting. The number of attached (plugged or inserted) modules is also not limiting.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="folder" id="folder95"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0046</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0045</span>"</span>&gt;</span></div><div class="opened"><span>Reference is now made to </span><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 1</span><span class="html-tag">&lt;/figref&gt;</span></div><span>, which is a simplified illustration showing the external component interconnect structures integrated within the base platform of an HMD, in accordance with an embodiment of the present invention. The surface of a base platform </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>100</span><span class="html-tag">&lt;/b&gt;</span></div><span> contains a power strip </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>110</span><span class="html-tag">&lt;/b&gt;</span></div><span>, a PCIe (PCI Express) interface bus </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>160</span><span class="html-tag">&lt;/b&gt;</span></div><span>, a number of HDMI sockets </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>150</span><span class="html-tag">&lt;/b&gt;</span></div><span>, and a number of USB sockets </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>140</span><span class="html-tag">&lt;/b&gt;</span></div><span>, a SMARC (smart mobility architecture) card socket </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>120</span><span class="html-tag">&lt;/b&gt;</span></div><span>, and another serial bus </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>130</span><span class="html-tag">&lt;/b&gt;</span></div><span>.</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/p&gt;</span></div></div><span>
+</span><div class="folder" id="folder96"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0047</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0046</span>"</span>&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 2</span><span class="html-tag">&lt;/figref&gt;</span></div><span> is a simplified illustration of an HMD </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>200</span><span class="html-tag">&lt;/b&gt;</span></div><span>, which is a hybrid TV set with </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>4</span><span class="html-tag">&lt;/b&gt;</span></div><span> plugged module devices. In the figure, the backside of a TV display unit is employed as the base platform. In the top half of </span><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 2, 4</span><span class="html-tag">&lt;/figref&gt;</span></div><span> slots </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>210</span><span class="html-tag">&lt;/b&gt;</span></div><span> for inserting modular devices are shown. In the bottom half of </span><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 2</span><span class="html-tag">&lt;/figref&gt;</span></div><span>, a modular Wi-Fi AP </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>220</span><span class="html-tag">&lt;/b&gt;</span></div><span>, a modular wireless modem </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>240</span><span class="html-tag">&lt;/b&gt;</span></div><span>, a modular storage device </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>250</span><span class="html-tag">&lt;/b&gt;</span></div><span>, and a modular NAS server unit </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>230</span><span class="html-tag">&lt;/b&gt;</span></div><span> are plugged into the HMD TV set </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>200</span><span class="html-tag">&lt;/b&gt;</span></div><span>.</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/p&gt;</span></div></div><span>
+</span><div class="folder" id="folder97"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0048</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0047</span>"</span>&gt;</span></div><div class="opened"><div class="line"><span class="html-tag">&lt;figref<span class="html-attribute"> <span class="html-attribute-name">idref</span>="<span class="html-attribute-value">DRAWINGS</span>"</span>&gt;</span><span>FIG. 3</span><span class="html-tag">&lt;/figref&gt;</span></div><span> is a simplified illustration of an HMD </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>300</span><span class="html-tag">&lt;/b&gt;</span></div><span>, which is a hybrid Wi-Fi router with multiple modems and a server computer, in accordance with an embodiment of the present invention. A modular wireless modem </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>310</span><span class="html-tag">&lt;/b&gt;</span></div><span> connecting to a mobile data operator, another modular wireless (Bluetooth) modem </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>320</span><span class="html-tag">&lt;/b&gt;</span></div><span>, a modular wired-line broadband modem </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>330</span><span class="html-tag">&lt;/b&gt;</span></div><span>, and a modular server computer </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>340</span><span class="html-tag">&lt;/b&gt;</span></div><span>, are plugged into the base platform (the top side) of the HMD Wi-Fi router </span><div class="line"><span class="html-tag">&lt;b&gt;</span><span>300</span><span class="html-tag">&lt;/b&gt;</span></div><span>.</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/p&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;p<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">p-0049</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">0048</span>"</span>&gt;</span><span>In the foregoing specification, the invention has been described with reference to specific exemplary embodiments thereof It will, however, be evident that various modification and changes may be made to the specific exemplary embodiments without departing from the broader spirit and scope of the invention as set forth in the appended claims. Accordingly, the specification and drawings are to be regarded in an illustrative rather than a restrictive sense.</span><span class="html-tag">&lt;/p&gt;</span></div><span>
+</span><div class="line"><span class="comment html-comment">&lt;?DETDESC description="Detailed Description" end="tail"?&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/description&gt;</span></div></div><span>
+</span><div class="line"><span class="html-tag">&lt;us-claim-statement&gt;</span><span>What is claimed is:</span><span class="html-tag">&lt;/us-claim-statement&gt;</span></div><span>
+</span><div class="folder" id="folder98"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;claims<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">claims</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder99"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;claim<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">CLM-00001</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00001</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder100"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;claim-text&gt;</span></div><div class="opened"><span>1. A reconfigurable hybrid TV set comprising:
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a base device;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a TV core system integrated into the base device, wherein the core system supports a TV set without being a display screen and/or TV tuner;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a plurality of component modules, each of said module attachable on a surface of the base device, each said module becoming a module subsystem of the hybrid device upon attachment to the base device, wherein said attachable modules include a device that accelerates Internet traffic through the hybrid TV set;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a plurality of module interconnect structures integrated into the base device, each said module interconnect structure allowing a number of said modules to be snapped onto or plugged into the module interconnect structure;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a data interconnect structure integrated into the base device, the data interconnect structure coupled with the plurality of module interconnect structures; and</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a computing unit comprising at least a CPU (central processing unit) or a GPU (graphics processing unit), and a memory unit, wherein</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>the computing unit is integrated into the base device, and is configured to control all data communication between any 2 of the module subsystems, and between the base device and any of the module subsystems.</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/claim-text&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/claim&gt;</span></div></div><span>
+</span><div class="folder" id="folder101"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;claim<span class="html-attribute"> <span class="html-attribute-name">id</span>="<span class="html-attribute-value">CLM-00002</span>"</span><span class="html-attribute"> <span class="html-attribute-name">num</span>="<span class="html-attribute-value">00002</span>"</span>&gt;</span></div><div class="opened"><span>
+</span><div class="folder" id="folder102"><div class="line"><span class="folder-button fold"></span><span class="html-tag">&lt;claim-text&gt;</span></div><div class="opened"><span>2. A reconfigurable hybrid TV box comprising:
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a base device;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a TV box system integrated into the base device, wherein the TV box supports streaming movies or TV shows from a service to a TV set;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a plurality of component modules, each of said module attachable on a surface of the base device, each said module becoming a module subsystem of the hybrid device upon attachment to the base device, wherein said attachable modules include a device that accelerates Internet traffic through the hybrid TV box;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a plurality of module interconnect structures integrated into the base device, each said module interconnect structure allowing a number of said modules to be snapped onto or plugged into the module interconnect structure;</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a data interconnect structure integrated into the base device, the data interconnect structure coupled with the plurality of module interconnect structures; and</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>a computing unit comprising at least a CPU or a GPU, and a memory unit, wherein</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span><div class="line"><span class="html-tag">&lt;claim-text&gt;</span><span>the computing unit is integrated into the base device, and is configured to control all data communication between any 2 of the module subsystems, and between the base device and any of the module subsystem.</span><span class="html-tag">&lt;/claim-text&gt;</span></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/claim-text&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/claim&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/claims&gt;</span></div></div><span>
+</span></div><span class="folded hidden">...</span><div class="line"><span class="html-tag">&lt;/us-patent-grant&gt;</span></div></div></div></body></html>
